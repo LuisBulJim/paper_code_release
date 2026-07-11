@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Underwater Corrosion Detection via YOLO26</title>
+<meta name="description" content="Project page for 'Underwater Corrosion Detection via YOLO26: From Heterogeneous Ensembles to Robust Inference with Test-Time Augmentation'.">
+<style>
+  :root{
+    --bg:#f6f8fb; --surface:#ffffff; --text:#1a2230; --muted:#5a6b82;
+    --border:#e3e9f2; --accent:#0e7c86; --accent-2:#0a4d68; --accent-soft:#e2f2f4;
+    --code-bg:#0f1c2e; --code-text:#e6edf3; --shadow:0 8px 30px rgba(16,42,67,.08);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1420; --surface:#131c2b; --text:#e7edf6; --muted:#9fb0c7;
+      --border:#22304a; --accent:#3bb6c2; --accent-2:#6fd3dd; --accent-soft:#132a30;
+      --code-bg:#0a1220; --code-text:#e6edf3; --shadow:0 8px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d1420; --surface:#131c2b; --text:#e7edf6; --muted:#9fb0c7;
+    --border:#22304a; --accent:#3bb6c2; --accent-2:#6fd3dd; --accent-soft:#132a30;
+    --code-bg:#0a1220; --code-text:#e6edf3; --shadow:0 8px 30px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"]{
+    --bg:#f6f8fb; --surface:#ffffff; --text:#1a2230; --muted:#5a6b82;
+    --border:#e3e9f2; --accent:#0e7c86; --accent-2:#0a4d68; --accent-soft:#e2f2f4;
+    --code-bg:#0f1c2e; --code-text:#e6edf3; --shadow:0 8px 30px rgba(16,42,67,.08);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:920px; margin:0 auto; padding:0 22px}
+  /* Hero */
+  header.hero{
+    background:
+      radial-gradient(1200px 400px at 80% -10%, rgba(59,182,194,.25), transparent 60%),
+      linear-gradient(160deg, var(--accent-2), var(--accent));
+    color:#fff; padding:64px 0 54px; position:relative; overflow:hidden;
+  }
+  header.hero .wrap{position:relative; z-index:1}
+  .eyebrow{letter-spacing:.14em; text-transform:uppercase; font-size:.72rem; font-weight:700; opacity:.9}
+  h1.title{font-size:clamp(1.7rem,4.4vw,2.7rem); line-height:1.18; margin:.5rem 0 .2rem; font-weight:800}
+  .authors{margin:.7rem 0 .2rem; font-size:1.02rem; opacity:.96}
+  .affil{font-size:.9rem; opacity:.85}
+  .btns{display:flex; flex-wrap:wrap; gap:12px; margin-top:22px}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; padding:10px 18px; border-radius:999px;
+    font-weight:600; font-size:.94rem; background:rgba(255,255,255,.14);
+    color:#fff; border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(3px);
+  }
+  .btn:hover{background:rgba(255,255,255,.24); text-decoration:none}
+  .btn.solid{background:#fff; color:var(--accent-2); border-color:#fff}
+  .btn.disabled{opacity:.6; cursor:not-allowed}
+  .btn svg{width:16px; height:16px; fill:currentColor}
+  /* Sections */
+  section{padding:52px 0; border-bottom:1px solid var(--border)}
+  section:last-of-type{border-bottom:none}
+  h2{font-size:1.5rem; font-weight:800; margin:0 0 .4rem; letter-spacing:-.01em}
+  h2 .tag{color:var(--accent); font-weight:800}
+  .lead{color:var(--muted); margin-top:0}
+  p{margin:.7rem 0}
+  .abstract{
+    background:var(--surface); border:1px solid var(--border); border-radius:16px;
+    padding:24px 26px; box-shadow:var(--shadow); text-align:justify;
+  }
+  /* Gallery */
+  .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:20px}
+  figure{margin:0; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; box-shadow:var(--shadow)}
+  figure img{display:block; width:100%; height:auto}
+  figcaption{padding:10px 14px; font-size:.85rem; color:var(--muted)}
+  .teaser{margin-top:22px; border-radius:16px; overflow:hidden; border:1px solid var(--border); box-shadow:var(--shadow)}
+  .teaser img{display:block; width:100%; height:auto}
+  /* Qualitative sample triptychs (Original | YOLO | SAM 3) — full width, stacked */
+  .samples{display:flex; flex-direction:column; gap:0; margin-top:20px; background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden; box-shadow:var(--shadow)}
+  .samples figure{margin:0; background:transparent; border:none; border-radius:0; box-shadow:none}
+  .samples figure img{display:block; width:100%; height:auto}
+  /* Experiment cards */
+  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:16px; margin:22px 0}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:18px 18px 16px; box-shadow:var(--shadow)}
+  .metric{font-size:1.9rem; font-weight:800; color:var(--accent); line-height:1}
+  .metric small{font-size:.9rem; color:var(--muted); font-weight:600}
+  .card .k{font-size:.82rem; color:var(--muted); margin-top:8px; text-transform:uppercase; letter-spacing:.05em}
+  /* Experiment metric groups */
+  .metric-groups{display:grid; grid-template-columns:1fr; gap:16px; margin:22px 0}
+  @media (min-width:720px){ .metric-groups{grid-template-columns:repeat(3,1fr)} }
+  .mgroup{background:var(--surface); border:1px solid var(--border); border-top:3px solid var(--accent); border-radius:14px; padding:16px 18px; box-shadow:var(--shadow)}
+  .mgroup-h{font-size:.78rem; font-weight:800; color:var(--text); text-transform:uppercase; letter-spacing:.04em; display:flex; flex-direction:column; gap:2px; margin-bottom:14px}
+  .mgroup-h span{font-size:.72rem; font-weight:600; color:var(--muted); text-transform:none; letter-spacing:0}
+  .mgroup-row{display:flex; gap:14px}
+  .stat{flex:1; display:flex; flex-direction:column; gap:3px}
+  .stat + .stat{border-left:1px solid var(--border); padding-left:14px}
+  .stat .v{font-size:1.8rem; font-weight:800; color:var(--accent); line-height:1}
+  .stat .v small{font-size:.8rem; color:var(--muted); font-weight:700}
+  .stat .l{font-size:.78rem; color:var(--muted)}
+  /* Full title with a smaller after-colon subtitle */
+  .title .subtitle{display:block; font-size:.58em; font-weight:600; opacity:.92; margin-top:.4rem; line-height:1.3}
+  ul.exp{padding-left:1.15rem; margin:.6rem 0}
+  ul.exp li{margin:.4rem 0}
+  ul.clean{list-style:none; padding:0; margin:.6rem 0}
+  ul.clean li{padding:.35rem 0; border-bottom:1px dashed var(--border)}
+  ul.clean li:last-child{border-bottom:none}
+  /* BibTeX */
+  .bibwrap{position:relative}
+  pre.bib{
+    background:var(--code-bg); color:var(--code-text); border-radius:14px; padding:20px 18px;
+    overflow-x:auto; font-size:.86rem; line-height:1.5; margin:14px 0 0;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  .copybtn{
+    position:absolute; top:12px; right:12px; background:rgba(255,255,255,.12); color:#e6edf3;
+    border:1px solid rgba(255,255,255,.25); border-radius:8px; padding:6px 12px; font-size:.8rem;
+    cursor:pointer; font-weight:600;
+  }
+  .copybtn:hover{background:rgba(255,255,255,.22)}
+  .coming{display:inline-block; background:var(--accent-soft); color:var(--accent-2); border:1px solid var(--border);
+    padding:3px 12px; border-radius:999px; font-size:.82rem; font-weight:700}
+  :root[data-theme="dark"] .coming, @media (prefers-color-scheme: dark){}
+  /* Footer */
+  footer{padding:34px 0 50px; color:var(--muted); font-size:.88rem; text-align:center}
+  @media (max-width:520px){ .btns{gap:9px} .btn{padding:9px 14px; font-size:.88rem} }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Underwater Inspection · Object Detection · Foundation Models</div>
+    <h1 class="title">Underwater Corrosion Detection via YOLO26<span class="subtitle">From Heterogeneous Ensembles to Robust Inference with Test-Time Augmentation</span></h1>
+    <div class="authors">Luis Bulnes Jiménez<sup>1</sup>&nbsp;· Camila Rodrigues<sup>2</sup>&nbsp;· Juan Jesús Ruiz<sup>2</sup>&nbsp;· Thalia Morel<sup>2</sup>&nbsp;· Juan A. Álvarez-García<sup>1</sup></div>
+    <div class="affil"><sup>1</sup> Universidad de Sevilla &middot; <sup>2</sup> EONSEA S.L., Sevilla, Spain</div>
+
+    <div class="btns">
+      <span class="btn disabled" aria-disabled="true">Paper — coming soon</span>
+      <a class="btn solid" href="https://github.com/LuisBulJim/paper_code_release" target="_blank" rel="noopener">Code</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section id="abstract">
+    <div class="wrap">
+      <h2>Abstract</h2>
+      <div class="abstract">
+        The automated inspection of submerged marine infrastructure is critical for predictive maintenance yet remains hindered by hostile optical conditions and data scarcity. Despite the considerable advancement of deep learning in terrestrial defect detection, the direct application of large-scale models in the underwater domain typically fails due to severe domain shifts caused by turbidity and light attenuation. The present study evaluates YOLO26 architectures for the purpose of underwater corrosion detection, comparing three complementary strategies: model scaling (Nano, Medium, Large), multi-model fusion via Weighted Box Fusion (WBF), and robust inference via Test-Time Augmentation (TTA). Our experiments on the SINTEF LIACI dataset (the first Object Detection baseline reported on this repository) reveal that the Medium variant (20.4M parameters) trained via Direct Transfer Learning achieves the strongest individual performance (F1-Score: 0.77, mAP@50: 0.82), while Nano and Large models suffer from insufficient capacity and overfitting, respectively. Although WBF ensembling improves recall and mAP@50 over single-pass inference, test-time augmentation applied to the medium backbone remains the strongest inference strategy. It achieves an <strong>mAP@50 of 0.75</strong> and a <strong>recall of 0.79</strong> under a unified fixed-threshold evaluation and demonstrates robust generalisation, improving <strong>recall by +6.28%</strong> on an independent TrashCan benchmark. The model was retrained on this benchmark via direct transfer as a methodological verification. A post-detection refinement stage using the Foundation Model SAM 3 provides an independent, zero-shot morphological characterization of the detected regions. With workstation-level inference latency compatible with offline or low-rate inspection workflows, the proposed framework offers a viable solution for resource-constrained inspection-class Remotely Operated Vehicles (ROVs).
+      </div>
+    </div>
+  </section>
+
+  <section id="proposal">
+    <div class="wrap">
+      <h2>Proposal</h2>
+      <p class="lead">A two-stage, reproducible pipeline for underwater corrosion assessment.</p>
+      <p>
+        We establish the first standardized Object Detection baseline on the SINTEF LIACI underwater inspection
+        dataset by converting its pixel-level masks into bounding-box annotations. A <strong>YOLO26 (Medium)</strong>
+        detector, trained via Direct Transfer, localizes corrosion, and its boxes are used as spatial prompts for a
+        <strong>zero-shot SAM 3</strong> stage that recovers pixel-level morphology. The images below are qualitative
+        evidence produced by the released SAM 3 evaluation notebook (<code>notebook&nbsp;09</code>): yellow =
+        YOLO26 detection, red = SAM 3 segmentation.
+      </p>
+      <p class="lead" style="margin-bottom:8px">Each triptych — <strong>Original</strong> &middot; <strong>YOLO26 detection</strong> (yellow) &middot; <strong>SAM 3 segmentation</strong> within the box (red).</p>
+      <!-- Qualitative samples. Missing images auto-hide. -->
+      <div class="samples">
+        <figure><img src="assets/sample_7.png" alt="Original, YOLO26 detection and SAM 3 segmentation — propeller hub" onerror="this.closest('figure').style.display='none'"></figure>
+        <figure><img src="assets/sample_1.png" alt="Original, YOLO26 detection and SAM 3 segmentation — sample 1" onerror="this.closest('figure').style.display='none'"></figure>
+        <figure><img src="assets/sample_3.png" alt="Original, YOLO26 detection and SAM 3 segmentation — sample 3" onerror="this.closest('figure').style.display='none'"></figure>
+        <figure><img src="assets/sample_4.png" alt="Original, YOLO26 detection and SAM 3 segmentation — sample 4" onerror="this.closest('figure').style.display='none'"></figure>
+        <figure><img src="assets/sample_5.png" alt="Original, YOLO26 detection and SAM 3 segmentation — sample 5" onerror="this.closest('figure').style.display='none'"></figure>
+        <figure><img src="assets/sample_6.png" alt="Original, YOLO26 detection and SAM 3 segmentation — sample 6" onerror="this.closest('figure').style.display='none'"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiments">
+    <div class="wrap">
+      <h2>Experiments</h2>
+      <p class="lead">Key results on the SINTEF LIACI target domain and cross-domain verification.</p>
+      <div class="metric-groups">
+        <div class="mgroup">
+          <div class="mgroup-h">Best single model<span>Medium &middot; Direct Transfer</span></div>
+          <div class="mgroup-row">
+            <div class="stat"><span class="v">0.82</span><span class="l">mAP@50</span></div>
+            <div class="stat"><span class="v">0.77</span><span class="l">F1-Score</span></div>
+          </div>
+        </div>
+        <div class="mgroup">
+          <div class="mgroup-h">Best inference<span>TTA on Medium</span></div>
+          <div class="mgroup-row">
+            <div class="stat"><span class="v">0.75</span><span class="l">mAP@50</span></div>
+            <div class="stat"><span class="v">0.79</span><span class="l">Recall</span></div>
+          </div>
+        </div>
+        <div class="mgroup">
+          <div class="mgroup-h">Robustness &amp; morphology<span>cross-domain &middot; zero-shot</span></div>
+          <div class="mgroup-row">
+            <div class="stat"><span class="v">+6.28<small>%</small></span><span class="l">TrashCan Recall</span></div>
+            <div class="stat"><span class="v">0.56<small> / 0.67</small></span><span class="l">SAM 3 IoU / Dice</span></div>
+          </div>
+        </div>
+      </div>
+      <ul class="exp">
+        <li><strong>Model scaling (Nano / Medium / Large).</strong> The Medium variant (20.4M params) is the optimal
+          trade-off; Nano underfits and Large overfits environmental noise.</li>
+        <li><strong>TTA &gt; WBF.</strong> Single-model Test-Time Augmentation (F1&nbsp;0.72) consistently outperforms
+          multi-model Weighted Box Fusion (F1&nbsp;0.68) — geometric diversity at inference beats model fusion while
+          reducing computational overhead.</li>
+        <li><strong>External verification.</strong> The TTA-driven gains transfer to the independent TrashCan
+          benchmark when the model is retrained via Direct Transfer.</li>
+        <li><strong>Morphological refinement.</strong> A zero-shot SAM 3 stage recovers the detected corrosion regions
+          at the pixel level, validated against ground-truth masks.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="reproducibility">
+    <div class="wrap">
+      <h2>Reproducibility</h2>
+      <p class="lead">Every quantitative result is produced by a notebook published with its executed outputs.</p>
+      <ul class="clean">
+        <li><a href="https://github.com/LuisBulJim/paper_code_release/tree/main/notebooks" target="_blank" rel="noopener">Executed notebooks</a> — one per experiment (dataset prep, training, model comparison, WBF, TTA/S-TTA, TrashCan, SAM 3).</li>
+        <li><a href="https://github.com/LuisBulJim/paper_code_release/blob/main/src/utils_research.py" target="_blank" rel="noopener">Shared utilities</a> — seeding, split loading, and the single COCO-compatible metric.</li>
+        <li><a href="https://github.com/LuisBulJim/paper_code_release/blob/main/data/splits.json" target="_blank" rel="noopener">Frozen splits</a> — the exact held-out 33-image LIACI test set.</li>
+        <li><a href="https://github.com/LuisBulJim/paper_code_release/blob/main/requirements.txt" target="_blank" rel="noopener">Pinned environment</a> — <code>ultralytics==8.4.5</code> (critical pin), <code>torch==2.8.0</code>, SAM 3 via <code>transformers</code>.</li>
+      </ul>
+      <h3 style="margin-top:22px; font-size:1.05rem;">Data availability</h3>
+      <p>
+        The code, executed notebooks, and frozen evaluation splits supporting this study are openly available in the
+        accompanying repository. The underlying datasets are third-party and publicly accessible from their original
+        sources: the <a href="https://liaci.sintef.cloud/" target="_blank" rel="noopener">SINTEF LIACI</a> underwater
+        inspection dataset, the TrashCan&nbsp;1.0 dataset (cross-domain verification), and an aerial corrosion dataset
+        hosted on Roboflow (sequential-transfer pre-training); the corresponding download routines are included in the
+        released notebooks. Trained model checkpoints will be deposited in a DOI-referenced archive upon acceptance.
+      </p>
+    </div>
+  </section>
+
+  <section id="citation">
+    <div class="wrap">
+      <h2>Citation</h2>
+      <p>The paper is <span class="coming">coming soon</span>. Please cite it as:</p>
+      <div class="bibwrap">
+        <button class="copybtn" id="copybtn">Copy</button>
+        <pre class="bib" id="bibtex">@article{corrosion_yolo26_2026,
+  title   = {Underwater Corrosion Detection via YOLO26: From Heterogeneous
+             Ensembles to Robust Inference with Test-Time Augmentation},
+  author  = {Bulnes Jim\'enez, Luis and Rodrigues, Camila and Ruiz, Juan Jes\'us and Morel, Thalia and \'Alvarez-Garc\'ia, Juan A.},
+  journal = {(under review) — coming soon},
+  year    = {2026},
+  note    = {Code and executed notebooks: https://github.com/LuisBulJim/paper_code_release}
+}</pre>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Project page for the YOLO26 underwater corrosion detection study.
+       Code released for full reproducibility. © 2026.</p>
+  </div>
+</footer>
+
+<script>
+  // Copy BibTeX
+  document.getElementById("copybtn").addEventListener("click",function(){
+    var t=document.getElementById("bibtex").innerText;
+    navigator.clipboard.writeText(t).then(function(){
+      var b=document.getElementById("copybtn"); b.textContent="Copied!";
+      setTimeout(function(){ b.textContent="Copy"; },1500);
+    });
+  });
+</script>
+</body>
+</html>
