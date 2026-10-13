@@ -1,0 +1,43 @@
+2026-09-28 13:24:47 | INFO | mask index: 0 cached, 1893 to read
+2026-09-28 13:25:23 | INFO |   read 100/1893 masks
+2026-09-28 13:25:56 | INFO |   read 200/1893 masks
+2026-09-28 13:26:31 | INFO |   read 300/1893 masks
+2026-09-28 13:34:13 | INFO | mask index: 0 cached, 1893 to read
+2026-09-28 13:34:14 | INFO |   read 100/1893 masks
+2026-09-28 13:34:14 | INFO |   read 200/1893 masks
+2026-09-28 13:34:15 | INFO |   read 300/1893 masks
+2026-09-28 13:34:15 | WARNING | mask image_0393: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:15 | INFO |   read 400/1893 masks
+2026-09-28 13:34:15 | WARNING | mask image_0409: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:15 | WARNING | mask image_0439: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:16 | WARNING | mask image_0455: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:16 | WARNING | mask image_0456: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:16 | WARNING | mask image_0457: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:17 | WARNING | mask image_0458: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:17 | WARNING | mask image_0459: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:17 | WARNING | mask image_0460: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:18 | WARNING | mask image_0461: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:18 | WARNING | mask image_0462: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:18 | WARNING | mask image_0463: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:18 | WARNING | mask image_0464: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:19 | WARNING | mask image_0465: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:19 | WARNING | mask image_0466: unreadable in <LIACI_ROOT>, using copy from <SUBMITTED_DATASET_ROOT>
+2026-09-28 13:34:20 | INFO |   read 500/1893 masks
+2026-09-28 13:34:21 | INFO |   read 600/1893 masks
+2026-09-28 13:34:22 | INFO |   read 700/1893 masks
+2026-09-28 13:34:23 | INFO |   read 800/1893 masks
+2026-09-28 13:34:24 | INFO |   read 900/1893 masks
+2026-09-28 13:34:26 | INFO |   read 1000/1893 masks
+2026-09-28 13:34:28 | INFO |   read 1100/1893 masks
+2026-09-28 13:34:30 | INFO |   read 1200/1893 masks
+2026-09-28 13:34:31 | INFO |   read 1300/1893 masks
+2026-09-28 13:34:32 | INFO |   read 1400/1893 masks
+2026-09-28 13:34:34 | INFO |   read 1500/1893 masks
+2026-09-28 13:34:35 | INFO |   read 1600/1893 masks
+2026-09-28 13:34:37 | INFO |   read 1700/1893 masks
+2026-09-28 13:34:38 | INFO |   read 1800/1893 masks
+2026-09-28 13:34:39 | INFO |   read 1893/1893 masks
+2026-09-28 13:34:39 | INFO | LIACI: 1893 images, 209 positive, 1684 negative
+2026-09-28 13:34:39 | INFO | test: 21 positive + 12 negative (frozen)
+2026-09-28 13:34:39 | INFO | pool: 188 positive + 40 negative (sampled 40 of 1504 candidates, seed 0)
+2026-09-28 13:36:45 | INFO | manifest written: data\manifest_v2.json | summary: {'n_images': 261, 'pool': {'positive': 188, 'negative': 40}, 'test': {'negative': 12, 'positive': 21}, 'n_boxes_pool': 517, 'n_boxes_test': 52, 'excluded_no_box': [], 'fallback_copies_used': {'mask/image_0393': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0409': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0439': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0455': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0456': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0457': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0458': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0459': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0460': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0461': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0462': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0463': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0464': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0465': '<SUBMITTED_DATASET_ROOT>', 'mask/image_0466': '<SUBMITTED_DATASET_ROOT>'}}

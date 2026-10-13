@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Zero-shot out-of-distribution test: the 15 nested-CV fold models of each LIACI corrosion detector (3 repeats $\times$ 5 outer folds), without retraining, on the TrashCan validation images containing metal debris (corrosion predictions scored against the Metal boxes); mean with 95\% t-interval over fold models.}
+\label{tab:trashcan_ood}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+LIACI model & Strategy & Ckpts & mAP@50 & Precision & Recall & F1 \\
+\midrule
+YOLO26-m & Standard & 15 & 0.009 [0.005, 0.013] & 0.036 [0.021, 0.051] & 0.010 [0.006, 0.015] & 0.015 [0.009, 0.022] \\
+YOLO26-m & TTA & 15 & 0.013 [0.008, 0.017] & 0.121 [0.000, 0.267] & 0.003 [0.001, 0.005] & 0.005 [0.001, 0.010] \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

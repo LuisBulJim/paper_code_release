@@ -1,0 +1,22 @@
+[x1_recipe] repeat 0 fold 0: train 179 + extra 0, val 5, test 77
+  workspace OK {'train': 179, 'val': 5, 'extra': 0, 'boxes_train': 417}
+[x2_multi] repeat 0 fold 0: train 179 + extra 1095, val 5, test 77
+  workspace OK {'train': 1274, 'val': 5, 'extra': 1095, 'boxes_train': 6553}
+[x3_seg] repeat 0 fold 0: train 179 + extra 0, val 5, test 77
+  workspace OK {'train': 179, 'val': 5, 'extra': 0, 'boxes_train': 417}
+[x4_seg_cp] repeat 0 fold 0: train 179 + extra 0, val 5, test 77
+  workspace OK {'train': 179, 'val': 5, 'extra': 0, 'boxes_train': 417}
+[x5_combined] repeat 0 fold 0: train 179 + extra 1095, val 5, test 77
+  workspace OK {'train': 1274, 'val': 5, 'extra': 1095, 'boxes_train': 6553}
+[x1_recipe] repeat 0 fold 0: train 179 + extra 0, val 5, test 77
+  workspace OK {'train': 179, 'val': 5, 'extra': 0, 'boxes_train': 417}
+[x2_multi] repeat 0 fold 0: train 179 + extra 1095, val 5, test 77
+  workspace OK {'train': 1274, 'val': 5, 'extra': 1095, 'boxes_train': 6553}
+[x3_seg] repeat 0 fold 0: train 179 + extra 0, val 5, test 77
+  workspace OK {'train': 179, 'val': 5, 'extra': 0, 'boxes_train': 417}
+[x4_seg_cp] repeat 0 fold 0: train 179 + extra 0, val 5, test 77
+  workspace OK {'train': 179, 'val': 5, 'extra': 0, 'boxes_train': 417}
+[x6_multi_seg] repeat 0 fold 0: train 179 + extra 1095, val 5, test 77
+  workspace OK {'train': 1274, 'val': 5, 'extra': 1095, 'boxes_train': 6553}
+[x5_combined] repeat 0 fold 0: train 179 + extra 1095, val 5, test 77
+  workspace OK {'train': 1274, 'val': 5, 'extra': 1095, 'boxes_train': 6553}

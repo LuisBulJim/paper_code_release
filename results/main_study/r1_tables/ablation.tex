@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Effect of grouping the outer folds by inspection video: the same nested protocol with outer folds that ignore the video (adjacent frames may fall on both sides) against folds grouped by video. Standard inference, mean over repeats with 95\% cluster-bootstrap interval.}
+\label{tab:ablation}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrr}
+\toprule
+Outer folds & Protocol & Model & mAP@50 & F1 & AUROC \\
+\midrule
+Grouped by video & Direct transfer & YOLO26-n & 0.119 [0.090, 0.150] & 0.126 [0.100, 0.151] & 0.650 [0.576, 0.730] \\
+Grouped by video & Direct transfer & YOLO26-m & 0.167 [0.119, 0.209] & 0.227 [0.175, 0.264] & 0.702 [0.631, 0.769] \\
+Grouped by video & Direct transfer & YOLO26-l & 0.172 [0.112, 0.234] & 0.207 [0.145, 0.259] & 0.687 [0.616, 0.760] \\
+Grouped by video & Sequential transfer & YOLO26-n & 0.161 [0.114, 0.206] & 0.230 [0.171, 0.273] & 0.655 [0.587, 0.727] \\
+Grouped by video & Sequential transfer & YOLO26-m & 0.168 [0.118, 0.214] & 0.242 [0.185, 0.282] & 0.663 [0.583, 0.743] \\
+Grouped by video & Sequential transfer & YOLO26-l & 0.175 [0.123, 0.226] & 0.267 [0.209, 0.307] & 0.671 [0.597, 0.746] \\
+Not grouped & Direct transfer & YOLO26-n & 0.206 [0.166, 0.246] & 0.234 [0.189, 0.276] & 0.746 [0.669, 0.824] \\
+Not grouped & Direct transfer & YOLO26-m & 0.299 [0.235, 0.359] & 0.374 [0.321, 0.419] & 0.805 [0.732, 0.877] \\
+Not grouped & Direct transfer & YOLO26-l & 0.285 [0.217, 0.342] & 0.338 [0.276, 0.382] & 0.791 [0.704, 0.869] \\
+Not grouped & Sequential transfer & YOLO26-n & 0.279 [0.243, 0.314] & 0.356 [0.321, 0.385] & 0.815 [0.754, 0.866] \\
+Not grouped & Sequential transfer & YOLO26-m & 0.277 [0.233, 0.326] & 0.365 [0.322, 0.402] & 0.790 [0.719, 0.853] \\
+Not grouped & Sequential transfer & YOLO26-l & 0.282 [0.235, 0.327] & 0.364 [0.311, 0.399] & 0.787 [0.700, 0.860] \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

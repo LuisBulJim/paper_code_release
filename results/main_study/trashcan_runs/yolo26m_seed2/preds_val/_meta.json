@@ -1,0 +1,27 @@
+{
+  "strategy": "standard",
+  "checkpoints": [
+    {
+      "path": "r1/runs/trashcan/yolo26m_seed2/weights/best.pt",
+      "sha256": "56794c27d68a3e1c22c17dce128ba5490b1704566d04a760383fab4a558e734f"
+    }
+  ],
+  "model_weights": [
+    1.0
+  ],
+  "conf_dump": 0.001,
+  "imgsz": 640,
+  "tta": null,
+  "wbf_models": null,
+  "n_images": 1204,
+  "mean_ms_per_image_informal": 7.863008592005486,
+  "device": "cuda:0",
+  "environment": {
+    "python": "3.9.13",
+    "platform": "linux",
+    "torch": "2.8.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "ultralytics": "8.4.5"
+  }
+}

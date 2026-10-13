@@ -1,0 +1,52 @@
+\begin{table}[htbp]
+\centering
+\caption{Sensitivity of TTA to its settings on the inner validation splits of the nested cross-validation (mean $\pm$ SD over 3 repeats $\times$ 5 outer folds, operating point 0.25). The configuration applied to the outer test folds is the best mean validation mAP@50 averaged over model sizes.}
+\label{tab:sweep_tta}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Model & TTA configuration & WBF IoU & mAP@50 (val) & F1 (val) & Recall (val) \\
+\midrule
+YOLO26-l & tta\_s3\_flip\_equal & 0.6 & 0.260 $\pm$ 0.112 & 0.126 $\pm$ 0.110 & 0.075 \\
+YOLO26-l & tta\_s3\_flip & 0.4 & 0.256 $\pm$ 0.103 & 0.091 $\pm$ 0.092 & 0.051 \\
+YOLO26-l & tta\_s3\_flip\_equal & 0.5 & 0.255 $\pm$ 0.113 & 0.105 $\pm$ 0.102 & 0.061 \\
+YOLO26-l & tta\_s3\_flip\_equal & 0.4 & 0.255 $\pm$ 0.105 & 0.091 $\pm$ 0.092 & 0.051 \\
+YOLO26-l & tta\_s3\_flip & 0.5 & 0.254 $\pm$ 0.113 & 0.106 $\pm$ 0.102 & 0.062 \\
+YOLO26-l & tta\_s3\_flip & 0.6 & 0.251 $\pm$ 0.105 & 0.127 $\pm$ 0.109 & 0.076 \\
+YOLO26-l & tta\_s3\_noflip & 0.4 & 0.246 $\pm$ 0.089 & 0.099 $\pm$ 0.095 & 0.057 \\
+YOLO26-l & tta\_s3\_noflip & 0.5 & 0.238 $\pm$ 0.088 & 0.116 $\pm$ 0.103 & 0.068 \\
+YOLO26-l & tta\_s3\_noflip & 0.6 & 0.235 $\pm$ 0.092 & 0.136 $\pm$ 0.104 & 0.082 \\
+YOLO26-l & tta\_flip\_only & 0.4 & 0.234 $\pm$ 0.081 & 0.089 $\pm$ 0.089 & 0.051 \\
+YOLO26-l & standard & -- & 0.232 $\pm$ 0.087 & 0.216 $\pm$ 0.127 & 0.157 \\
+YOLO26-l & tta\_flip\_only & 0.5 & 0.230 $\pm$ 0.081 & 0.109 $\pm$ 0.098 & 0.064 \\
+YOLO26-l & tta\_flip\_only & 0.6 & 0.230 $\pm$ 0.084 & 0.127 $\pm$ 0.108 & 0.078 \\
+YOLO26-m & tta\_s3\_flip\_equal & 0.6 & 0.274 $\pm$ 0.085 & 0.136 $\pm$ 0.090 & 0.085 \\
+YOLO26-m & tta\_s3\_flip & 0.6 & 0.272 $\pm$ 0.085 & 0.135 $\pm$ 0.088 & 0.083 \\
+YOLO26-m & tta\_s3\_flip & 0.5 & 0.270 $\pm$ 0.091 & 0.121 $\pm$ 0.085 & 0.073 \\
+YOLO26-m & tta\_s3\_flip\_equal & 0.5 & 0.268 $\pm$ 0.090 & 0.117 $\pm$ 0.088 & 0.071 \\
+YOLO26-m & tta\_s3\_flip\_equal & 0.4 & 0.266 $\pm$ 0.091 & 0.068 $\pm$ 0.056 & 0.037 \\
+YOLO26-m & tta\_s3\_flip & 0.4 & 0.265 $\pm$ 0.089 & 0.067 $\pm$ 0.057 & 0.036 \\
+YOLO26-m & tta\_flip\_only & 0.6 & 0.255 $\pm$ 0.095 & 0.169 $\pm$ 0.122 & 0.112 \\
+YOLO26-m & tta\_s3\_noflip & 0.4 & 0.254 $\pm$ 0.117 & 0.090 $\pm$ 0.074 & 0.052 \\
+YOLO26-m & tta\_s3\_noflip & 0.5 & 0.254 $\pm$ 0.106 & 0.106 $\pm$ 0.082 & 0.064 \\
+YOLO26-m & tta\_s3\_noflip & 0.6 & 0.254 $\pm$ 0.098 & 0.144 $\pm$ 0.088 & 0.095 \\
+YOLO26-m & standard & -- & 0.251 $\pm$ 0.079 & 0.278 $\pm$ 0.083 & 0.281 \\
+YOLO26-m & tta\_flip\_only & 0.4 & 0.251 $\pm$ 0.095 & 0.085 $\pm$ 0.074 & 0.048 \\
+YOLO26-m & tta\_flip\_only & 0.5 & 0.239 $\pm$ 0.075 & 0.103 $\pm$ 0.085 & 0.063 \\
+YOLO26-n & standard & -- & 0.233 $\pm$ 0.096 & 0.161 $\pm$ 0.094 & 0.106 \\
+YOLO26-n & tta\_s3\_flip\_equal & 0.4 & 0.228 $\pm$ 0.070 & 0.013 $\pm$ 0.028 & 0.007 \\
+YOLO26-n & tta\_s3\_flip\_equal & 0.6 & 0.228 $\pm$ 0.073 & 0.022 $\pm$ 0.038 & 0.011 \\
+YOLO26-n & tta\_s3\_flip\_equal & 0.5 & 0.227 $\pm$ 0.076 & 0.022 $\pm$ 0.038 & 0.011 \\
+YOLO26-n & tta\_s3\_flip & 0.4 & 0.227 $\pm$ 0.073 & 0.013 $\pm$ 0.028 & 0.007 \\
+YOLO26-n & tta\_s3\_noflip & 0.4 & 0.226 $\pm$ 0.086 & 0.014 $\pm$ 0.024 & 0.007 \\
+YOLO26-n & tta\_s3\_flip & 0.6 & 0.226 $\pm$ 0.070 & 0.024 $\pm$ 0.038 & 0.013 \\
+YOLO26-n & tta\_s3\_flip & 0.5 & 0.225 $\pm$ 0.075 & 0.022 $\pm$ 0.038 & 0.011 \\
+YOLO26-n & tta\_s3\_noflip & 0.5 & 0.219 $\pm$ 0.080 & 0.026 $\pm$ 0.048 & 0.014 \\
+YOLO26-n & tta\_flip\_only & 0.5 & 0.211 $\pm$ 0.070 & 0.021 $\pm$ 0.043 & 0.011 \\
+YOLO26-n & tta\_s3\_noflip & 0.6 & 0.210 $\pm$ 0.076 & 0.029 $\pm$ 0.049 & 0.015 \\
+YOLO26-n & tta\_flip\_only & 0.6 & 0.207 $\pm$ 0.080 & 0.024 $\pm$ 0.044 & 0.013 \\
+YOLO26-n & tta\_flip\_only & 0.4 & 0.205 $\pm$ 0.079 & 0.015 $\pm$ 0.028 & 0.008 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

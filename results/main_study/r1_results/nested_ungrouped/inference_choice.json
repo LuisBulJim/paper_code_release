@@ -1,0 +1,44 @@
+{
+  "tag": "direct",
+  "variant": "ungrouped",
+  "conf": 0.25,
+  "rule": "TTA: highest validation mAP@50 averaged over models; WBF: highest mean validation mAP@50",
+  "validation": "inner validation split of every outer fold of nested_cv.py (mean over 3 repeats x 5 folds)",
+  "tta": {
+    "config": "tta_s3_flip",
+    "wbf_iou": 0.4,
+    "val_map50_mean_over_models": 0.355,
+    "standard_val_map50_mean_over_models": 0.3155,
+    "models": [
+      "yolo26l",
+      "yolo26m",
+      "yolo26n"
+    ]
+  },
+  "wbf": {
+    "models": [
+      "yolo26n",
+      "yolo26m",
+      "yolo26l"
+    ],
+    "weights": null,
+    "iou": 0.4,
+    "val_map50_mean": 0.3756,
+    "config": "yolo26n+yolo26m+yolo26l_equal"
+  },
+  "operating_threshold_on_validation": {
+    "direct/yolo26l/standard": 0.1,
+    "direct/yolo26l/tta": 0.05,
+    "direct/yolo26m/standard": 0.2,
+    "direct/yolo26m/tta": 0.05,
+    "direct/yolo26n/standard": 0.1,
+    "direct/yolo26n/tta": 0.01,
+    "direct/yolo26n+yolo26m+yolo26l/wbf": 0.05,
+    "sequential/yolo26l/standard": 0.2,
+    "sequential/yolo26l/tta": 0.05,
+    "sequential/yolo26m/standard": 0.35,
+    "sequential/yolo26m/tta": 0.05,
+    "sequential/yolo26n/standard": 0.15,
+    "sequential/yolo26n/tta": 0.05
+  }
+}

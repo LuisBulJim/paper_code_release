@@ -1,0 +1,1 @@
+2026-10-03 13:28:15 | INFO | manifest written: {'images': 261, 'positive': 209, 'negative': 52, 'boxes': 569, 'size_buckets': {'large': 177, 'medium': 213, 'small': 179}} | ground truth of every .pkl equals the labels

@@ -1,0 +1,35 @@
+{
+ "rule": "a variant enters the combined model only if its mean inner-validation mAP@50 (standard pass) beats the baseline; if 9-class boxes and polygons both enter, the label type of the best validation variant is kept",
+ "baseline_val_map50": {
+  "standard": 0.2511,
+  "tta": 0.274
+ },
+ "val_map50_standard": {
+  "x0_baseline": 0.2511,
+  "x1_recipe": 0.2309,
+  "x2_multi": 0.1889,
+  "x3_seg": 0.2908,
+  "x4_seg_cp": 0.2605,
+  "x6_multi_seg": 0.2008,
+  "e1_ensemble": 0.2734,
+  "c4_baselines": 0.321
+ },
+ "entering": [
+  "x3_seg",
+  "x4_seg_cp"
+ ],
+ "combination": [
+  "x3_seg",
+  "x4_seg_cp"
+ ],
+ "tta": {
+  "config": "tta_s3_flip_equal",
+  "wbf_iou": 0.6,
+  "skip": 0.001
+ },
+ "bootstrap": {
+  "iters": 1000,
+  "unit": "video group",
+  "n_groups": 28
+ }
+}

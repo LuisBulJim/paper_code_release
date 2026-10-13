@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Image-level screening (does the image contain corrosion?) from the same out-of-fold predictions: image score = highest box confidence; sensitivity and specificity at conf 0.25. Mean over repeats with 95\% cluster-bootstrap interval.}
+\label{tab:nested_image}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrr}
+\toprule
+Protocol & Model & Strategy & AUROC & Sensitivity & Specificity \\
+\midrule
+Direct transfer & YOLO26-n & Standard & 0.650 [0.576, 0.730] & 0.298 [0.247, 0.358] & 0.846 [0.765, 0.919] \\
+Direct transfer & YOLO26-n & TTA & 0.645 [0.569, 0.725] & 0.003 [0.000, 0.008] & 1.000 [1.000, 1.000] \\
+Direct transfer & YOLO26-m & Standard & 0.702 [0.631, 0.769] & 0.493 [0.420, 0.570] & 0.750 [0.652, 0.838] \\
+Direct transfer & YOLO26-m & TTA & 0.687 [0.609, 0.760] & 0.215 [0.163, 0.267] & 0.917 [0.862, 0.968] \\
+Direct transfer & YOLO26-l & Standard & 0.687 [0.616, 0.760] & 0.459 [0.381, 0.535] & 0.737 [0.667, 0.815] \\
+Direct transfer & YOLO26-l & TTA & 0.650 [0.574, 0.726] & 0.190 [0.119, 0.274] & 0.910 [0.864, 0.965] \\
+Sequential transfer & YOLO26-n & Standard & 0.655 [0.587, 0.727] & 0.547 [0.477, 0.625] & 0.667 [0.581, 0.758] \\
+Sequential transfer & YOLO26-n & TTA & 0.672 [0.602, 0.741] & 0.322 [0.247, 0.400] & 0.878 [0.823, 0.932] \\
+Sequential transfer & YOLO26-m & Standard & 0.663 [0.583, 0.743] & 0.617 [0.529, 0.702] & 0.615 [0.508, 0.713] \\
+Sequential transfer & YOLO26-m & TTA & 0.669 [0.595, 0.742] & 0.367 [0.285, 0.459] & 0.846 [0.773, 0.908] \\
+Sequential transfer & YOLO26-l & Standard & 0.671 [0.597, 0.746] & 0.577 [0.498, 0.656] & 0.647 [0.541, 0.753] \\
+Sequential transfer & YOLO26-l & TTA & 0.699 [0.618, 0.777] & 0.431 [0.344, 0.527] & 0.846 [0.748, 0.921] \\
+Direct transfer & YOLO26-n + YOLO26-m + YOLO26-l & WBF ensemble & 0.652 [0.584, 0.721] & 0.016 [0.006, 0.028] & 1.000 [1.000, 1.000] \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

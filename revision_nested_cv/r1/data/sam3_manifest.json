@@ -1,0 +1,2259 @@
+{
+  "source_root": "<LIACI_ROOT>",
+  "definition": "official LIACI test split minus images of the dataset v2 training pool",
+  "target_size": [
+    640,
+    640
+  ],
+  "n_images": 191,
+  "n_positive": 21,
+  "n_negative": 170,
+  "n_in_frozen_detection_test": 23,
+  "excluded_in_training_pool": [],
+  "fallback_copies_used": {},
+  "images": [
+    {
+      "image": "image_0002.jpg",
+      "source_image": "image_0002.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6cd0f0bb41749d294fd7cb7140b2610fe7863d7fd218e9afafd096b887513e71"
+    },
+    {
+      "image": "image_0005.jpg",
+      "source_image": "image_0005.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "22eadce094c555cf9de30e659c7322767dcd8b32a019dcf6a921a8a75e55dcc4"
+    },
+    {
+      "image": "image_0007.jpg",
+      "source_image": "image_0007.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c6746b99168b3e24b646ff69a7e412eddcbcc7a12174804faf6b844b0b4974a5"
+    },
+    {
+      "image": "image_0015.jpg",
+      "source_image": "image_0015.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8a2a82e3777b0ac974ccdd378cb82105abc0b2d0f709fdc5ee84071773bc45a1"
+    },
+    {
+      "image": "image_0019.jpg",
+      "source_image": "image_0019.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d2b2ce0e0ff20e7664b74607f10cefcdaef2e44fdfdd19a7ef680eb97876df55"
+    },
+    {
+      "image": "image_0023.jpg",
+      "source_image": "image_0023.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "809c47eb17d1c26129420dc03ae74eece5ee881609459ebcd98856b35300cd70"
+    },
+    {
+      "image": "image_0042.jpg",
+      "source_image": "image_0042.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "1d6e319e9afaac963b5d4a155123ca4ac82b80e55172b051a76372ef522ab406"
+    },
+    {
+      "image": "image_0044.jpg",
+      "source_image": "image_0044.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": true,
+      "image_sha256": "1971efd3803288103faec9ac4b82b033f7ee6571df4eee6625940d950f2be0ee"
+    },
+    {
+      "image": "image_0059.jpg",
+      "source_image": "image_0059.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c705d2bfe8e6b471dd3378f6b119e5c293fe609112cd1b41654622e13445520c"
+    },
+    {
+      "image": "image_0065.jpg",
+      "source_image": "image_0065.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "e74d27ffb1fa0ca6980165862d01861f6cbea2e98f3cc18d339011c4a8194d21"
+    },
+    {
+      "image": "image_0083.jpg",
+      "source_image": "image_0083.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "4599a553f30594a2268dc972787060d744c29f152512d5d0e71acbddc5e10459"
+    },
+    {
+      "image": "image_0090.jpg",
+      "source_image": "image_0090.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "816b3e0ed82cc0972ad2255dce7223a145b4ee18f3144c36695a9355072bf85a"
+    },
+    {
+      "image": "image_0102.jpg",
+      "source_image": "image_0102.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "2782306e9c231e8db985751b573e3b31785e023433151b9b30a8fc0d298e9639"
+    },
+    {
+      "image": "image_0104.jpg",
+      "source_image": "image_0104.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "7d14d6cf6d8c1a1d406d2c325bda55ada62a15555211d36c9e4476610091bdc6"
+    },
+    {
+      "image": "image_0105.jpg",
+      "source_image": "image_0105.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d61d3ec3ce3eb989410ac1547a37d6feef7cc14abbfc1a17be1007db70b49370"
+    },
+    {
+      "image": "image_0122.jpg",
+      "source_image": "image_0122.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "074ddff2c6730ac2876de2acf3821c28eaccd991bc6964f0a01e54393e0495fa"
+    },
+    {
+      "image": "image_0145.jpg",
+      "source_image": "image_0145.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "13a78e4df1c465f88d09ff8db6fa4f6129b6b290eedfe1563f9f72073347f608"
+    },
+    {
+      "image": "image_0156.jpg",
+      "source_image": "image_0156.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "e9a075a9aea0f3ca82f9f333a59fdfa657019477ffbc8e66c2789e701f66df99"
+    },
+    {
+      "image": "image_0162.jpg",
+      "source_image": "image_0162.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "1acdc848a12aeb9011fc88df98612ebd14715efa93150f0728cbc3bb8b2702e7"
+    },
+    {
+      "image": "image_0179.jpg",
+      "source_image": "image_0179.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9e265a660787c2316cfa3067af90b19a698373ea9fdea702e9f5b846a0dba483"
+    },
+    {
+      "image": "image_0183.jpg",
+      "source_image": "image_0183.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "dbb343ba79723d29abaf04393dcb4d2c7adc07b69e6a652bc2cd9b78340dcd22"
+    },
+    {
+      "image": "image_0186.jpg",
+      "source_image": "image_0186.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "54547ea381704969180456315e72db881fe74baf9ec37e5d78c63434bf788e76"
+    },
+    {
+      "image": "image_0191.jpg",
+      "source_image": "image_0191.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "0d522d6b0252b26197bdaaba19fd6dd4cc93e9b2799fa4f66edd701d958a8cc0"
+    },
+    {
+      "image": "image_0205.jpg",
+      "source_image": "image_0205.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "f1f9c0818eca0fb23cd56eb1c0c2628eb9c20c4af7a0c27267964bf34a7530ab"
+    },
+    {
+      "image": "image_0226.jpg",
+      "source_image": "image_0226.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9afcc58283f02515f20c248a938e74f4358910aef9f09a256cc30ec1a576f5e5"
+    },
+    {
+      "image": "image_0239.jpg",
+      "source_image": "image_0239.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c4ae49c2a503082df824892e012a1d775c5fb3805e2280f453ca0acedb1b97c0"
+    },
+    {
+      "image": "image_0242.jpg",
+      "source_image": "image_0242.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "7710a6ce00712503e1366bd396b7f9122a3c9d6658ead11f15e8c3473997ddff"
+    },
+    {
+      "image": "image_0259.jpg",
+      "source_image": "image_0259.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "2683142b714f97c40d2c2e0c8a14adb90fa92f577b4081520eacca485df8fd15"
+    },
+    {
+      "image": "image_0275.jpg",
+      "source_image": "image_0275.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "f402ba9200f50dd7c376f682f6f76aad05ce3e1fed260b8e09c4f9ee77e5b855"
+    },
+    {
+      "image": "image_0289.jpg",
+      "source_image": "image_0289.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "972d834d23a73a50e7cd3be28804bc682cd2c46ba650e81ecd39974fe3f06958"
+    },
+    {
+      "image": "image_0298.jpg",
+      "source_image": "image_0298.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "203de3d22c550a8f8fce6f2d0cbfe4ae3788601be2aebd5db850bce03a945d9b"
+    },
+    {
+      "image": "image_0321.jpg",
+      "source_image": "image_0321.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "e25d0f5c989a7544a974117109a50d6a065fb517d365cc71b3150ec63d04316a"
+    },
+    {
+      "image": "image_0324.jpg",
+      "source_image": "image_0324.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a944903306e9714a22a8880570ca4ae36366ee3e0d22206cfe6ca66923007b97"
+    },
+    {
+      "image": "image_0347.jpg",
+      "source_image": "image_0347.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "28b2ab02eeca933c97c344f8af8f3abba76b9a8904c0f7ede374afa9c97cc8e0"
+    },
+    {
+      "image": "image_0351.jpg",
+      "source_image": "image_0351.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "fbabe7f24445e5d895f70c2a00f17ea17810c6106afa941e39a19bd4616ebafa"
+    },
+    {
+      "image": "image_0354.jpg",
+      "source_image": "image_0354.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ee850da6707ccc963e2890d88fb915f116a92fb986a6e00d02af590bb6f7dbb0"
+    },
+    {
+      "image": "image_0357.jpg",
+      "source_image": "image_0357.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9798e3327d4ae48f8acc3851375acfda5ffae40eb2ebfbd0a14eace04ba87af9"
+    },
+    {
+      "image": "image_0365.jpg",
+      "source_image": "image_0365.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d9bb5542f6520058e7dc0621ea23403a74274d78f8182a775e465b4737a74c35"
+    },
+    {
+      "image": "image_0368.jpg",
+      "source_image": "image_0368.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d79cab91b6ff59749069655c2b8a435e904611da4bbc1c5e28b827563352b3c9"
+    },
+    {
+      "image": "image_0370.jpg",
+      "source_image": "image_0370.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "35a8f6d326e3d4fb935874085cfa89f28a761429b13e24741577d2d488dc11ac"
+    },
+    {
+      "image": "image_0386.jpg",
+      "source_image": "image_0386.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ae8a8c4a287790902a54d08f97f89e9da3a64bf3bd83fa8408ac47b5a432f642"
+    },
+    {
+      "image": "image_0398.jpg",
+      "source_image": "image_0398.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "43b107cf20b1216ddb87228a272d17ede1260814809d30d98ab7c98d4872bda1"
+    },
+    {
+      "image": "image_0408.jpg",
+      "source_image": "image_0408.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6a43bc1bd4766e90a8bdadfef4f620f83ed8b57f6ac7dddc35b901a3c27261cb"
+    },
+    {
+      "image": "image_0415.jpg",
+      "source_image": "image_0415.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "05fb9b01b05b0be61ea1797cbaf55c333e14a43a1fb4a25e032faef167750024"
+    },
+    {
+      "image": "image_0416.jpg",
+      "source_image": "image_0416.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "1a970b53cb0641abc31f8092d4d322831c9276b7a1013331d7f4491acedadbc3"
+    },
+    {
+      "image": "image_0433.jpg",
+      "source_image": "image_0433.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a868ee13404d5617186788294ee219c9d05c9b5e376fb1f302ab4246ea67e92a"
+    },
+    {
+      "image": "image_0435.jpg",
+      "source_image": "image_0435.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a50825432cb174e1a12aac6c27a64e9ab89ed9f7ba974830ce91cfb0c5732e0a"
+    },
+    {
+      "image": "image_0453.jpg",
+      "source_image": "image_0453.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "99a38e60829c0f20b804be46017bee00aa597d742ba70b12a80b082d0c636818"
+    },
+    {
+      "image": "image_0456.jpg",
+      "source_image": "image_0456.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c428fd77bfe67e877d5370a77ee4798ecd353721d1be0f79aef403c3dba9d842"
+    },
+    {
+      "image": "image_0465.jpg",
+      "source_image": "image_0465.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9b79ae641cc7e417e01ee13e9af038088e90c707b6d77cba3df905506ce35f28"
+    },
+    {
+      "image": "image_0494.jpg",
+      "source_image": "image_0494.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.2318994140625,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          0.0,
+          5.0,
+          373.0,
+          504.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "53d5bdaaaf91f4c601bb1f7c2b353f315c2938cd2e9d850eadb6cdd4695e77dd"
+    },
+    {
+      "image": "image_0496.jpg",
+      "source_image": "image_0496.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "f4cdc6564d8fe9585eddb9620c5a81fb72d36dc55b039e7301a316e62b8c3e0b"
+    },
+    {
+      "image": "image_0506.jpg",
+      "source_image": "image_0506.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.006005859375,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          79.0,
+          65.0,
+          106.0,
+          271.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "7e17eecb96a1046a54556266db835ee736a0da17fea41fd04daf513e6426692c"
+    },
+    {
+      "image": "image_0511.jpg",
+      "source_image": "image_0511.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "1a0906c63caa44795578253d51f8e20583b1a2d53ef0b667b388d3ffda7d6d8c"
+    },
+    {
+      "image": "image_0516.jpg",
+      "source_image": "image_0516.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6fce386cbe022b85bc9aaa82bca4460c8fa3557e702a3ae3983c1eed7f68331c"
+    },
+    {
+      "image": "image_0517.jpg",
+      "source_image": "image_0517.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "0c66c9fa78ef082da3e8a3b38902c216d7c83ac4bba8a1233a49dc865368ddb9"
+    },
+    {
+      "image": "image_0524.jpg",
+      "source_image": "image_0524.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6ab2886a14dc9ba3e6e0a9c2a82ed725bfbb61466db5d7425e094a77276f03cd"
+    },
+    {
+      "image": "image_0541.jpg",
+      "source_image": "image_0541.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ed3d9e5545e1ecaa536fe14272ee511a165524e6d5e391b1a55837e9b4c7983b"
+    },
+    {
+      "image": "image_0565.jpg",
+      "source_image": "image_0565.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9c22ed0e45642ba133c7443c71a4927b5409c7a5436351e132f16f96553e1c74"
+    },
+    {
+      "image": "image_0582.jpg",
+      "source_image": "image_0582.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ebd17cd98cbfe12721ed0fb729339e70207a504906de02fb69fe15f49faad96a"
+    },
+    {
+      "image": "image_0605.jpg",
+      "source_image": "image_0605.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "52a9138a769ddefe977ae707c25963aaae1118c2a3c3d8ea3999d7c5f69e4f2d"
+    },
+    {
+      "image": "image_0621.jpg",
+      "source_image": "image_0621.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "67d996b6e32176f67b704e0c55595ae01622a7826d2f592e1b4ea6c446d99279"
+    },
+    {
+      "image": "image_0624.jpg",
+      "source_image": "image_0624.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "65066adb711cb0190078cfafcf46035352bf2529e872b60a379ba3bb11280e42"
+    },
+    {
+      "image": "image_0631.jpg",
+      "source_image": "image_0631.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "29a7f9c553071a12cdde485ecaef2c6873b8a39dca72628fb7d1c71c26a738a1"
+    },
+    {
+      "image": "image_0636.jpg",
+      "source_image": "image_0636.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "11842e2fbf1105f0dc986a8b368e95c8e6229bab5e5165cafc0014d34b903e15"
+    },
+    {
+      "image": "image_0670.jpg",
+      "source_image": "image_0670.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.0387255859375,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          402.0,
+          283.0,
+          570.0,
+          579.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "d98a2e35128862d1d67f22474365722b95a035bee13fae5c044ce3ce8eb7de2b"
+    },
+    {
+      "image": "image_0683.jpg",
+      "source_image": "image_0683.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "784d5ce39c68723f13696c5046d445fbeb9f45093474004a488bbfc970225e93"
+    },
+    {
+      "image": "image_0685.jpg",
+      "source_image": "image_0685.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "f9d3862140113f0f4851b5b06b743c980db1e95206f4d392b19b6477a24de647"
+    },
+    {
+      "image": "image_0699.jpg",
+      "source_image": "image_0699.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d5ae03ebd305b2821aafc04b6191abe6f3eac8d4e89e02467d89e7a56ac9962c"
+    },
+    {
+      "image": "image_0703.jpg",
+      "source_image": "image_0703.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "1a82323d4380378a028f98ab1f2cc1a6760337cec7b78df28867168666584ec6"
+    },
+    {
+      "image": "image_0711.jpg",
+      "source_image": "image_0711.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "719356f5896691243b47403aaa81e5b41bfa1d67004662d0c8a1bf97ed6965b9"
+    },
+    {
+      "image": "image_0714.jpg",
+      "source_image": "image_0714.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "f67cd4e95e030d1e271c61d71b72c4d853f4f313155d4935af087da6e50431c7"
+    },
+    {
+      "image": "image_0720.jpg",
+      "source_image": "image_0720.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8168d953f90c6e4cc21f4626fb0009ba11f25212692a0200cf3546a5d8167817"
+    },
+    {
+      "image": "image_0745.jpg",
+      "source_image": "image_0745.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "41a5d32372cf0016f1eed0f606a9df1c6d3ee3c09eb9907c1e125ff204539698"
+    },
+    {
+      "image": "image_0747.jpg",
+      "source_image": "image_0747.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "01b14eb22786382adc3d4b38a86d84b1db9706374d81ba560a51ec6c56f1bda7"
+    },
+    {
+      "image": "image_0748.jpg",
+      "source_image": "image_0748.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.0162841796875,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          408.0,
+          102.0,
+          507.0,
+          212.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "0177cc1221fd16e8f772fba54951120eefc6440391ab93c9b373458a78bc7fb5"
+    },
+    {
+      "image": "image_0751.jpg",
+      "source_image": "image_0751.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "21d9774ee99f58bd191886d16c4f96ec30b28c1d9fdba5d27a3b79f77d200927"
+    },
+    {
+      "image": "image_0757.jpg",
+      "source_image": "image_0757.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "261b5bb8b600f7701d951f97d224337b62fa6dde6fc6ea86d8e7e6237918fb46"
+    },
+    {
+      "image": "image_0763.jpg",
+      "source_image": "image_0763.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "fd2169467665899e740fb1de5158faa98e33d3327e094ebba32c47716d8c3a07"
+    },
+    {
+      "image": "image_0779.jpg",
+      "source_image": "image_0779.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "2faa80954825938531b051b1d28ee8357e1cd87072f9137fda3421c5bbd04364"
+    },
+    {
+      "image": "image_0806.jpg",
+      "source_image": "image_0806.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "54e542e31b295b5b8a3bdd310725cd68806c22498b9bf25483f7c4df509812a5"
+    },
+    {
+      "image": "image_0815.jpg",
+      "source_image": "image_0815.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "5a5ede9cf963217eb98dbd06620ccdb68d471235b50775a96b46948abd90a4cc"
+    },
+    {
+      "image": "image_0817.jpg",
+      "source_image": "image_0817.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "0332ea9109ad632fe4d0f7be14f5617c64d309473df8958b9e2f82f07701c86a"
+    },
+    {
+      "image": "image_0849.jpg",
+      "source_image": "image_0849.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8870e77b567d2ed5d2b106a95fb92a42bc5730bf52a4a86a289535fcd23dc7a6"
+    },
+    {
+      "image": "image_0853.jpg",
+      "source_image": "image_0853.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "128bc26213210104a4e94e86d61b6e473707be04843099a402af7b7a05bb962b"
+    },
+    {
+      "image": "image_0855.jpg",
+      "source_image": "image_0855.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "25d79e453eba11d45bfcde4dd8289234aa53bb8480622584bbdc5ebae2af6773"
+    },
+    {
+      "image": "image_0876.jpg",
+      "source_image": "image_0876.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "721a7befc1dc409cc08a48362f4b82f819ed48eb3857ebf187fb924e69de6b61"
+    },
+    {
+      "image": "image_0880.jpg",
+      "source_image": "image_0880.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "23de15ed271f06cdae47271b0eb114167b91b93cb5958731ab0a10bb400567e8"
+    },
+    {
+      "image": "image_0882.jpg",
+      "source_image": "image_0882.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "cee6a8c435da1dddeeffd954d10cb12b5d50ddc16d373d692b13ff1e1c5b04df"
+    },
+    {
+      "image": "image_0885.jpg",
+      "source_image": "image_0885.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d47a95c66801375557d953e48d0d511b0ab4806d8e6ab93b4518c02fccd752fb"
+    },
+    {
+      "image": "image_0888.jpg",
+      "source_image": "image_0888.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a622e8954c7c81e249ff86ed6b3c907201a4e61e6408ada73b91ad1b72fe1f34"
+    },
+    {
+      "image": "image_0901.jpg",
+      "source_image": "image_0901.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8c171463523fca2533c52441301dbfffc22b630116fc9ba2f65095e18a4d6afc"
+    },
+    {
+      "image": "image_0908.jpg",
+      "source_image": "image_0908.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "e5ce773a6f2b829c0b92b797baaceca6bc71213f520beb640c62fbeb203b104b"
+    },
+    {
+      "image": "image_0910.jpg",
+      "source_image": "image_0910.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ddb8d7a4506c3a38d80fa83dcd6aea1f220fb4b39fa24a56b3a949af34452d80"
+    },
+    {
+      "image": "image_0928.jpg",
+      "source_image": "image_0928.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ac49a9dcc61e3effdd3445d804984510da0448041b859ff98b1abec99b692346"
+    },
+    {
+      "image": "image_0934.jpg",
+      "source_image": "image_0934.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6b4f2358e6fa0d370dcc1e5463b154905f73027768e2386c36b06eaaa6cc1c09"
+    },
+    {
+      "image": "image_0935.jpg",
+      "source_image": "image_0935.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c06be3c5b9e820c69abbbd8c49d43cf5dd5772daf5b3bf698642b37b86f2f2df"
+    },
+    {
+      "image": "image_0944.jpg",
+      "source_image": "image_0944.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "b78a6c51272d763d4eab8f646d928724173b84f443095aab9deb9736b2407cd3"
+    },
+    {
+      "image": "image_0948.jpg",
+      "source_image": "image_0948.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "268cbe1192ca75320d2e3be3221bd9f70a3ffcdcbb2c75da753463c65a35a5b0"
+    },
+    {
+      "image": "image_0959.jpg",
+      "source_image": "image_0959.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c12ec1cbe25bd8eec21b5610224742473c8e9bc986e3319d4d4fd142d051f0e9"
+    },
+    {
+      "image": "image_0970.jpg",
+      "source_image": "image_0970.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "f40672cbf422ea8b5a18cf434466e2777dd9e04a5df88f272f4c0a618f0dc441"
+    },
+    {
+      "image": "image_0977.jpg",
+      "source_image": "image_0977.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a1a8f72a7b0b2b631a5013a8f96b0919326a35e954525ea5cd2ed1cb86f5caa5"
+    },
+    {
+      "image": "image_0978.jpg",
+      "source_image": "image_0978.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "e611010f6bee93326d82f838b9ce5c1dc1ef2e17f3e287d61c2d417eefea567f"
+    },
+    {
+      "image": "image_0994.jpg",
+      "source_image": "image_0994.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "aae4952ca2c20fa3ce82fa25b4d06f4b78079ed9d659a3bb0e476d2bd2b5e8a5"
+    },
+    {
+      "image": "image_1005.jpg",
+      "source_image": "image_1005.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.35259521484375,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          179.0,
+          0.0,
+          639.0,
+          639.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "0b83367508f23c1e0374f67748eaf5fcdb6c791771d4719e2891cffa08f7228c"
+    },
+    {
+      "image": "image_1017.jpg",
+      "source_image": "image_1017.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9558f7dd4814caa5463a3c6dfc0759f591f0181c318ef41ea0bcd5d5e754d222"
+    },
+    {
+      "image": "image_1025.jpg",
+      "source_image": "image_1025.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c979177a0a027a546d04ea642c96edac8b0788d825a21dd2601037fb8791d8b4"
+    },
+    {
+      "image": "image_1052.jpg",
+      "source_image": "image_1052.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "756871fbe18232603e93661062e93369cf69170543d963dfe268501ca73b5f74"
+    },
+    {
+      "image": "image_1058.jpg",
+      "source_image": "image_1058.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d50230d401b768749a5d32236d469664b49b0e0acc67a50cf2bcabee3bbbe7c8"
+    },
+    {
+      "image": "image_1060.jpg",
+      "source_image": "image_1060.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "12e48f6b80d043afafc0a38ed5cac09f8a2b8a246617ae76bbf7f03c030f34f0"
+    },
+    {
+      "image": "image_1080.jpg",
+      "source_image": "image_1080.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "c8fa4eb8cc7b1cac103b43fef63057badfc49781acdb59ae3b28e29546010ca6"
+    },
+    {
+      "image": "image_1085.jpg",
+      "source_image": "image_1085.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "7c698413b719e32d5fcc13414a862aa980c47ad1d3ffaaca0c0ebf70c6e6c86d"
+    },
+    {
+      "image": "image_1089.jpg",
+      "source_image": "image_1089.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "27630adc9fb3ae2e4db794af3fd5987b6b20532b8051802856f024a455da53f2"
+    },
+    {
+      "image": "image_1090.jpg",
+      "source_image": "image_1090.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6fe9d57484f42a9e225a56e9c64e2a228bae55b4566dce906bf199a8ca835858"
+    },
+    {
+      "image": "image_1093.jpg",
+      "source_image": "image_1093.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "296dd76fc60213f59b7caa144f5f655351b91760d21d0dcbcdfd7034744609eb"
+    },
+    {
+      "image": "image_1105.jpg",
+      "source_image": "image_1105.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "08c8a4fda047c1c1422cf06e6bd921fe99d28680722b68e5293a404e1fb9eef2"
+    },
+    {
+      "image": "image_1117.jpg",
+      "source_image": "image_1117.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "3e35b9c06c6f10a5db06b3fea1340a6598eadd83e11984cba67f9f0f032d55e4"
+    },
+    {
+      "image": "image_1144.jpg",
+      "source_image": "image_1144.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "4206a15fd1a3ed0e1c65e85d7ee3fde14bce933b8b41436e5294e058f91bc40e"
+    },
+    {
+      "image": "image_1194.jpg",
+      "source_image": "image_1194.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ee52ce08a1d569f1b6afe3a3757dd19fdb0523ceb1c63b0ea111d0b4e7ddf165"
+    },
+    {
+      "image": "image_1239.jpg",
+      "source_image": "image_1239.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "3efbab95175424843f62283afb6305115e87d91903fe71c99550b3c078f4b5bf"
+    },
+    {
+      "image": "image_1245.jpg",
+      "source_image": "image_1245.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.0294189453125,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          243.0,
+          0.0,
+          401.0,
+          97.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "87e94b5e904dfcd0663c834b65c157ec4e0d9476a3d720ced462bb352900ce54"
+    },
+    {
+      "image": "image_1263.jpg",
+      "source_image": "image_1263.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.02101318359375,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          140.0,
+          2.0,
+          239.0,
+          114.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "bcb58adb5484039e040181f7b8c92578354db4da6e4264fdeb3313fd7ae2507c"
+    },
+    {
+      "image": "image_1264.jpg",
+      "source_image": "image_1264.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "7df81d4c08c5957a1fac158c41d04e73c0702befd3985c5ea4bc85f595bbecf6"
+    },
+    {
+      "image": "image_1292.jpg",
+      "source_image": "image_1292.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8f969a07eb368327228adf582b3ffdeb68a2f565060fab08f4baee5e8f52f5f5"
+    },
+    {
+      "image": "image_1299.jpg",
+      "source_image": "image_1299.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "3f33fc7615d92c84d178c02b6103d77302f1ed3f94932e493af0e70771706a4f"
+    },
+    {
+      "image": "image_1307.jpg",
+      "source_image": "image_1307.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.06572509765625,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          254.0,
+          272.0,
+          394.0,
+          522.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "d1d1c77addba75c4ceb46751d8e341a31b3d616ee75a3bd336a718398d3ba5f0"
+    },
+    {
+      "image": "image_1309.jpg",
+      "source_image": "image_1309.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.06869140625,
+      "n_components": 3,
+      "gt_boxes_xyxy": [
+        [
+          151.0,
+          239.0,
+          234.0,
+          443.0
+        ],
+        [
+          207.0,
+          12.0,
+          255.0,
+          210.0
+        ],
+        [
+          504.0,
+          11.0,
+          605.0,
+          170.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "4d7ecf5f9a10215504f418933982830b687e9ea2e3dccd3181abf8a8dd99d298"
+    },
+    {
+      "image": "image_1323.jpg",
+      "source_image": "image_1323.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6f098fa6c2a9529e6255832ab93eca50ce4fc23fecc60adbd567de013fb690ed"
+    },
+    {
+      "image": "image_1333.jpg",
+      "source_image": "image_1333.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "107017c95c16fa0bb2757809d3f960567a698de40b98d9a5588b1442ddca849a"
+    },
+    {
+      "image": "image_1334.jpg",
+      "source_image": "image_1334.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "80cbdb0a792a6f326c713e04383fdc9893878afcbeb4a7d9fba95e0893f53a46"
+    },
+    {
+      "image": "image_1350.jpg",
+      "source_image": "image_1350.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.01316162109375,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          284.0,
+          143.0,
+          358.0,
+          240.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "9e37da151a32df931d214a229ee6697d282ed7906a552bf2e44f23a229eb8e38"
+    },
+    {
+      "image": "image_1352.jpg",
+      "source_image": "image_1352.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.00335205078125,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          253.0,
+          215.0,
+          298.0,
+          257.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "316534c5f18232f64370ba40c3cdfbd7026e1e4b0c413db53dbdfbaa16a7b212"
+    },
+    {
+      "image": "image_1355.jpg",
+      "source_image": "image_1355.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.03545166015625,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          268.0,
+          215.0,
+          426.0,
+          324.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "21c38c625ec2a0b5768cd7a1b443cdba0e88397e2b7ee3ce9fc012644a752203"
+    },
+    {
+      "image": "image_1385.jpg",
+      "source_image": "image_1385.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.06665283203125,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          0.0,
+          2.0,
+          286.0,
+          338.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "8c4c3b4f03b64bb9a36679c25015a0270b2bb8c379fc7bf7c870952120510188"
+    },
+    {
+      "image": "image_1424.jpg",
+      "source_image": "image_1424.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "024b922920ca262ab58d395d41b754e8a352184d0e7f62eabdc2349f1bbb6b0a"
+    },
+    {
+      "image": "image_1427.jpg",
+      "source_image": "image_1427.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8f1b3bceeba17b3d7bcdccfdfdb83288392a592ea7bcda349f2169c43b0e94c8"
+    },
+    {
+      "image": "image_1429.jpg",
+      "source_image": "image_1429.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "16eb5810d7d949b358e8c9669d2a071d4f3a852dd60bbdf2c89b93473bef5145"
+    },
+    {
+      "image": "image_1464.jpg",
+      "source_image": "image_1464.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8054033f24d1a706e07611e73d699cc4dff05aa9c4c11a8aa1827228009fbff5"
+    },
+    {
+      "image": "image_1470.jpg",
+      "source_image": "image_1470.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "014aae367611c0863b94c026d9207ddd8bba51a904df364f2c8e83107f1a23ef"
+    },
+    {
+      "image": "image_1475.jpg",
+      "source_image": "image_1475.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8945fe06b388365bca1933c429a0947fbe7c3c295362a624f0b5f1c7a8db4208"
+    },
+    {
+      "image": "image_1478.jpg",
+      "source_image": "image_1478.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "7416115f70eb124769bfc5c988eb3c65d35d5aae4e4ec139c033d39e41685b16"
+    },
+    {
+      "image": "image_1481.jpg",
+      "source_image": "image_1481.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.24723876953125,
+      "n_components": 2,
+      "gt_boxes_xyxy": [
+        [
+          169.0,
+          4.0,
+          338.0,
+          373.0
+        ],
+        [
+          382.0,
+          1.0,
+          638.0,
+          539.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "f08eadd53ea15aa8e80d813eb4a0ae04bbb4ad389544cd268a8da05eace60b0b"
+    },
+    {
+      "image": "image_1486.jpg",
+      "source_image": "image_1486.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.0870361328125,
+      "n_components": 4,
+      "gt_boxes_xyxy": [
+        [
+          450.0,
+          28.0,
+          637.0,
+          350.0
+        ],
+        [
+          603.0,
+          13.0,
+          623.0,
+          43.0
+        ],
+        [
+          462.0,
+          2.0,
+          523.0,
+          52.0
+        ],
+        [
+          549.0,
+          0.0,
+          569.0,
+          25.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "5927db9a6c9268a9ec35b7577c1f8206d8b792eef7bd2454d9c83eb41d1f2403"
+    },
+    {
+      "image": "image_1490.jpg",
+      "source_image": "image_1490.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "2892895409f4c63803c8ffdf6550790ac7e7acebbae294907d8d4a811d933c42"
+    },
+    {
+      "image": "image_1500.jpg",
+      "source_image": "image_1500.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9e20b7875ca9b6112308cd69c9a66676bfea5bc1b2ecba20354f2700b13f5c50"
+    },
+    {
+      "image": "image_1501.jpg",
+      "source_image": "image_1501.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "27908798077a00570ecbc3c36451212573d6278586b27dcb39aad49177e17908"
+    },
+    {
+      "image": "image_1515.jpg",
+      "source_image": "image_1515.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "fc138c53a51d25555050052297b2932a7f0a36385d3a122e65862b152c3980e9"
+    },
+    {
+      "image": "image_1539.jpg",
+      "source_image": "image_1539.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "bc5ca25cf1e9728a54c49ae458962f4feebc6b7a4b8954d5873384e342cc0e84"
+    },
+    {
+      "image": "image_1541.jpg",
+      "source_image": "image_1541.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "3545c825b9c2a50a0f18f1616febcc9ea7bbdd62d0ad79f975d38045c10cc1ff"
+    },
+    {
+      "image": "image_1558.jpg",
+      "source_image": "image_1558.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a6a455b6082d9269749d8e91176095b9f0238a17288a288babf37de8e635a968"
+    },
+    {
+      "image": "image_1562.jpg",
+      "source_image": "image_1562.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "1004548eee3fc504b43c20ce472d8b62172bf9cf8393e473c0a314e7c579af2f"
+    },
+    {
+      "image": "image_1568.jpg",
+      "source_image": "image_1568.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "7bf33e54c791cdc884813e6fb638db56bf59809ea8b533bfff4b9f312885751c"
+    },
+    {
+      "image": "image_1581.jpg",
+      "source_image": "image_1581.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "f29cab697c1719ce29416da313cbea53f65094ca2d918aa2c22503d20479c421"
+    },
+    {
+      "image": "image_1588.jpg",
+      "source_image": "image_1588.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "191707e795f8b5cd7e46a28bbf0eec1079b39bb48763354d226668dd254c1065"
+    },
+    {
+      "image": "image_1612.jpg",
+      "source_image": "image_1612.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "8d212d497e88c342aff7ba24820a9909a1978b0d8ec9f7f1939fc4983fed44ef"
+    },
+    {
+      "image": "image_1620.jpg",
+      "source_image": "image_1620.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": true,
+      "image_sha256": "92a04403692cfd77babc31b6c7cf15562eeeefad535ce479d18dfe1c24280226"
+    },
+    {
+      "image": "image_1623.jpg",
+      "source_image": "image_1623.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "b4abf259721cfec3ead8bd5386e3c331abbbecf8c557e69711f67ca05f30a5b9"
+    },
+    {
+      "image": "image_1625.jpg",
+      "source_image": "image_1625.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "d06504888be359085c96cd42b4301626ebcf90b98070957a9bec23eb267d77ac"
+    },
+    {
+      "image": "image_1626.jpg",
+      "source_image": "image_1626.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "954a13a2c6f64690be1a163cd0d591ce0fbed8ef0c0d628924dd2d400cf8dd93"
+    },
+    {
+      "image": "image_1633.jpg",
+      "source_image": "image_1633.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "69f498215866fe936f12f5e1a226f8d8872d2ddf59bf8cfc691f36812dc7a300"
+    },
+    {
+      "image": "image_1641.jpg",
+      "source_image": "image_1641.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "4ea6e7ff0dd185a3a3d54f4f7f4f135d6e3a43ec7ae9b0c86396c853992a59ec"
+    },
+    {
+      "image": "image_1642.jpg",
+      "source_image": "image_1642.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "977a2e0131691fcbcc7bd259ca652d66610d8bd1156e334cf2f9ed9898a44a05"
+    },
+    {
+      "image": "image_1643.jpg",
+      "source_image": "image_1643.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "4170ef512fca6b25a420f58a1b334d2dc5143cbeb58b68afcf47c7bd4998666f"
+    },
+    {
+      "image": "image_1659.jpg",
+      "source_image": "image_1659.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "67493146a17327b8266879f9736cb4a03e7bbc4b962b6ffb136af896f073c430"
+    },
+    {
+      "image": "image_1660.jpg",
+      "source_image": "image_1660.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "713d28a0c383d5f4ede04473ac61378e69ea2bdc3ec201d45dd063ac2189fad4"
+    },
+    {
+      "image": "image_1661.jpg",
+      "source_image": "image_1661.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "28162543cce43085b216484dd6ce4cffb1b47ac9fcf09452ccb8fa405ee8f5e0"
+    },
+    {
+      "image": "image_1690.jpg",
+      "source_image": "image_1690.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "6725a3920c55ce67e26c97e2beee5175f72a5ac79ba41d142ec41b9827dc0b13"
+    },
+    {
+      "image": "image_1698.jpg",
+      "source_image": "image_1698.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "bc97158f0e26134e01cbf847c848c77d444617d10cd5393d3bbde537660ee418"
+    },
+    {
+      "image": "image_1700.jpg",
+      "source_image": "image_1700.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "473d158766b09af7aa2f286c7dcd4e8bee6f31ff48b2160b10818e8f2d1b3a59"
+    },
+    {
+      "image": "image_1703.jpg",
+      "source_image": "image_1703.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "98038826d76d2e8dc42f020fa375d992573c1a9527c8db7f19e03da1636a3f04"
+    },
+    {
+      "image": "image_1719.jpg",
+      "source_image": "image_1719.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a5fe42944e6d2905befefe60cfcc82ec7b4619ef59db4f11039ceb0b882f0948"
+    },
+    {
+      "image": "image_1721.jpg",
+      "source_image": "image_1721.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "64a04784043ecf9f1e14905cda43f39d8b2b52b8ad871191d67c6d11ca7194ba"
+    },
+    {
+      "image": "image_1724.jpg",
+      "source_image": "image_1724.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "ee7e906ab7bc52d0a0a251810746ed7f36c4aef043707aadfb342f37324e4992"
+    },
+    {
+      "image": "image_1729.jpg",
+      "source_image": "image_1729.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "0a25238c2c6127a0b33c903fe981cb76be4830daf0b817988d69d0830d025d96"
+    },
+    {
+      "image": "image_1731.jpg",
+      "source_image": "image_1731.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "9d3cf611964fd32bac84001da8eba0c5f9b67cb0df36d7ae60f572219a3bd0fa"
+    },
+    {
+      "image": "image_1735.jpg",
+      "source_image": "image_1735.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "33549fa4d5aef040c3a2f122868e041fe7ca516c79c49a6d1897821c2c1ddcb2"
+    },
+    {
+      "image": "image_1736.jpg",
+      "source_image": "image_1736.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.0281005859375,
+      "n_components": 5,
+      "gt_boxes_xyxy": [
+        [
+          271.0,
+          263.0,
+          306.0,
+          288.0
+        ],
+        [
+          285.0,
+          206.0,
+          353.0,
+          269.0
+        ],
+        [
+          86.0,
+          97.0,
+          161.0,
+          181.0
+        ],
+        [
+          10.0,
+          58.0,
+          39.0,
+          120.0
+        ],
+        [
+          129.0,
+          0.0,
+          224.0,
+          59.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "3d5d34e79087966c3a768ee878aa0db8e86cddae878000e7850fc2a5376cd9e5"
+    },
+    {
+      "image": "image_1741.jpg",
+      "source_image": "image_1741.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.00112060546875,
+      "n_components": 1,
+      "gt_boxes_xyxy": [
+        [
+          296.0,
+          470.0,
+          335.0,
+          487.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "871a6f4d8042c499c51256e8169dc56ce3dc533a7d64d80732bcf09d1e2e2bb8"
+    },
+    {
+      "image": "image_1743.jpg",
+      "source_image": "image_1743.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "04aad7e99050bcc95f849192b698dad5673bdd945f120aece833c466a6c6a5ec"
+    },
+    {
+      "image": "image_1764.jpg",
+      "source_image": "image_1764.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "3de66e581d862fdaf5e66ab2b34917d1cc69db69f59e14de86f600854e015ca1"
+    },
+    {
+      "image": "image_1767.jpg",
+      "source_image": "image_1767.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "dfb9f4784f1d948c008e5566eca98cbc43f9f860148aad3602653828e72f5389"
+    },
+    {
+      "image": "image_1782.jpg",
+      "source_image": "image_1782.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.002822265625,
+      "n_components": 2,
+      "gt_boxes_xyxy": [
+        [
+          18.0,
+          327.0,
+          42.0,
+          373.0
+        ],
+        [
+          269.0,
+          282.0,
+          292.0,
+          311.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "e04e456776187cc01bd380fb348a020c15ff49870b0d97961d1ddb0cf81b1ab4"
+    },
+    {
+      "image": "image_1785.jpg",
+      "source_image": "image_1785.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.0196826171875,
+      "n_components": 3,
+      "gt_boxes_xyxy": [
+        [
+          109.0,
+          366.0,
+          189.0,
+          635.0
+        ],
+        [
+          47.0,
+          230.0,
+          66.0,
+          259.0
+        ],
+        [
+          361.0,
+          197.0,
+          380.0,
+          233.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "452663181377700fbe36ed4c77aa5cfab25157fb924634a14246defc6269d23b"
+    },
+    {
+      "image": "image_1787.jpg",
+      "source_image": "image_1787.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "0c75e8498c70ec67492d825f65352a0439f8f2ea89219664fba456d5dc3dd8b4"
+    },
+    {
+      "image": "image_1790.jpg",
+      "source_image": "image_1790.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.00672607421875,
+      "n_components": 2,
+      "gt_boxes_xyxy": [
+        [
+          337.0,
+          292.0,
+          407.0,
+          335.0
+        ],
+        [
+          530.0,
+          244.0,
+          585.0,
+          290.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "9b64689918424f477ccf367749f0dc7a896516dddaa48507c2fa8ee102a69b06"
+    },
+    {
+      "image": "image_1792.jpg",
+      "source_image": "image_1792.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "398e8751728168cc7d94535b36a528ec45da01c518f3b8973e49e7ff9bf526c7"
+    },
+    {
+      "image": "image_1811.jpg",
+      "source_image": "image_1811.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "a1e0a21fa5d144846a8d89a078720eab286d613aceadeab51cbbc918592ea24a"
+    },
+    {
+      "image": "image_1826.jpg",
+      "source_image": "image_1826.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "985f0723569803e9e6d9d8d0210e0462fd4c6b83019b74ddfb6c8c9dc728bf2f"
+    },
+    {
+      "image": "image_1828.jpg",
+      "source_image": "image_1828.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "61f4b3476b8a15b81f8f159e4628575dbc9664a42301916d1bed2ec5fc02bcbc"
+    },
+    {
+      "image": "image_1858.jpg",
+      "source_image": "image_1858.jpg",
+      "positive": true,
+      "mask_area_fraction": 0.349951171875,
+      "n_components": 18,
+      "gt_boxes_xyxy": [
+        [
+          347.0,
+          500.0,
+          358.0,
+          520.0
+        ],
+        [
+          328.0,
+          499.0,
+          337.0,
+          511.0
+        ],
+        [
+          311.0,
+          499.0,
+          328.0,
+          518.0
+        ],
+        [
+          356.0,
+          492.0,
+          388.0,
+          570.0
+        ],
+        [
+          338.0,
+          460.0,
+          348.0,
+          479.0
+        ],
+        [
+          284.0,
+          450.0,
+          350.0,
+          580.0
+        ],
+        [
+          370.0,
+          441.0,
+          378.0,
+          455.0
+        ],
+        [
+          357.0,
+          436.0,
+          364.0,
+          455.0
+        ],
+        [
+          368.0,
+          415.0,
+          379.0,
+          429.0
+        ],
+        [
+          314.0,
+          415.0,
+          320.0,
+          427.0
+        ],
+        [
+          325.0,
+          412.0,
+          354.0,
+          463.0
+        ],
+        [
+          357.0,
+          391.0,
+          366.0,
+          411.0
+        ],
+        [
+          371.0,
+          355.0,
+          382.0,
+          371.0
+        ],
+        [
+          242.0,
+          145.0,
+          491.0,
+          636.0
+        ],
+        [
+          366.0,
+          96.0,
+          391.0,
+          125.0
+        ],
+        [
+          384.0,
+          67.0,
+          418.0,
+          101.0
+        ],
+        [
+          326.0,
+          38.0,
+          371.0,
+          67.0
+        ],
+        [
+          16.0,
+          1.0,
+          295.0,
+          637.0
+        ]
+      ],
+      "in_frozen_detection_test": true,
+      "image_sha256": "559d1cc0654278074b140f06b1d8143c2d50773732a1df48b6b5e72929ea72a8"
+    },
+    {
+      "image": "image_1890.jpg",
+      "source_image": "image_1890.jpg",
+      "positive": false,
+      "mask_area_fraction": 0.0,
+      "n_components": 0,
+      "gt_boxes_xyxy": [],
+      "in_frozen_detection_test": false,
+      "image_sha256": "7478e77d3af06d40cba0599ebdf1cf7ab147c213c40652839f99122476301a6d"
+    }
+  ]
+}

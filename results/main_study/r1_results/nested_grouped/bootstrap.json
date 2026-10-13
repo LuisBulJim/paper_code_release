@@ -1,0 +1,8 @@
+{
+  "iters": 1000,
+  "seed": 0,
+  "unit": "video group",
+  "n_groups": 28,
+  "redraws_without_both_classes": 0,
+  "statistic": "metric of each repeat on the resampled images, averaged over repeats"
+}

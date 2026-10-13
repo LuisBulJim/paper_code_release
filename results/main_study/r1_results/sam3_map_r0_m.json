@@ -1,0 +1,311 @@
+{
+  "tag": "direct",
+  "model": "yolo26m",
+  "repeat": 0,
+  "rule": "image of the nested CV -> fold model with the image in its outer test fold; other images -> fold 0",
+  "n_images": 191,
+  "n_in_nested_cv": 27,
+  "in_nested_cv": {
+    "image_0005.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 2.09
+    },
+    "image_0015.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.4
+    },
+    "image_0044.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.22
+    },
+    "image_0494.jpg": {
+      "fold": 0,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.19
+    },
+    "image_0506.jpg": {
+      "fold": 0,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.57
+    },
+    "image_0670.jpg": {
+      "fold": 0,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.41
+    },
+    "image_0748.jpg": {
+      "fold": 0,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 2.03
+    },
+    "image_1005.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.62
+    },
+    "image_1245.jpg": {
+      "fold": 0,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.93
+    },
+    "image_1263.jpg": {
+      "fold": 0,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.49
+    },
+    "image_1307.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.25
+    },
+    "image_1309.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.54
+    },
+    "image_1350.jpg": {
+      "fold": 1,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.09
+    },
+    "image_1352.jpg": {
+      "fold": 1,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.11
+    },
+    "image_1355.jpg": {
+      "fold": 1,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 0.99
+    },
+    "image_1385.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.39
+    },
+    "image_1481.jpg": {
+      "fold": 2,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.18
+    },
+    "image_1486.jpg": {
+      "fold": 2,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.11
+    },
+    "image_1490.jpg": {
+      "fold": 2,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.44
+    },
+    "image_1620.jpg": {
+      "fold": 3,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.29
+    },
+    "image_1690.jpg": {
+      "fold": 1,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.41
+    },
+    "image_1736.jpg": {
+      "fold": 1,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.35
+    },
+    "image_1741.jpg": {
+      "fold": 1,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.23
+    },
+    "image_1782.jpg": {
+      "fold": 3,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.24
+    },
+    "image_1785.jpg": {
+      "fold": 3,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.73
+    },
+    "image_1790.jpg": {
+      "fold": 0,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 1.48
+    },
+    "image_1858.jpg": {
+      "fold": 4,
+      "mean_abs_pixel_diff_vs_dataset_yolo": 2.22
+    }
+  },
+  "images": {
+    "image_0002.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0005.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_0007.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0015.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_0019.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0023.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0042.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0044.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_0059.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0065.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0083.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0090.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0102.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0104.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0105.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0122.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0145.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0156.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0162.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0179.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0183.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0186.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0191.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0205.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0226.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0239.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0242.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0259.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0275.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0289.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0298.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0321.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0324.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0347.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0351.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0354.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0357.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0365.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0368.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0370.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0386.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0398.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0408.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0415.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0416.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0433.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0435.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0453.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0456.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0465.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0494.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0496.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0506.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0511.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0516.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0517.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0524.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0541.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0565.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0582.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0605.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0621.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0624.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0631.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0636.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0670.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0683.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0685.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0699.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0703.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0711.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0714.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0720.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0745.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0747.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0748.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0751.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0757.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0763.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0779.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0806.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0815.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0817.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0849.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0853.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0855.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0876.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0880.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0882.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0885.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0888.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0901.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0908.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0910.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0928.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0934.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0935.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0944.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0948.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0959.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0970.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0977.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0978.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_0994.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1005.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_1017.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1025.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1052.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1058.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1060.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1080.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1085.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1089.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1090.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1093.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1105.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1117.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1144.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1194.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1239.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1245.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1263.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1264.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1292.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1299.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1307.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_1309.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_1323.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1333.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1334.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1350.jpg": "r1/runs/direct/yolo26m_seed0/fold1/weights/best.pt",
+    "image_1352.jpg": "r1/runs/direct/yolo26m_seed0/fold1/weights/best.pt",
+    "image_1355.jpg": "r1/runs/direct/yolo26m_seed0/fold1/weights/best.pt",
+    "image_1385.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_1424.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1427.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1429.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1464.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1470.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1475.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1478.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1481.jpg": "r1/runs/direct/yolo26m_seed0/fold2/weights/best.pt",
+    "image_1486.jpg": "r1/runs/direct/yolo26m_seed0/fold2/weights/best.pt",
+    "image_1490.jpg": "r1/runs/direct/yolo26m_seed0/fold2/weights/best.pt",
+    "image_1500.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1501.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1515.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1539.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1541.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1558.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1562.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1568.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1581.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1588.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1612.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1620.jpg": "r1/runs/direct/yolo26m_seed0/fold3/weights/best.pt",
+    "image_1623.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1625.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1626.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1633.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1641.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1642.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1643.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1659.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1660.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1661.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1690.jpg": "r1/runs/direct/yolo26m_seed0/fold1/weights/best.pt",
+    "image_1698.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1700.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1703.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1719.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1721.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1724.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1729.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1731.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1735.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1736.jpg": "r1/runs/direct/yolo26m_seed0/fold1/weights/best.pt",
+    "image_1741.jpg": "r1/runs/direct/yolo26m_seed0/fold1/weights/best.pt",
+    "image_1743.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1764.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1767.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1782.jpg": "r1/runs/direct/yolo26m_seed0/fold3/weights/best.pt",
+    "image_1785.jpg": "r1/runs/direct/yolo26m_seed0/fold3/weights/best.pt",
+    "image_1787.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1790.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1792.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1811.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1826.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1828.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt",
+    "image_1858.jpg": "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt",
+    "image_1890.jpg": "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt"
+  }
+}

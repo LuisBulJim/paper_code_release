@@ -1,0 +1,4 @@
+2026-09-28 13:37:28 | INFO | seed 0: val sizes [46, 46, 46, 45, 45], positives per val [38, 38, 38, 37, 37]
+2026-09-28 13:37:28 | INFO | seed 1: val sizes [46, 46, 46, 45, 45], positives per val [38, 38, 38, 37, 37]
+2026-09-28 13:37:28 | INFO | seed 2: val sizes [46, 46, 46, 45, 45], positives per val [38, 38, 38, 37, 37]
+2026-09-28 13:37:28 | INFO | written data\folds_v2.json: pool 228, test 33, seeds [0, 1, 2]

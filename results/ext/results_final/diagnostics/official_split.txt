@@ -1,0 +1,5 @@
+official split sizes {'train': 1370, 'test': 191, 'not_used': 332}
+test images with a training frame within +- 1 indices: 175/191 = 91.6% | among test images with corrosion: 22/23
+test images with a training frame within +- 2 indices: 186/191 = 97.4% | among test images with corrosion: 23/23
+test images with a training frame within +- 5 indices: 191/191 = 100.0% | among test images with corrosion: 23/23
+test images with a training frame within +-15 indices: 191/191 = 100.0% | among test images with corrosion: 23/23

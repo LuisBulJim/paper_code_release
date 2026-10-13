@@ -1,0 +1,2 @@
+2026-09-28 14:13:46 | INFO | positives 8: IoU 0.095 [0.025, 0.184] Dice 0.155 | detected 100.0% | negatives 8: false-mask rate 1.0
+2026-09-28 19:57:13 | INFO | positives 2: IoU 0.000 [0.000, 0.000] Dice 0.000 | detected 0.0% | negatives 2: false-mask rate 0.0

@@ -1,0 +1,30 @@
+cosine similarity between images k filename-indices apart (median / p10):
+  k=  1  median 0.785  p10 0.650  share>=0.90 0.14
+  k=  2  median 0.742  p10 0.625  share>=0.90 0.05
+  k=  5  median 0.709  p10 0.589  share>=0.90 0.02
+  k= 10  median 0.682  p10 0.578  share>=0.90 0.01
+  k= 15  median 0.673  p10 0.564  share>=0.90 0.00
+  k= 30  median 0.659  p10 0.557  share>=0.90 0.00
+  k= 50  median 0.648  p10 0.546  share>=0.90 0.00
+  k=100  median 0.643  p10 0.551  share>=0.90 0.00
+  random pairs  median 0.637  p90 0.727  share>=0.90 0.001
+
+grouped (current): 783 test evaluations
+  nearest-train similarity: median 0.813  share>=0.90 0.09  share>=0.95 0.00
+  nearest-train index distance: median 28  share<=2 0.07  share<=5 0.17  share<=15 0.39
+  similarity tertile 1 [0.69, 0.80]: images 259, GT 439, recall@0.25 0.132, AP50 0.142
+  similarity tertile 2 [0.80, 0.84]: images 260, GT 537, recall@0.25 0.114, AP50 0.104
+  similarity tertile 3 [0.84, 0.95]: images 264, GT 731, recall@0.25 0.212, AP50 0.246
+  index distance 0-5: images 135, GT 514, recall@0.25 0.212, AP50 0.257
+  index distance 6-15: images 170, GT 401, recall@0.25 0.155, AP50 0.179
+  index distance 16-inf: images 478, GT 792, recall@0.25 0.130, AP50 0.120
+
+ungrouped (28-Sep): 783 test evaluations
+  nearest-train similarity: median 0.850  share>=0.90 0.25  share>=0.95 0.04
+  nearest-train index distance: median 1  share<=2 0.61  share<=5 0.75  share<=15 0.91
+  similarity tertile 1 [0.69, 0.83]: images 260, GT 365, recall@0.25 0.181, AP50 0.172
+  similarity tertile 2 [0.83, 0.88]: images 261, GT 687, recall@0.25 0.255, AP50 0.267
+  similarity tertile 3 [0.88, 0.99]: images 262, GT 655, recall@0.25 0.424, AP50 0.419
+  index distance 0-5: images 585, GT 1504, recall@0.25 0.325, AP50 0.332
+  index distance 6-15: images 128, GT 125, recall@0.25 0.192, AP50 0.143
+  index distance 16-inf: images 70, GT 78, recall@0.25 0.077, AP50 0.089

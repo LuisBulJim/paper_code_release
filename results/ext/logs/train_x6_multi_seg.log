@@ -1,0 +1,1 @@
+[yoloenv] ext/train_ext.py --variant x6_multi_seg --pool ../dataset_yolo

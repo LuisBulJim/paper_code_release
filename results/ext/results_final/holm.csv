@@ -1,0 +1,17 @@
+family,strategy,comparison,delta,ci_lo,ci_hi,p_one_sided,p_holm
+pre-registered,standard,x1_recipe - x0_baseline,0.0096,-0.0241,0.0377,0.284,0.284
+pre-registered,standard,x2_multi - x0_baseline,0.0378,0.0044,0.063,0.014,0.052
+pre-registered,standard,x3_seg - x0_baseline,0.0244,0.0017,0.0433,0.013,0.052
+pre-registered,standard,x4_seg_cp - x0_baseline,0.022,-0.0093,0.0459,0.072,0.144
+second round,standard,x6_multi_seg - x0_baseline,0.0187,-0.0011,0.0414,0.034,0.034
+second round,standard,e1_ensemble - x0_baseline,0.0778,0.0265,0.1151,<0.001,<0.003
+second round,standard,c4_baselines - x0_baseline,0.071,0.0446,0.0973,<0.001,<0.003
+ensembles,standard,e1_ensemble - c4_baselines,0.0067,-0.0381,0.0471,0.376,0.376
+pre-registered,tta,x1_recipe - x0_baseline,0.009,-0.0311,0.0415,0.341,0.341
+pre-registered,tta,x2_multi - x0_baseline,0.0397,0.0012,0.0737,0.018,0.054
+pre-registered,tta,x3_seg - x0_baseline,0.0259,0.0041,0.0429,0.01,0.04
+pre-registered,tta,x4_seg_cp - x0_baseline,0.0237,-0.0115,0.0474,0.089,0.178
+second round,tta,x6_multi_seg - x0_baseline,0.0201,-0.0157,0.0502,0.133,0.133
+second round,tta,e1_ensemble - x0_baseline,0.0853,0.0441,0.1136,<0.001,<0.003
+second round,tta,c4_baselines - x0_baseline,0.0684,0.0443,0.0893,<0.001,<0.003
+ensembles,tta,e1_ensemble - c4_baselines,0.0169,-0.029,0.0619,0.242,0.242

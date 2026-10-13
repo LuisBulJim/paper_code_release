@@ -1,0 +1,13 @@
+nohup: ignoring input
+2026-10-04 10:46:41 | INFO | TTA tta_s3_flip_equal iou 0.6 | WBF members ['yolo26n', 'yolo26m', 'yolo26l'] weights [1.0, 1.0, 1.0] iou 0.5
+2026-10-04 10:46:45 | INFO | standard fp16: 7.9 ms (p95 7.9), 127.2 img/s, VRAM 116 MB
+2026-10-04 10:46:58 | INFO | tta fp16: 57.4 ms (p95 67.3), 17.4 img/s, VRAM 126 MB
+2026-10-04 10:47:04 | INFO | wbf fp16: 31.2 ms (p95 39.4), 32.0 img/s, VRAM 225 MB
+2026-10-04 10:47:06 | INFO | standard fp32: 7.5 ms (p95 7.9), 132.7 img/s, VRAM 298 MB
+2026-10-04 10:47:16 | INFO | tta fp32: 55.6 ms (p95 65.7), 18.0 img/s, VRAM 315 MB
+2026-10-04 10:47:22 | INFO | wbf fp32: 30.3 ms (p95 38.4), 33.1 img/s, VRAM 503 MB
+2026-10-04 10:47:22 | INFO | written r1/results/latency.csv | env {'python': '3.9.13', 'platform': 'linux', 'torch': '2.8.0+cu128', 'cuda_available': True, 'gpu': 'NVIDIA GeForce RTX 4090', 'ultralytics': '8.4.5'}
+2026-10-04 10:47:24 | INFO | standard: matched 83 inflated 3 FN by size {'large': 149, 'medium': 182, 'small': 155} | tta: matched 19 inflated 0 FN by size {'large': 172, 'medium': 201, 'small': 177}
+2026-10-04 10:47:24 | INFO | TTA effect per image: {'same': 174, 'helps': 52, 'hurts': 35} | figure panels: ['FN:image_1858.jpg', 'FN:image_1877.jpg', 'FP:image_1881.jpg', 'FP:image_1175.jpg', 'inflated:image_1880.jpg', 'inflated:image_1378.jpg']
+2026-10-04 10:47:24 | INFO | written: ['hparams', 'dataset', 'nested', 'nested_image', 'nested_threshold', 'nested_deltas', 'ablation', 'latency', 'trashcan', 'trashcan_ood', 'sweep_tta'] | skipped (inputs missing): ['sam3', 'sam3_valthr'] | 1122 numbers recorded in r1/tables/numbers.json
+2026-10-04 10:47:37 | INFO | written: ['nested_design', 'fold_dispersion', 'pr_oof', 'deltas', 'ablation', 'sweep_tta', 'latency'] | skipped (inputs missing): [] -> r1/figures

@@ -1,0 +1,7 @@
+2026-09-28 14:12:05 | INFO |   25/40 images
+2026-09-28 14:12:09 | INFO |   40/40 images
+2026-09-28 14:12:09 | INFO | predictions written to runs\dryrun\sam3_mock
+2026-09-28 14:13:41 | INFO |   16/16 images
+2026-09-28 14:13:41 | INFO | predictions written to runs\dryrun\sam3_mock
+2026-09-28 19:57:11 | INFO |   4/4 images
+2026-09-28 19:57:11 | INFO | predictions written to runs\localcheck\sam3_tta

@@ -1,0 +1,17 @@
+model,strategy,val_map50_mean,val_folds,conf_vt
+x0_baseline,standard,0.2511,15,0.1
+x0_baseline,tta,0.274,15,0.05
+x1_recipe,standard,0.2309,15,0.1
+x1_recipe,tta,0.2273,15,0.05
+x2_multi,standard,0.1889,15,0.05
+x2_multi,tta,0.2265,15,0.01
+x3_seg,standard,0.2908,15,0.2
+x3_seg,tta,0.2832,15,0.05
+x4_seg_cp,standard,0.2605,15,0.15
+x4_seg_cp,tta,0.2775,15,0.05
+x6_multi_seg,standard,0.2008,15,0.05
+x6_multi_seg,tta,0.2252,15,0.01
+e1_ensemble,standard,0.2734,15,0.05
+e1_ensemble,tta,0.3007,15,0.05
+c4_baselines,standard,0.321,15,0.05
+c4_baselines,tta,0.3278,15,0.05

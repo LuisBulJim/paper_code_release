@@ -1,0 +1,11 @@
+subset,n,metric,value,sd,ci_lo,ci_hi,sam_model,detector,tta
+positives,21,iou_mean,0.6498,0.2226,0.5529,0.7338,facebook/sam3,none (gt_boxes),False
+positives,21,dice_mean,0.7611,0.2108,0.6678,0.8352,facebook/sam3,none (gt_boxes),False
+positives,21,iou_median,0.7225,,,,facebook/sam3,none (gt_boxes),False
+positives,21,share_iou_gt_0.5,0.8571,,,,facebook/sam3,none (gt_boxes),False
+positives,21,share_detected,1.0,,,,facebook/sam3,none (gt_boxes),False
+positives_detected,21,iou_mean,0.6498,,,,facebook/sam3,none (gt_boxes),False
+negatives,170,false_mask_rate,0.0,,,,facebook/sam3,none (gt_boxes),False
+negatives,170,mean_false_area_fraction,0.0,,,,facebook/sam3,none (gt_boxes),False
+positives,21,spearman_iou_vs_gt_area,0.3558,,,,facebook/sam3,none (gt_boxes),False
+positives,21,spearman_p_value,0.1134,,,,facebook/sam3,none (gt_boxes),False

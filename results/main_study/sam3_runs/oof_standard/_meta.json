@@ -1,0 +1,29 @@
+{
+  "checkpoint": "r1/results/sam3_map_r0_m.json",
+  "checkpoint_sha256": {
+    "r1/runs/direct/yolo26m_seed0/fold0/weights/best.pt": "60ada34138b201832a47f7b7c25ae649925c62c4306ddf61e50ddde7247b2409",
+    "r1/runs/direct/yolo26m_seed0/fold1/weights/best.pt": "2160ef4603a0223520376488048375f0e3dfa33504ec5078ad2fa7957242ddab",
+    "r1/runs/direct/yolo26m_seed0/fold2/weights/best.pt": "301bd084124c8dcbb89285cefb834b2ead0091855f5baa1ec07f2a38327f95e5",
+    "r1/runs/direct/yolo26m_seed0/fold3/weights/best.pt": "809b6f61674b1a91524d42e12bc95ee8c4ead86ff9ea6ec996d3252d1d4b8a7a",
+    "r1/runs/direct/yolo26m_seed0/fold4/weights/best.pt": "c913b59c03e7ad19c10394ed9959a7569811f52cfb6cdbd7d8ef3335d7af4a25"
+  },
+  "checkpoint_map": "r1/results/sam3_map_r0_m.json",
+  "conf": 0.25,
+  "tta": false,
+  "tta_config": null,
+  "tta_params": null,
+  "sam_model": "facebook/sam3",
+  "mask_threshold": 0.5,
+  "n_images": 191,
+  "device": "cuda:0",
+  "mean_ms_detector": 12.899770806129066,
+  "mean_ms_sam": 22.48908964556237,
+  "environment": {
+    "python": "3.11.14",
+    "platform": "linux",
+    "torch": "2.9.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "ultralytics": "8.4.5"
+  }
+}

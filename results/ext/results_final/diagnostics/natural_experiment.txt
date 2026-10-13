@@ -1,0 +1,23 @@
+paired evaluations: 783
+  far in grouped, near in ungrouped    images  291  GT   602  AP50 grouped 0.148  AP50 ungrouped 0.279
+  near in both                         images  130  GT   510  AP50 grouped 0.257  AP50 ungrouped 0.347
+  far in both                          images   67  GT    76  AP50 grouped 0.072  AP50 ungrouped 0.077
+  all                                  images  783  GT  1707  AP50 grouped 0.167  AP50 ungrouped 0.299
+
+resolution runs with corrosion: 16 | positives 209 | boxes 569
+  run 28: positives  75 (35.9%, cumulative  35.9%)  boxes 299  AP50 when tested 0.232
+  run 22: positives  48 (23.0%, cumulative  58.9%)  boxes  92  AP50 when tested 0.172
+  run 24: positives  18 ( 8.6%, cumulative  67.5%)  boxes  38  AP50 when tested 0.134
+  run 15: positives  17 ( 8.1%, cumulative  75.6%)  boxes  31  AP50 when tested 0.098
+  run 27: positives  14 ( 6.7%, cumulative  82.3%)  boxes  45  AP50 when tested 0.097
+  run 19: positives  11 ( 5.3%, cumulative  87.6%)  boxes  24  AP50 when tested 0.158
+  run 14: positives   7 ( 3.3%, cumulative  90.9%)  boxes   9  AP50 when tested 0.152
+  run 18: positives   6 ( 2.9%, cumulative  93.8%)  boxes   7  AP50 when tested 0.238
+  run 26: positives   4 ( 1.9%, cumulative  95.7%)  boxes   9  AP50 when tested 0.396
+  run 11: positives   3 ( 1.4%, cumulative  97.1%)  boxes   4  AP50 when tested 0.003
+  run  1: positives   1 ( 0.5%, cumulative  97.6%)  boxes   1  AP50 when tested 0.070
+  run  8: positives   1 ( 0.5%, cumulative  98.1%)  boxes   1  AP50 when tested 0.083
+  run 16: positives   1 ( 0.5%, cumulative  98.6%)  boxes   1  AP50 when tested 0.083
+  run 17: positives   1 ( 0.5%, cumulative  99.0%)  boxes   2  AP50 when tested 0.095
+  run 21: positives   1 ( 0.5%, cumulative  99.5%)  boxes   3  AP50 when tested 0.092
+  run 23: positives   1 ( 0.5%, cumulative 100.0%)  boxes   3  AP50 when tested 0.409

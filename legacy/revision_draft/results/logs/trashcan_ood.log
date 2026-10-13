@@ -1,0 +1,5 @@
+2026-09-28 14:45:20 | INFO | 4 TrashCan val images (metal), 4 Metal boxes | tag=dryrun models=yolo26n
+2026-09-28 14:45:24 | INFO |   4/4 images
+2026-09-28 14:45:26 | INFO |   4/4 images
+2026-09-28 14:46:21 | INFO | yolo26n seed0 fold0: standard recall 0.000 P 0.000 mAP50 0.001 | tta recall 0.000
+2026-09-28 14:46:21 | INFO | written runs\dryrun\results\trashcan_ood.csv (2 rows)

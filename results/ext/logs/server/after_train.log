@@ -1,0 +1,89 @@
+nohup: ignoring input
+skip x5_combined: predictions incomplete (ext/out/preds/x5_combined_r{r}_f{k}_m.pkl)
+x0_baseline  standard val mAP50 0.2511 | OOF mAP50 0.1665 [0.1192, 0.2088] | F1@vt 0.2730 (conf 0.1)
+x0_baseline  tta      val mAP50 0.2740 | OOF mAP50 0.1938 [0.1351, 0.2511] | F1@vt 0.2964 (conf 0.05)
+x1_recipe    standard val mAP50 0.2309 | OOF mAP50 0.1761 [0.1206, 0.2303] | F1@vt 0.2518 (conf 0.1)
+x1_recipe    tta      val mAP50 0.2273 | OOF mAP50 0.2028 [0.1367, 0.2703] | F1@vt 0.2799 (conf 0.05)
+x2_multi     standard val mAP50 0.1889 | OOF mAP50 0.2043 [0.1435, 0.2534] | F1@vt 0.2776 (conf 0.05)
+x2_multi     tta      val mAP50 0.2265 | OOF mAP50 0.2335 [0.1702, 0.2851] | F1@vt 0.2792 (conf 0.01)
+x3_seg       standard val mAP50 0.2908 | OOF mAP50 0.1909 [0.1305, 0.2452] | F1@vt 0.2729 (conf 0.2)
+x3_seg       tta      val mAP50 0.2832 | OOF mAP50 0.2196 [0.1570, 0.2779] | F1@vt 0.3183 (conf 0.05)
+x4_seg_cp    standard val mAP50 0.2605 | OOF mAP50 0.1885 [0.1236, 0.2427] | F1@vt 0.2559 (conf 0.15)
+x4_seg_cp    tta      val mAP50 0.2775 | OOF mAP50 0.2175 [0.1464, 0.2765] | F1@vt 0.2902 (conf 0.05)
+variants entering the combination (validation only): ['x3_seg', 'x4_seg_cp'] | combination: ['x3_seg', 'x4_seg_cp']
+the union of ['x3_seg', 'x4_seg_cp'] equals x4_seg_cp, already trained: nothing to do
+now rerun: bash ext/run_ext.sh evaluate
+
+Loading weights:   0%|   | 0/1468 [00:00<?, ?it/s]
+Loading weights:  50%|▌| 741/1468 [00:00<00:00, 74
+Loading weights: 100%|█| 1468/1468 [00:00<00:00, 1
+Traceback (most recent call last):
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 795, in hf_raise_for_status
+    response.raise_for_status()
+  File "<envs>/sam2/lib/python3.11/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/facebook/sam3/resolve/main/chat_template.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<envs>/sam2/lib/python3.11/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1018, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1170, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1869, in _raise_on_head_call_error
+    raise head_call_error
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1712, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1620, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 726, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+  File "<envs>/sam2/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 821, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-6ac5acc6-2317ca341306e1531c9f4ab5;6693acb4-e5b4-4a2a-9523-895159e5beca)
+
+Cannot access gated repo for url https://huggingface.co/facebook/sam3/resolve/main/chat_template.json.
+Access to model facebook/sam3 is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "ext/sam3_oracle.py", line 111, in <module>
+    main()
+  File "ext/sam3_oracle.py", line 85, in main
+    segmenter = Sam3Segmenter(cfg["model_id"], device, cfg["mask_threshold"])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "r1/sam3_eval.py", line 46, in __init__
+    self.processor = Sam3Processor.from_pretrained(model_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/transformers/processing_utils.py", line 1717, in from_pretrained
+    processor_dict, instantiation_kwargs = cls.get_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/transformers/processing_utils.py", line 1297, in get_processor_dict
+    resolved_chat_template_file = cached_file(
+                                  ^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<envs>/sam2/lib/python3.11/site-packages/transformers/utils/hub.py", line 503, in cached_files
+    raise OSError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/facebook/sam3.
+401 Client Error. (Request ID: Root=1-6ac5acc6-2317ca341306e1531c9f4ab5;6693acb4-e5b4-4a2a-9523-895159e5beca)
+
+Cannot access gated repo for url https://huggingface.co/facebook/sam3/resolve/main/chat_template.json.
+Access to model facebook/sam3 is restricted. You must have access to it and be authenticated to access it. Please log in.
+CHAIN_DONE

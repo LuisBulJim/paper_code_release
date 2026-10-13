@@ -1,0 +1,36 @@
+skip r0 f0: missing ['ext\\out\\preds\\x1_recipe_r0_f0_m.pkl', 'ext\\out\\preds\\x2_multi_r0_f0_m.pkl', 'ext\\out\\preds\\x3_seg_r0_f0_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r0_f0_m.pkl']
+skip r0 f1: missing ['ext\\out\\preds\\x1_recipe_r0_f1_m.pkl', 'ext\\out\\preds\\x2_multi_r0_f1_m.pkl', 'ext\\out\\preds\\x3_seg_r0_f1_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r0_f1_m.pkl']
+skip r0 f2: missing ['ext\\out\\preds\\x1_recipe_r0_f2_m.pkl', 'ext\\out\\preds\\x2_multi_r0_f2_m.pkl', 'ext\\out\\preds\\x3_seg_r0_f2_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r0_f2_m.pkl']
+skip r0 f3: missing ['ext\\out\\preds\\x1_recipe_r0_f3_m.pkl', 'ext\\out\\preds\\x2_multi_r0_f3_m.pkl', 'ext\\out\\preds\\x3_seg_r0_f3_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r0_f3_m.pkl']
+skip r0 f4: missing ['ext\\out\\preds\\x1_recipe_r0_f4_m.pkl', 'ext\\out\\preds\\x2_multi_r0_f4_m.pkl', 'ext\\out\\preds\\x3_seg_r0_f4_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r0_f4_m.pkl']
+skip r1 f0: missing ['ext\\out\\preds\\x1_recipe_r1_f0_m.pkl', 'ext\\out\\preds\\x2_multi_r1_f0_m.pkl', 'ext\\out\\preds\\x3_seg_r1_f0_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r1_f0_m.pkl']
+skip r1 f1: missing ['ext\\out\\preds\\x1_recipe_r1_f1_m.pkl', 'ext\\out\\preds\\x2_multi_r1_f1_m.pkl', 'ext\\out\\preds\\x3_seg_r1_f1_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r1_f1_m.pkl']
+skip r1 f2: missing ['ext\\out\\preds\\x1_recipe_r1_f2_m.pkl', 'ext\\out\\preds\\x2_multi_r1_f2_m.pkl', 'ext\\out\\preds\\x3_seg_r1_f2_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r1_f2_m.pkl']
+skip r1 f3: missing ['ext\\out\\preds\\x1_recipe_r1_f3_m.pkl', 'ext\\out\\preds\\x2_multi_r1_f3_m.pkl', 'ext\\out\\preds\\x3_seg_r1_f3_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r1_f3_m.pkl']
+skip r1 f4: missing ['ext\\out\\preds\\x1_recipe_r1_f4_m.pkl', 'ext\\out\\preds\\x2_multi_r1_f4_m.pkl', 'ext\\out\\preds\\x3_seg_r1_f4_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r1_f4_m.pkl']
+skip r2 f0: missing ['ext\\out\\preds\\x1_recipe_r2_f0_m.pkl', 'ext\\out\\preds\\x2_multi_r2_f0_m.pkl', 'ext\\out\\preds\\x3_seg_r2_f0_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r2_f0_m.pkl']
+skip r2 f1: missing ['ext\\out\\preds\\x1_recipe_r2_f1_m.pkl', 'ext\\out\\preds\\x2_multi_r2_f1_m.pkl', 'ext\\out\\preds\\x3_seg_r2_f1_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r2_f1_m.pkl']
+skip r2 f2: missing ['ext\\out\\preds\\x1_recipe_r2_f2_m.pkl', 'ext\\out\\preds\\x2_multi_r2_f2_m.pkl', 'ext\\out\\preds\\x3_seg_r2_f2_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r2_f2_m.pkl']
+skip r2 f3: missing ['ext\\out\\preds\\x1_recipe_r2_f3_m.pkl', 'ext\\out\\preds\\x2_multi_r2_f3_m.pkl', 'ext\\out\\preds\\x3_seg_r2_f3_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r2_f3_m.pkl']
+skip r2 f4: missing ['ext\\out\\preds\\x1_recipe_r2_f4_m.pkl', 'ext\\out\\preds\\x2_multi_r2_f4_m.pkl', 'ext\\out\\preds\\x3_seg_r2_f4_m.pkl', 'ext\\out\\preds\\x4_seg_cp_r2_f4_m.pkl']
+e1_ensemble: 0 folds written (WBF IoU 0.5, skip 0.001, members ['x1_recipe', 'x2_multi', 'x3_seg', 'x4_seg_cp'])
+<site-packages>\ensemble_boxes\ensemble_boxes_wbf.py:39: UserWarning: Y2 < Y1 value in box. Swap them.
+  warnings.warn('Y2 < Y1 value in box. Swap them.')
+<site-packages>\ensemble_boxes\ensemble_boxes_wbf.py:36: UserWarning: X2 < X1 value in box. Swap them.
+  warnings.warn('X2 < X1 value in box. Swap them.')
+  saved: c4_baselines_r0_f0_m.pkl
+  saved: c4_baselines_r0_f1_m.pkl
+  saved: c4_baselines_r0_f2_m.pkl
+  saved: c4_baselines_r0_f3_m.pkl
+  saved: c4_baselines_r0_f4_m.pkl
+  saved: c4_baselines_r1_f0_m.pkl
+  saved: c4_baselines_r1_f1_m.pkl
+  saved: c4_baselines_r1_f2_m.pkl
+  saved: c4_baselines_r1_f3_m.pkl
+  saved: c4_baselines_r1_f4_m.pkl
+  saved: c4_baselines_r2_f0_m.pkl
+  saved: c4_baselines_r2_f1_m.pkl
+  saved: c4_baselines_r2_f2_m.pkl
+  saved: c4_baselines_r2_f3_m.pkl
+  saved: c4_baselines_r2_f4_m.pkl
+c4_baselines: 15 folds written (WBF IoU 0.5, skip 0.001, members ['dm', 'dl', 'sm', 'sl'])

@@ -1,0 +1,131 @@
+{
+  "protocol": {
+    "dataset": {
+      "name": "liaci_corrosion_261",
+      "root": "../dataset_yolo",
+      "manifest_file": "r1/data/nested_manifest.json"
+    },
+    "nested": {
+      "out": "out",
+      "grouped_suffix": ".pkl",
+      "ungrouped_suffix": ".pkl.bak",
+      "groups_csv": "",
+      "tags": [
+        "direct",
+        "sequential"
+      ],
+      "sizes": [
+        "n",
+        "m",
+        "l"
+      ],
+      "repeats": 3,
+      "folds": 5,
+      "wbf_tag": "direct",
+      "sam3_repeat": 0,
+      "sam3_size": "m"
+    },
+    "evaluation": {
+      "conf_dump": 0.001,
+      "conf_fixed": 0.25,
+      "iou_match": 0.5,
+      "bootstrap_iters": 1000,
+      "bootstrap_seed": 0
+    },
+    "inference": {
+      "imgsz": 640,
+      "tta": {
+        "scales": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "flip": true,
+        "weight_native": 1.0,
+        "weight_rescaled": 0.8,
+        "wbf_iou": 0.5,
+        "wbf_skip": 0.001
+      },
+      "wbf_models": {
+        "iou": 0.5,
+        "skip": 0.001
+      }
+    },
+    "environment": {
+      "ultralytics": "8.4.5",
+      "torch": "2.8.0"
+    },
+    "trashcan": {
+      "source_root": "../dataset",
+      "source_format": "yolo",
+      "output_root": "r1/data/trashcan_v2",
+      "manifest_file": "r1/data/trashcan_manifest.json",
+      "class_map": {
+        "Metal": [
+          "trash_metal"
+        ],
+        "Bio": [
+          "plant",
+          "animal_fish",
+          "animal_starfish",
+          "animal_shells",
+          "animal_crab",
+          "animal_eel",
+          "animal_etc"
+        ]
+      },
+      "selection_fraction": 0.1,
+      "selection_seed": 0,
+      "model": "yolo26m",
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    "sam3": {
+      "output_root": "r1/data/sam3_eval",
+      "manifest_file": "r1/data/sam3_manifest.json",
+      "model_id": "facebook/sam3",
+      "mask_threshold": 0.5
+    }
+  },
+  "hparams": {
+    "epochs": 50,
+    "patience": 100,
+    "imgsz": 640,
+    "batch": 16,
+    "optimizer": "SGD",
+    "lr0": 0.01,
+    "lrf": 0.1,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3.0,
+    "cos_lr": false,
+    "mosaic": 1.0,
+    "close_mosaic": 10,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "translate": 0.1,
+    "scale": 0.5,
+    "degrees": 0.0,
+    "freeze": null,
+    "amp": true,
+    "deterministic": true,
+    "workers": 4,
+    "pretrained": true
+  }
+}
+{
+  "python": "3.9.13",
+  "platform": "linux",
+  "torch": "2.8.0+cu128",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "ultralytics": "8.4.5",
+  "problems": []
+}
+dataset check: OK

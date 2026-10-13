@@ -1,0 +1,30 @@
+# Environment that trained and evaluated every result of the revised manuscript (server: RTX 4090, CUDA 12.8).
+# Recorded by the run logs: Ultralytics 8.4.5 | Python 3.9.13 | torch 2.8.0+cu128.
+#
+# ultralytics==8.4.5 is a hard requirement: YOLO26 is NMS-free and its decoding changes between Ultralytics
+# releases, so inference with the released checkpoints under another version gives different detections
+# (run_r1.sh check and run_ext.sh check abort on any other version).
+#
+#   pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements-lock.txt
+ultralytics==8.4.5
+ensemble-boxes==1.0.9
+pycocotools>=2.0.7
+scikit-learn>=1.3
+scipy>=1.13
+numpy>=1.26,<2.0
+pandas>=2.0
+pyyaml>=6.0
+opencv-python>=4.9
+Pillow>=10.0
+matplotlib>=3.8
+tqdm>=4.66
+pytest>=8.0
+
+# Optional: sliced inference for `predict_extra_views.py --sahi` (experimental, not used in the paper)
+# sahi>=0.11.14
+
+# SAM 3 (r1/sam3_eval.py, ext/sam3_oracle.py) needs a SEPARATE environment with Python >= 3.10:
+#   pip install ultralytics==8.4.5 "transformers>=5.13" huggingface-hub safetensors
+# facebook/sam3 is a gated checkpoint on the Hugging Face Hub: accept its terms and log in with your own
+# account (huggingface-cli login); no token is stored in this repository.

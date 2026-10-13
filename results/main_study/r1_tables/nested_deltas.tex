@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\caption{Paired differences on the out-of-fold predictions (mean over repeats, 95\% cluster-bootstrap interval with the same resampled video groups for both strategies, and bootstrap probability that the mAP@50 difference is not positive). F1 at the a-priori threshold 0.25 and at the threshold chosen on inner validation for each strategy.}
+\label{tab:nested_deltas}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Comparison & $\Delta$ mAP@50 & $\Delta$ mAP@[.5:.95] & $\Delta$ F1 (0.25) & $\Delta$ F1 (val. threshold) & $P(\Delta \mathrm{mAP@50} \le 0)$ \\
+\midrule
+Direct YOLO26-n: TTA $-$ standard & 0.041 [0.018, 0.065] & 0.013 [0.005, 0.023] & -0.120 [-0.146, -0.095] & 0.012 [-0.011, 0.035] & 0.000 \\
+Direct YOLO26-m: TTA $-$ standard & 0.027 [0.011, 0.046] & 0.012 [0.005, 0.021] & -0.129 [-0.161, -0.089] & 0.023 [0.009, 0.034] & 0.000 \\
+Direct YOLO26-l: TTA $-$ standard & 0.031 [0.013, 0.044] & 0.016 [0.006, 0.025] & -0.099 [-0.122, -0.069] & 0.036 [0.004, 0.060] & 0.000 \\
+Sequential YOLO26-n: TTA $-$ standard & 0.019 [0.009, 0.028] & 0.010 [0.005, 0.014] & -0.080 [-0.115, -0.031] & 0.038 [0.016, 0.064] & 0.000 \\
+Sequential YOLO26-m: TTA $-$ standard & 0.023 [0.008, 0.040] & 0.011 [0.003, 0.018] & -0.039 [-0.057, -0.015] & 0.024 [-0.003, 0.045] & 0.001 \\
+Sequential YOLO26-l: TTA $-$ standard & 0.045 [0.025, 0.059] & 0.019 [0.010, 0.026] & -0.030 [-0.052, -0.002] & 0.040 [0.013, 0.064] & 0.000 \\
+Direct YOLO26-n + YOLO26-m + YOLO26-l: WBF $-$ YOLO26-n & 0.068 [0.029, 0.109] & 0.028 [0.010, 0.047] & -0.118 [-0.139, -0.095] & 0.067 [0.023, 0.101] & 0.000 \\
+Direct YOLO26-n + YOLO26-m + YOLO26-l: WBF $-$ YOLO26-m & 0.021 [-0.001, 0.048] & 0.004 [-0.007, 0.016] & -0.219 [-0.255, -0.168] & 0.005 [-0.025, 0.029] & 0.032 \\
+Direct YOLO26-n + YOLO26-m + YOLO26-l: WBF $-$ YOLO26-l & 0.015 [0.000, 0.033] & 0.003 [-0.005, 0.012] & -0.199 [-0.251, -0.138] & 0.019 [-0.006, 0.042] & 0.023 \\
+Direct: YOLO26-m $-$ YOLO26-n (standard) & 0.047 [0.018, 0.067] & 0.024 [0.011, 0.034] & 0.101 [0.059, 0.133] & 0.063 [0.030, 0.084] & 0.001 \\
+Direct: YOLO26-l $-$ YOLO26-m (standard) & 0.006 [-0.019, 0.032] & 0.001 [-0.012, 0.013] & -0.020 [-0.045, 0.002] & -0.014 [-0.036, 0.008] & 0.394 \\
+YOLO26-n: Sequential $-$ Direct (standard) & 0.041 [0.010, 0.067] & 0.027 [0.011, 0.043] & 0.104 [0.047, 0.144] & 0.019 [-0.016, 0.044] & 0.007 \\
+YOLO26-m: Sequential $-$ Direct (standard) & 0.001 [-0.021, 0.022] & 0.001 [-0.010, 0.014] & 0.016 [-0.012, 0.040] & -0.030 [-0.058, 0.003] & 0.488 \\
+YOLO26-l: Sequential $-$ Direct (standard) & 0.002 [-0.022, 0.032] & 0.002 [-0.013, 0.022] & 0.060 [0.030, 0.089] & 0.013 [-0.010, 0.039] & 0.415 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

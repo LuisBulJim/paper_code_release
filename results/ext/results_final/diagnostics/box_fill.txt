@@ -1,0 +1,2 @@
+polygons 569 | polygon area / box area: mean 0.561 median 0.569 p10 0.357 p90 0.750
+share of polygons filling less than half of their box: 0.304

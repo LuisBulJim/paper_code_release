@@ -1,0 +1,35 @@
+nohup: ignoring input
+SAM 3 disponible
+=== 2026-10-04 11:56:03 SAM 3 (detector estándar out-of-fold, conf 0.25 fijada a priori) ===
+2026-10-04 11:56:05 | INFO | 191 images, 5 detector checkpoint(s)
+
+Loading weights:   0%|                                                                                      | 0/1468 [00:00<?, ?it/s]
+Loading weights:  32%|███████████████████████▋                                                  | 470/1468 [00:00<00:00, 4698.82it/s]
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 1468/1468 [00:00<00:00, 11383.45it/s]
+2026-10-04 11:56:55 | INFO |   25/191 images
+2026-10-04 11:56:55 | INFO |   50/191 images
+2026-10-04 11:56:56 | INFO |   75/191 images
+2026-10-04 11:56:56 | INFO |   100/191 images
+2026-10-04 11:56:57 | INFO |   125/191 images
+2026-10-04 11:56:59 | INFO |   150/191 images
+2026-10-04 11:57:00 | INFO |   175/191 images
+2026-10-04 11:57:01 | INFO |   191/191 images
+2026-10-04 11:57:01 | INFO | predictions written to r1/runs/sam3/oof_standard
+2026-10-04 11:57:03 | INFO | positives 21: IoU 0.034 [0.000, 0.087] Dice 0.052 | detected 14.3% | negatives 170: false-mask rate 0.0765
+=== 2026-10-04 11:57:03 SAM 3 (mismo detector, umbral elegido en validación: 0.1) ===
+2026-10-04 11:57:06 | INFO | 191 images, 5 detector checkpoint(s)
+
+Loading weights:   0%|                                                                                      | 0/1468 [00:00<?, ?it/s]
+Loading weights:  57%|██████████████████████████████████████████▏                               | 837/1468 [00:00<00:00, 8369.21it/s]
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 1468/1468 [00:00<00:00, 12749.07it/s]
+2026-10-04 11:57:12 | INFO |   25/191 images
+2026-10-04 11:57:14 | INFO |   50/191 images
+2026-10-04 11:57:16 | INFO |   75/191 images
+2026-10-04 11:57:17 | INFO |   100/191 images
+2026-10-04 11:57:18 | INFO |   125/191 images
+2026-10-04 11:57:21 | INFO |   150/191 images
+2026-10-04 11:57:24 | INFO |   175/191 images
+2026-10-04 11:57:26 | INFO |   191/191 images
+2026-10-04 11:57:26 | INFO | predictions written to r1/runs/sam3/oof_standard_valthr
+2026-10-04 11:57:28 | INFO | positives 21: IoU 0.083 [0.010, 0.183] Dice 0.107 | detected 52.4% | negatives 170: false-mask rate 0.2235
+=== 2026-10-04 11:57:29 SAM 3 terminado ===

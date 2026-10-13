@@ -1,36 +1,23 @@
 # Project page (`docs/`)
 
-Static, self-contained project page for the manuscript
-**"Underwater Corrosion Detection via YOLO26: From Heterogeneous Ensembles to Robust
-Inference with Test-Time Augmentation."**
+Static, self-contained project page of the revised manuscript **"Underwater Corrosion Detection with YOLO26:
+Comparing Model Scaling, Ensemble Fusion, and Test-Time Augmentation"**. It is served by GitHub Pages from this
+folder: <https://luisbuljim.github.io/paper_code_release/>.
 
-## Publish with GitHub Pages
+* `index.html` — the page (all CSS/JS inline, no external dependencies; opens offline too).
+* `.nojekyll` — GitHub serves the raw HTML as-is.
 
-1. Push this repository (the page lives in `docs/`).
-2. On GitHub: **Settings → Pages → Build and deployment → Source: _Deploy from a branch_**,
-   Branch: `main`, Folder: **`/docs`**. Save.
-3. The site goes live at `https://<username>.github.io/paper_code_release/`.
+The page quotes only numbers that exist in `results/` (abstract, key-result cards and table). The qualitative
+image gallery of the first submission (YOLO26 + SAM 3 triptychs produced by the superseded notebook 09) was
+removed; the images are kept under `legacy/original_submission/docs_assets/`.
 
-`.nojekyll` is present so GitHub serves the raw `index.html` as-is (no Jekyll processing).
-The page has **no external dependencies** (all CSS/JS inline) — it also works offline by
-opening `index.html` in a browser.
+## Publishing
 
-## Add the result images
+Settings → Pages → Build and deployment → Source: *Deploy from a branch*, Branch `main`, Folder `/docs`.
+After a push to `main` the site rebuilds within a few minutes.
 
-The page shows images that are **not tracked yet** — they are produced by
-`make_paper_figures.py` (run on the server). Missing images auto-hide, so the page looks
-clean even before you add them. Drop the selected PNGs into `docs/assets/` with these names:
+## Placeholders still to fill
 
-| File in `assets/` | Source (from `outputs/`) | Used in |
-|---|---|---|
-| `teaser.png`   | a striking `det_seg/*.png` | hero teaser |
-| `gallery1.png` | `det_seg/*.png` | Proposal gallery |
-| `gallery2.png` | `det_seg/*.png` | Proposal gallery |
-| `gallery3.png` | `det_seg/*.png` | Proposal gallery |
-| `gallery4.png` | `det_seg/*.png` | Proposal gallery |
-
-## Before going public — fill the placeholders in `index.html`
-
-- Author list / affiliations (`<!-- TODO -->` in the hero).
-- BibTeX `author` field (and journal once accepted).
-- Confirm the repository URL/casing in the buttons and links.
+* "Archived release (DOI) — to be added" button, the DOI in the Data availability paragraph and in the BibTeX
+  `note` field (after the Zenodo deposit; see `RELEASE_CHECKLIST.md`).
+* The paper button and the `journal` field once the article is published.

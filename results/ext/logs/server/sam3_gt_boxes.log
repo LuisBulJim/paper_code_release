@@ -1,0 +1,13 @@
+
+Loading weights:   0%|   | 0/1468 [00:00<?, ?it/s]
+Loading weights:  62%|▌| 914/1468 [00:00<00:00, 91
+Loading weights: 100%|█| 1468/1468 [00:00<00:00, 1
+  25/191 images
+  50/191 images
+  75/191 images
+  100/191 images
+  125/191 images
+  150/191 images
+  175/191 images
+  191/191 images
+written to ext/out/sam3_gt_boxes

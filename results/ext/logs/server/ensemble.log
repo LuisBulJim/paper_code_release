@@ -1,0 +1,22 @@
+  saved: e1_ensemble_r0_f0_m.pkl
+  saved: e1_ensemble_r0_f1_m.pkl
+  saved: e1_ensemble_r0_f2_m.pkl
+  saved: e1_ensemble_r0_f3_m.pkl
+  saved: e1_ensemble_r0_f4_m.pkl
+  saved: e1_ensemble_r1_f0_m.pkl
+  saved: e1_ensemble_r1_f1_m.pkl
+  saved: e1_ensemble_r1_f2_m.pkl
+  saved: e1_ensemble_r1_f3_m.pkl
+  saved: e1_ensemble_r1_f4_m.pkl
+  saved: e1_ensemble_r2_f0_m.pkl
+  saved: e1_ensemble_r2_f1_m.pkl
+  saved: e1_ensemble_r2_f2_m.pkl
+  saved: e1_ensemble_r2_f3_m.pkl
+  saved: e1_ensemble_r2_f4_m.pkl
+e1_ensemble: 15 folds written (WBF IoU 0.5, skip 0.001, members ['x1_recipe', 'x2_multi', 'x3_seg', 'x4_seg_cp'])
+Traceback (most recent call last):
+  File "ext/ensemble_eval.py", line 96, in <module>
+    main()
+  File "ext/ensemble_eval.py", line 60, in main
+    members = dict(m.split("=", 1) for m in args.member)
+ValueError: dictionary update sequence element #2 has length 1; 2 is required

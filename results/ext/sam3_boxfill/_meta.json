@@ -1,0 +1,18 @@
+{
+  "checkpoint": "none (gt_boxes)",
+  "mode": "gt_boxes",
+  "prompts": null,
+  "tta": false,
+  "sam_model": "mock",
+  "mask_threshold": 0.5,
+  "n_images": 191,
+  "device": null,
+  "mean_ms_sam": 0.15418429027618694,
+  "environment": {
+    "python": "3.12.10",
+    "platform": "win32",
+    "torch": "2.8.0+cpu",
+    "cuda_available": false,
+    "ultralytics": "8.4.5"
+  }
+}

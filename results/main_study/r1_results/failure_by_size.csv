@@ -1,0 +1,15 @@
+strategy,bucket_type,bucket,n_gt,tp,fn,recall,fp
+standard,gt_size,small,179,24,155,0.1341,23
+standard,gt_size,medium,213,31,182,0.1455,50
+standard,gt_size,large,177,28,149,0.1582,39
+standard,gt_aspect,wide,77,14,63,0.1818,
+standard,gt_aspect,square,264,46,218,0.1742,
+standard,gt_aspect,tall,228,23,205,0.1009,
+standard,matched,inflated_area_gt_1.5x,83,3,,,
+tta,gt_size,small,179,2,177,0.0112,0
+tta,gt_size,medium,213,12,201,0.0563,13
+tta,gt_size,large,177,5,172,0.0282,3
+tta,gt_aspect,wide,77,5,72,0.0649,
+tta,gt_aspect,square,264,11,253,0.0417,
+tta,gt_aspect,tall,228,3,225,0.0132,
+tta,matched,inflated_area_gt_1.5x,19,0,,,

@@ -1,0 +1,71 @@
+{
+  "direct-n": {
+    "ap@0.1": 0.2229,
+    "ap@0.2": 0.1944,
+    "ap@0.3": 0.1727,
+    "ap@0.4": 0.1477,
+    "ap@0.5": 0.1198,
+    "ap@0.6": 0.0928,
+    "ap@0.75": 0.0402,
+    "maxrec@0.1": 0.876,
+    "maxrec@0.3": 0.806,
+    "maxrec@0.5": 0.687
+  },
+  "direct-m": {
+    "ap@0.1": 0.3016,
+    "ap@0.2": 0.2648,
+    "ap@0.3": 0.234,
+    "ap@0.4": 0.2033,
+    "ap@0.5": 0.1666,
+    "ap@0.6": 0.1324,
+    "ap@0.75": 0.059,
+    "maxrec@0.1": 0.856,
+    "maxrec@0.3": 0.784,
+    "maxrec@0.5": 0.667
+  },
+  "taxonomy_direct_m_conf025": {
+    "tp": 91.3,
+    "fp_localisation": 42.7,
+    "fp_duplicate": 5.7,
+    "fp_background": 96.0,
+    "fn_localisation": 35.0,
+    "fn_low_confidence": 262.3,
+    "fn_missed": 180.3
+  },
+  "region_direct_m_conf0.25": {
+    "region_iou": 0.133,
+    "region_precision": 0.396,
+    "region_recall": 0.169,
+    "mask_recall": 0.19
+  },
+  "region_direct_m_conf0.1": {
+    "region_iou": 0.21,
+    "region_precision": 0.354,
+    "region_recall": 0.345,
+    "mask_recall": 0.379
+  },
+  "direct-l": {
+    "ap@0.1": 0.31,
+    "ap@0.2": 0.275,
+    "ap@0.3": 0.2426,
+    "ap@0.4": 0.2083,
+    "ap@0.5": 0.1727,
+    "ap@0.6": 0.1341,
+    "ap@0.75": 0.0589,
+    "maxrec@0.1": 0.874,
+    "maxrec@0.3": 0.798,
+    "maxrec@0.5": 0.685
+  },
+  "sequential-m": {
+    "ap@0.1": 0.307,
+    "ap@0.2": 0.2682,
+    "ap@0.3": 0.238,
+    "ap@0.4": 0.206,
+    "ap@0.5": 0.1684,
+    "ap@0.6": 0.1304,
+    "ap@0.75": 0.0678,
+    "maxrec@0.1": 0.818,
+    "maxrec@0.3": 0.749,
+    "maxrec@0.5": 0.639
+  }
+}

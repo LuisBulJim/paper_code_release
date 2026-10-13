@@ -1,0 +1,8 @@
+# Provenance: computed 2026-07-03 from Corrosion_Benchmark/*_fold_*/results.csv (best val mAP50 per fold)
+group,n_folds,map50_mean,map50_std
+Large,5,0.3906,0.0385
+Large_opt,5,0.3986,0.0340
+Medium,5,0.3747,0.0387
+Medium_opt,5,0.3882,0.0400
+Nano,5,0.2796,0.0281
+Nano_opt,5,0.2605,0.0399

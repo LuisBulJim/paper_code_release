@@ -1,0 +1,2 @@
+tag,model,seed,fold,best_epoch,epochs_run,map50,map5095,precision,recall,f1,tp,fp,fn
+dryrun,yolo26n,0,0,1,1,0.12871287128712872,0.11584158415841585,0.0,0.0,0.0,0,0,4

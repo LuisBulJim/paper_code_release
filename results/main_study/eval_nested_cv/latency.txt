@@ -1,0 +1,7 @@
+33 images | device: NVIDIA GeForce RTX 4090 | torch 2.8.0+cu128
+
+strategy     mean_ms   std_ms   p95_ms     FPS   peak_MB  weights_MB
+single_m         7.9      0.1      8.1   125.8       192         110
+tta6_m          49.1      1.1     50.6    20.4       206         110
+ens_nm          14.8      0.3     15.3    67.5       203         120
+ens_ml          18.5      0.5     19.7    54.0       300         206

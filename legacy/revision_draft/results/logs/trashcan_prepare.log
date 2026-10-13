@@ -1,0 +1,32 @@
+2026-09-28 14:32:35 | WARNING | --limit 40: partial dataset for pipeline checks, not for reporting
+2026-09-28 14:32:46 | INFO |   train: 40/40 images
+2026-09-28 14:32:58 | INFO |   val: 40/40 images
+2026-09-28 14:32:58 | INFO | manifest written: data\trashcan_manifest_dryrun.json | {"lists": {"train_fit": {"n_images": 36, "n_boxes": 9, "images_with_Metal": 9, "images_with_Bio": 0, "boxes_Metal": 9, "boxes_Bio": 0, "background_images": 27}, "train_sel": {"n_images": 4, "n_boxes": 1, "images_with_Metal": 1, "images_with_Bio": 0, "boxes_Metal": 1, "boxes_Bio": 0, "background_images": 3}, "val": {"n_images": 40, "n_boxes": 8, "images_with_Metal": 0, "images_with_Bio": 8, "boxes_Metal": 0, "boxes_Bio": 8, "background_images": 32}}, "val_metal_images": 0}
+2026-09-28 14:34:14 | WARNING | --limit 100: partial dataset for pipeline checks, not for reporting
+2026-09-28 14:34:36 | INFO |   train: 100/100 images
+2026-09-28 14:35:06 | INFO |   val: 100/100 images
+2026-09-28 14:35:06 | INFO | manifest written: data\trashcan_manifest_dryrun.json | {"lists": {"train_fit": {"n_images": 90, "n_boxes": 26, "images_with_Metal": 16, "images_with_Bio": 10, "boxes_Metal": 16, "boxes_Bio": 10, "background_images": 64}, "train_sel": {"n_images": 10, "n_boxes": 2, "images_with_Metal": 2, "images_with_Bio": 0, "boxes_Metal": 2, "boxes_Bio": 0, "background_images": 8}, "val": {"n_images": 100, "n_boxes": 27, "images_with_Metal": 11, "images_with_Bio": 16, "boxes_Metal": 11, "boxes_Bio": 16, "background_images": 73}}, "val_metal_images": 11}
+2026-09-28 14:51:55 | INFO |   train: 1000/6008 images
+2026-09-28 14:56:10 | INFO |   train: 2000/6008 images
+2026-09-28 15:00:31 | INFO |   train: 3000/6008 images
+2026-09-28 15:05:02 | INFO |   train: 4000/6008 images
+2026-09-28 15:09:38 | INFO |   train: 5000/6008 images
+2026-09-28 15:13:53 | INFO |   train: 6000/6008 images
+2026-09-28 15:13:55 | INFO |   train: 6008/6008 images
+2026-09-28 15:17:52 | INFO |   val: 1000/1204 images
+2026-09-28 15:19:00 | INFO |   val: 1204/1204 images
+2026-09-28 15:19:08 | INFO | manifest written: data\trashcan_manifest.json | {"lists": {"train_fit": {"n_images": 5407, "n_boxes": 2785, "images_with_Metal": 791, "images_with_Bio": 1372, "boxes_Metal": 810, "boxes_Bio": 1975, "background_images": 3352}, "train_sel": {"n_images": 601, "n_boxes": 271, "images_with_Metal": 88, "images_with_Bio": 133, "boxes_Metal": 91, "boxes_Bio": 180, "background_images": 392}, "val": {"n_images": 1204, "n_boxes": 875, "images_with_Metal": 214, "images_with_Bio": 369, "boxes_Metal": 225, "boxes_Bio": 650, "background_images": 679}}, "val_metal_images": 214}
+2026-09-28 19:04:06 | INFO |   train: 1000/6008 images
+2026-09-28 19:04:07 | INFO |   train: 2000/6008 images
+2026-09-28 19:04:07 | INFO |   train: 3000/6008 images
+2026-09-28 19:04:07 | INFO |   train: 4000/6008 images
+2026-09-28 19:04:07 | INFO |   train: 5000/6008 images
+2026-09-28 19:04:08 | INFO |   train: 6000/6008 images
+2026-09-28 19:04:08 | INFO |   train: 6008/6008 images
+2026-09-28 19:04:08 | INFO |   val: 1000/1204 images
+2026-09-28 19:04:08 | INFO |   val: 1204/1204 images
+2026-09-28 19:04:12 | INFO | manifest written: data\trashcan_manifest.json | {"lists": {"train_fit": {"n_images": 5407, "n_boxes": 2785, "images_with_Metal": 791, "images_with_Bio": 1372, "boxes_Metal": 810, "boxes_Bio": 1975, "background_images": 3352}, "train_sel": {"n_images": 601, "n_boxes": 271, "images_with_Metal": 88, "images_with_Bio": 133, "boxes_Metal": 91, "boxes_Bio": 180, "background_images": 392}, "val": {"n_images": 1204, "n_boxes": 875, "images_with_Metal": 214, "images_with_Bio": 369, "boxes_Metal": 225, "boxes_Bio": 650, "background_images": 679}}, "val_metal_images": 214}
+2026-09-28 19:04:26 | WARNING | --limit 100: partial dataset for pipeline checks, not for reporting
+2026-09-28 19:04:26 | INFO |   train: 100/100 images
+2026-09-28 19:04:27 | INFO |   val: 100/100 images
+2026-09-28 19:04:27 | INFO | manifest written: data\trashcan_manifest_dryrun.json | {"lists": {"train_fit": {"n_images": 90, "n_boxes": 26, "images_with_Metal": 16, "images_with_Bio": 10, "boxes_Metal": 16, "boxes_Bio": 10, "background_images": 64}, "train_sel": {"n_images": 10, "n_boxes": 2, "images_with_Metal": 2, "images_with_Bio": 0, "boxes_Metal": 2, "boxes_Bio": 0, "background_images": 8}, "val": {"n_images": 100, "n_boxes": 27, "images_with_Metal": 11, "images_with_Bio": 16, "boxes_Metal": 11, "boxes_Bio": 16, "background_images": 73}}, "val_metal_images": 11}

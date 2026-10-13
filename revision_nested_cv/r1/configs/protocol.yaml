@@ -1,0 +1,73 @@
+# Protocol of r1/: re-evaluation of the repeated nested CV of revision_nested_cv plus the experiments it lacked
+# (TrashCan, SAM 3). Single source of truth for every r1 script. Relative paths are relative to revision_nested_cv/.
+# Environment overrides: NESTED_DATASET -> dataset.root, NESTED_OUT -> nested.out,
+#                        TRASHCAN_ROOT -> trashcan.output_root, TRASHCAN_MANIFEST -> trashcan.manifest_file
+
+dataset:
+  name: liaci_corrosion_261
+  root: "../dataset_yolo"                 # the 261 images (images/{train,test}, labels/{train,test}) used by nested_cv.py
+  manifest_file: "r1/data/nested_manifest.json"
+
+nested:
+  out: "out"                              # --out of nested_cv.py: splits.json, preds/, runs/
+  grouped_suffix: ".pkl"                  # final run (2-oct), outer folds grouped by video
+  ungrouped_suffix: ".pkl.bak"            # earlier run (28-sep), outer folds not grouped (ablation)
+  groups_csv: ""                          # groups.csv given to nested_cv.py; empty -> blocks reconstructed from splits.json
+  tags: [direct, sequential]
+  sizes: [n, m, l]
+  repeats: 3
+  folds: 5
+  wbf_tag: direct                         # model ensembles are formed from the direct-transfer models
+  sam3_repeat: 0                          # repeat whose fold models detect the SAM 3 images
+  sam3_size: m
+
+evaluation:
+  conf_dump: 0.001       # confidence floor of the stored predictions (full PR curve)
+  conf_fixed: 0.25       # operating point for Precision / Recall / F1 (fixed a priori)
+  iou_match: 0.5
+  bootstrap_iters: 1000
+  bootstrap_seed: 0
+
+inference:
+  imgsz: 640
+  tta:
+    scales: [0.9, 1.0, 1.1]
+    flip: true
+    weight_native: 1.0     # views at scale 1.0 (flipped or not)
+    weight_rescaled: 0.8   # views at any other scale
+    wbf_iou: 0.5
+    wbf_skip: 0.001
+  wbf_models:
+    iou: 0.5
+    skip: 0.001
+
+# Versions of the environment that trained the 90 nested-CV models (yoloenv on the RTX 4090 server).
+# YOLO26 decoding changes across Ultralytics releases: inference with these checkpoints must use 8.4.5.
+environment:
+  ultralytics: "8.4.5"
+  torch: "2.8.0"
+
+# Cross-domain verification (TrashCan 1.0, material version). Classes kept: trash_metal -> Metal (0),
+# plant + animal_* -> Bio (1); everything else is dropped. The official train split is divided once
+# (selection_seed) into train_fit / train_sel so that best.pt is never selected on the reported val split.
+trashcan:
+  source_root: "../dataset"      # only needed to rebuild r1/data/trashcan_v2, which is shipped prepared
+  source_format: "yolo"
+  output_root: "r1/data/trashcan_v2"
+  manifest_file: "r1/data/trashcan_manifest.json"
+  class_map:
+    Metal: [trash_metal]
+    Bio: [plant, animal_fish, animal_starfish, animal_shells, animal_crab, animal_eel, animal_etc]
+  selection_fraction: 0.1
+  selection_seed: 0
+  model: yolo26m
+  seeds: [0, 1, 2]
+
+# SAM 3 box-prompted segmentation on the official LIACI test split (191 images, shipped in r1/data/sam3_eval).
+# 27 of them belong to the 261 images of the nested CV (the 23 old test images + 4 old training negatives): each is detected by the fold model that had it in its
+# outer test fold (sam3_eval --checkpoint-map), so the detector never saw the image it prompts SAM 3 with.
+sam3:
+  output_root: "r1/data/sam3_eval"
+  manifest_file: "r1/data/sam3_manifest.json"
+  model_id: "facebook/sam3"
+  mask_threshold: 0.5

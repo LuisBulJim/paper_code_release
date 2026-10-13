@@ -1,0 +1,13 @@
+single     fp32: 8.0 ms (p95 8.2), 125.1 img/s, 1 passes, VRAM 201 MB
+single_tta fp32: 75.8 ms (p95 113.4), 13.2 img/s, 6 passes, VRAM 216 MB
+e1         fp32: 45.8 ms (p95 60.5), 21.9 img/s, 4 passes, VRAM 828 MB
+e1_tta     fp32: 296.8 ms (p95 379.0), 3.4 img/s, 24 passes, VRAM 946 MB
+c4         fp32: 45.8 ms (p95 58.5), 21.8 img/s, 4 passes, VRAM 971 MB
+c4_tta     fp32: 297.9 ms (p95 389.9), 3.4 img/s, 24 passes, VRAM 991 MB
+single     fp16: 7.8 ms (p95 8.0), 128.5 img/s, 1 passes, VRAM 837 MB
+single_tta fp16: 78.0 ms (p95 116.8), 12.8 img/s, 6 passes, VRAM 844 MB
+e1         fp16: 46.5 ms (p95 61.4), 21.5 img/s, 4 passes, VRAM 648 MB
+e1_tta     fp16: 303.4 ms (p95 399.5), 3.3 img/s, 24 passes, VRAM 763 MB
+c4         fp16: 47.4 ms (p95 60.6), 21.1 img/s, 4 passes, VRAM 571 MB
+c4_tta     fp16: 306.7 ms (p95 399.7), 3.3 img/s, 24 passes, VRAM 577 MB
+wrote ext/results/latency_ext.csv

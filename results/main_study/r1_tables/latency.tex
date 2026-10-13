@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Inference cost measured on NVIDIA GeForce RTX 4090: batch 1, 640 px, 20 warm-up iterations, 165 timed inferences per row, CUDA synchronised; latency includes pre/post-processing and, for TTA and WBF, the box fusion. Peak VRAM is the memory allocated by PyTorch (CUDA context excluded). At batch 1 the runtime is dominated by pre/post-processing, so FP16 brings no speed-up for these model sizes.}
+\label{tab:latency}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrr}
+\toprule
+Strategy & Precision & Latency (ms) & p95 (ms) & img/s & Peak VRAM (MB) & Passes \\
+\midrule
+Standard & FP16 & 7.9 & 7.9 & 127.2 & 116 & 1 \\
+TTA & FP16 & 57.4 & 67.3 & 17.4 & 126 & 6 \\
+WBF ensemble & FP16 & 31.2 & 39.4 & 32.0 & 225 & 3 \\
+Standard & FP32 & 7.5 & 7.9 & 132.7 & 298 & 1 \\
+TTA & FP32 & 55.6 & 65.7 & 18.0 & 315 & 6 \\
+WBF ensemble & FP32 & 30.3 & 38.4 & 33.1 & 503 & 3 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

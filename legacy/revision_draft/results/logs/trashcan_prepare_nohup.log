@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "revision\trashcan_prepare.py", line 179, in <module>
+    if value:
+^^^^^^
+  File "revision\trashcan_prepare.py", line 175, in main
+    ap.add_argument("--limit", type=int, default=None, help="first N images per split (pipeline checks only)")
+    ^^^^^^^^^^^^^^^^^
+  File "revision\trashcan_prepare.py", line 114, in build
+    lbl_dir.mkdir(parents=True, exist_ok=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python>\Lib\shutil.py", line 460, in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process

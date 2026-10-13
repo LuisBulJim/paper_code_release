@@ -1,0 +1,21 @@
+2026-09-28 14:05:13 | INFO | tag=dryrun models=['yolo26n'] tta=tta_s3_flip wbf_iou=0.5 conf=0.25 device=cpu
+2026-09-28 14:05:29 | INFO |   6/6 images
+2026-09-28 14:07:58 | INFO | yolo26n seed0 fold0: standard mAP50 0.1287 | tta 0.0345 | delta F1 +0.0000 [+0.000, +0.000]
+2026-09-28 14:07:58 | INFO | written runs\dryrun\results\inference_test.csv (2 rows), summary and deltas
+2026-09-28 19:15:37 | INFO | tag=dryrun models=['yolo26n'] tta=tta_s3_flip iou=0.5 | wbf=None weights=None iou=0.5 | conf=0.25 device=cpu
+2026-09-28 19:15:46 | INFO |   6/6 images
+2026-09-28 19:16:45 | INFO | yolo26n seed0 fold0: standard mAP50 0.1287 | tta 0.0345 | delta F1 +0.0000 [+0.000, +0.000]
+2026-09-28 19:16:45 | INFO | written runs\dryrun\results\inference_test.csv (2 rows), summary and deltas
+2026-09-28 19:27:50 | INFO | tag=localcheck models=['yolo26n', 'yolo26m'] tta=tta_flip_only iou=0.5 | wbf=['yolo26n', 'yolo26m'] weights=None iou=0.4 | conf=0.25 device=cpu
+2026-09-28 19:27:57 | INFO |   33/33 images
+2026-09-28 19:32:13 | INFO | yolo26n seed0 fold0: standard mAP50 0.0155 | tta 0.0212 | delta F1 +0.0000 [+0.000, +0.000]
+2026-09-28 19:32:17 | INFO |   33/33 images
+2026-09-28 19:36:32 | INFO | yolo26m seed0 fold0: standard mAP50 0.0155 | tta 0.0212 | delta F1 +0.0000 [+0.000, +0.000]
+2026-09-28 19:36:36 | INFO |   33/33 images
+2026-09-28 19:43:58 | INFO | wbf yolo26n+yolo26m seed0 fold0: mAP50 0.0278 F1 0.0000
+2026-09-28 19:43:58 | INFO | written runs\localcheck\results\inference_test_localcheck.csv (5 rows), summary and deltas
+2026-09-28 19:44:00 | INFO | tag=localcheck models=['yolo26n', 'yolo26m'] tta=tta_flip_only iou=0.5 | wbf=['yolo26n', 'yolo26m'] weights=None iou=0.4 | conf=0.25 device=cpu
+2026-09-28 19:47:22 | INFO | yolo26n seed0 fold0: standard mAP50 0.0155 | tta 0.0212 | delta F1 +0.0000 [+0.000, +0.000]
+2026-09-28 19:50:47 | INFO | yolo26m seed0 fold0: standard mAP50 0.0155 | tta 0.0212 | delta F1 +0.0000 [+0.000, +0.000]
+2026-09-28 19:56:47 | INFO | wbf yolo26n+yolo26m seed0 fold0: mAP50 0.0278 F1 0.0000
+2026-09-28 19:56:47 | INFO | written runs\localcheck\results\inference_test_localcheck.csv (5 rows), summary and deltas

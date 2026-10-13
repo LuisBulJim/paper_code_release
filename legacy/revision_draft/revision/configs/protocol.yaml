@@ -1,0 +1,74 @@
+# Experimental protocol for the R1 revision. Single source of truth: every script reads this file.
+# Paths are relative to the repository root unless absolute. Environment overrides:
+#   LIACI_ROOT   -> dataset.source_root
+#   DATASET_ROOT -> dataset.output_root
+
+dataset:
+  name: liaci_corrosion_v2
+  source_root: "<LIACI_ROOT>"    # raw LIACI release (or set the LIACI_ROOT environment variable)
+  # Extra copies of the raw release, tried in order when a file of source_root is missing or unreadable
+  # (the local copy had 15 zero-filled masks). Every fallback use is logged and listed in the manifest.
+  fallback_roots:
+    - "<SUBMITTED_DATASET_ROOT>"
+  output_root: "data/dataset_yolo_v2"
+  target_size: [640, 640]
+  # Total negatives = round(negatives_ratio * all positives); the 12 fixed test negatives are subtracted,
+  # the rest is sampled with negatives_seed from LIACI images outside the official test split.
+  negatives_ratio: 0.25
+  negatives_seed: 0
+  # Frozen 33-image held-out test set, identical to the submitted version (21 positives + 12 negatives).
+  test_images_file: "data/test_images.json"
+  manifest_file: "data/manifest_v2.json"
+
+splits:
+  n_folds: 5
+  seeds: [0, 1, 2]
+  folds_file: "data/folds_v2.json"
+
+evaluation:
+  conf_dump: 0.001       # confidence floor when dumping predictions (full PR curve)
+  conf_fixed: 0.25       # operating point for Precision / Recall / F1 (fixed a priori)
+  iou_match: 0.5
+  bootstrap_iters: 1000
+  bootstrap_seed: 0
+
+inference:
+  imgsz: 640
+  tta:
+    scales: [0.9, 1.0, 1.1]
+    flip: true
+    weight_native: 1.0     # views at scale 1.0 (flipped or not)
+    weight_rescaled: 0.8   # views at any other scale
+    wbf_iou: 0.5
+    wbf_skip: 0.001
+  wbf_models:
+    iou: 0.5
+    skip: 0.001
+
+environment:
+  ultralytics: "8.4.164"
+  torch: "2.8.0"
+
+# Cross-domain verification (TrashCan 1.0, material version). Classes kept: trash_metal -> Metal (0),
+# plant + animal_* -> Bio (1); everything else is dropped. The official train split is divided once
+# (selection_seed) into train_fit / train_sel so that best.pt is never selected on the reported val split.
+trashcan:
+  source_root: "<TRASHCAN_ROOT>"   # TrashCan 1.0 material_version (or pass TRASHCAN_SOURCE to scripts/run_trashcan.sh)
+  source_format: "yolo"          # "coco" for the raw material_version release, "yolo" for an Ultralytics conversion
+  output_root: "data/trashcan_v2"
+  manifest_file: "data/trashcan_manifest.json"
+  class_map:
+    Metal: [trash_metal]
+    Bio: [plant, animal_fish, animal_starfish, animal_shells, animal_crab, animal_eel, animal_etc]
+  selection_fraction: 0.1
+  selection_seed: 0
+  model: yolo26m
+  seeds: [0, 1, 2]
+
+# SAM 3 box-prompted segmentation: evaluation set = official LIACI test split (191 images) minus any image
+# of the training pool (must be 0 with dataset v2), resized like the detector input; masks binarised.
+sam3:
+  output_root: "data/sam3_eval"
+  manifest_file: "data/sam3_manifest.json"
+  model_id: "facebook/sam3"
+  mask_threshold: 0.5

@@ -1,0 +1,15 @@
+# Pinned stack for the R1 revision (server + local CPU dry runs). torch/torchvision are installed first by
+# scripts/setup_server.sh from the PyTorch index (cu128 on the RTX 4090); their versions are pinned there.
+ultralytics==8.4.164
+pycocotools>=2.0.8
+ensemble-boxes==1.0.9
+scikit-learn>=1.5
+scipy>=1.13
+numpy>=1.26,<3
+pandas>=2.2
+pyyaml>=6.0
+opencv-python>=4.10
+Pillow>=10.4
+matplotlib>=3.9
+tqdm>=4.66
+pytest>=8.3

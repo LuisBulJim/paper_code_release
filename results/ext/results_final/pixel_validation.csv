@@ -1,0 +1,12 @@
+model,output,conf_vt,val_iou_mean
+x0_baseline,boxes,0.1,0.2168
+x1_recipe,boxes,0.1,0.1991
+x2_multi,boxes,0.01,0.1765
+x3_seg,boxes,0.1,0.2023
+x4_seg_cp,boxes,0.1,0.2106
+x6_multi_seg,boxes,0.01,0.1694
+e1_ensemble,boxes,0.05,0.1898
+c4_baselines,boxes,0.05,0.2267
+x3_seg,masks,0.1,0.2645
+x4_seg_cp,masks,0.05,0.2606
+x6_multi_seg,masks,0.01,0.1988

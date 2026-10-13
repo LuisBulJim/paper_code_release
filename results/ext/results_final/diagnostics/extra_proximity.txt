@@ -1,0 +1,8 @@
+test images x repeats: 783; LIACI images with embeddings: 1893
+reference, consecutive frames (index +1): median cosine 0.785
+nearest pool training image  p10/p50/p90: 0.767 / 0.813 / 0.896
+nearest extra image          p10/p50/p90: 0.781 / 0.825 / 0.875
+extra closer than pool: 60.8%; by more than 0.02: 40.7%
+nearest similarity > 0.9: pool 8.8% | extra 4.6% | consecutive frames 14.0%
+nearest similarity > 0.95: pool 0.0% | extra 0.3% | consecutive frames 2.4%
+index gap test -> nearest extra image: min 16, p10 16, median 35

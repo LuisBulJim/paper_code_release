@@ -1,0 +1,47 @@
+2026-10-03 13:50:30 | INFO | [grouped] 90 fold models, 261 images, 569 boxes
+2026-10-03 13:50:32 | INFO |   validation sweep r0 f0: 5 images
+2026-10-03 13:50:40 | INFO |   validation sweep r0 f1: 17 images
+2026-10-03 13:50:56 | INFO |   validation sweep r0 f2: 37 images
+2026-10-03 13:51:13 | INFO |   validation sweep r0 f3: 25 images
+2026-10-03 13:52:16 | INFO |   validation sweep r0 f4: 45 images
+2026-10-03 13:52:31 | INFO |   validation sweep r1 f0: 24 images
+2026-10-03 13:52:48 | INFO |   validation sweep r1 f1: 24 images
+2026-10-03 13:53:29 | INFO |   validation sweep r1 f2: 15 images
+2026-10-03 13:53:49 | INFO |   validation sweep r1 f3: 23 images
+2026-10-03 13:54:38 | INFO |   validation sweep r1 f4: 39 images
+2026-10-03 13:54:56 | INFO |   validation sweep r2 f0: 19 images
+2026-10-03 13:55:07 | INFO |   validation sweep r2 f1: 27 images
+2026-10-03 13:55:23 | INFO |   validation sweep r2 f2: 6 images
+2026-10-03 13:55:41 | INFO |   validation sweep r2 f3: 28 images
+2026-10-03 13:55:47 | INFO |   validation sweep r2 f4: 13 images
+2026-10-03 13:55:48 | INFO | [grouped] choice: tta={'config': 'tta_s3_flip_equal', 'wbf_iou': 0.6, 'val_map50_mean_over_models': 0.2538, 'standard_val_map50_mean_over_models': 0.2385, 'models': ['yolo26l', 'yolo26m', 'yolo26n']} wbf={'models': ['yolo26n', 'yolo26m', 'yolo26l'], 'weights': None, 'iou': 0.5, 'val_map50_mean': 0.2737, 'config': 'yolo26n+yolo26m+yolo26l_equal'}
+2026-10-03 13:58:34 | INFO | [grouped] bootstrap ('direct', 'yolo26n', 'standard') done
+2026-10-03 13:58:54 | INFO | [grouped] bootstrap ('direct', 'yolo26n', 'tta') done
+2026-10-03 13:59:05 | INFO | [grouped] bootstrap ('direct', 'yolo26m', 'standard') done
+2026-10-03 13:59:20 | INFO | [grouped] bootstrap ('direct', 'yolo26m', 'tta') done
+2026-10-03 13:59:31 | INFO | [grouped] bootstrap ('direct', 'yolo26l', 'standard') done
+2026-10-03 13:59:47 | INFO | [grouped] bootstrap ('direct', 'yolo26l', 'tta') done
+2026-10-03 13:59:58 | INFO | [grouped] bootstrap ('sequential', 'yolo26n', 'standard') done
+2026-10-03 14:00:11 | INFO | [grouped] bootstrap ('sequential', 'yolo26n', 'tta') done
+2026-10-03 14:00:26 | INFO | [grouped] bootstrap ('sequential', 'yolo26m', 'standard') done
+2026-10-03 14:00:42 | INFO | [grouped] bootstrap ('sequential', 'yolo26m', 'tta') done
+2026-10-03 14:00:52 | INFO | [grouped] bootstrap ('sequential', 'yolo26l', 'standard') done
+2026-10-03 14:01:04 | INFO | [grouped] bootstrap ('sequential', 'yolo26l', 'tta') done
+2026-10-03 14:01:20 | INFO | [grouped] bootstrap ('direct', 'yolo26n+yolo26m+yolo26l', 'wbf') done
+2026-10-03 14:01:33 | INFO | [ungrouped] 90 fold models, 261 images, 569 boxes
+2026-10-03 14:01:52 | INFO |   validation sweep r0 f0: 32 images
+2026-10-03 14:02:06 | INFO |   validation sweep r0 f1: 32 images
+2026-10-03 14:02:30 | INFO |   validation sweep r0 f2: 32 images
+2026-10-03 14:02:48 | INFO |   validation sweep r0 f3: 32 images
+2026-10-03 14:03:08 | INFO |   validation sweep r0 f4: 32 images
+2026-10-03 14:03:31 | INFO |   validation sweep r1 f0: 32 images
+2026-10-03 14:03:44 | INFO |   validation sweep r1 f1: 32 images
+2026-10-03 14:03:58 | INFO |   validation sweep r1 f2: 32 images
+2026-10-03 14:04:20 | INFO |   validation sweep r1 f3: 32 images
+2026-10-03 14:04:37 | INFO |   validation sweep r1 f4: 32 images
+2026-10-03 14:04:59 | INFO |   validation sweep r2 f0: 32 images
+2026-10-03 14:05:20 | INFO |   validation sweep r2 f1: 32 images
+2026-10-03 14:05:37 | INFO |   validation sweep r2 f2: 32 images
+2026-10-03 14:05:56 | INFO |   validation sweep r2 f3: 32 images
+2026-10-03 14:06:13 | INFO |   validation sweep r2 f4: 32 images
+2026-10-03 14:06:14 | INFO | [ungrouped] choice: tta={'config': 'tta_s3_flip', 'wbf_iou': 0.4, 'val_map50_mean_over_models': 0.355, 'standard_val_map50_mean_over_models': 0.3155, 'models': ['yolo26l', 'yolo26m', 'yolo26n']} wbf={'models': ['yolo26n', 'yolo26m', 'yolo26l'], 'weights': None, 'iou': 0.4, 'val_map50_mean': 0.3756, 'config': 'yolo26n+yolo26m+yolo26l_equal'}

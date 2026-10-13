@@ -1,0 +1,1 @@
+[sam2] ext/sam3_oracle.py --mode text --out ext/out/sam3_text

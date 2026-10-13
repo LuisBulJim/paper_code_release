@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\caption{Training hyperparameters shared by every run (Direct Transfer, Sequential Transfer fine-tuning and TrashCan), as passed to Ultralytics.}
+\label{tab:hparams}
+\begin{tabular}{ll}
+\toprule
+Hyperparameter & Value \\
+\midrule
+epochs & 50 \\
+patience & 100 \\
+imgsz & 640 \\
+batch & 16 \\
+optimizer & SGD \\
+lr0 & 0.010 \\
+lrf & 0.100 \\
+momentum & 0.937 \\
+weight\_decay & 0.0005 \\
+warmup\_epochs & 3 \\
+cos\_lr & False \\
+mosaic & 1.000 \\
+close\_mosaic & 10 \\
+fliplr & 0.500 \\
+flipud & 0.000 \\
+hsv\_h & 0.015 \\
+hsv\_s & 0.700 \\
+hsv\_v & 0.400 \\
+translate & 0.100 \\
+scale & 0.500 \\
+degrees & 0.000 \\
+freeze & None \\
+amp & True \\
+deterministic & True \\
+workers & 4 \\
+pretrained & True \\
+\bottomrule
+\end{tabular}
+\end{table}

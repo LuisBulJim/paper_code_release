@@ -1,0 +1,1 @@
+2026-10-03 13:28:18 | INFO | check OK: 3 repeats x 5 folds, 90 grouped + 90 ungrouped fold records, 28 video groups (reconstructed from splits.json (contiguous blocks with identical test folds)), checkpoints YOLO26, own workspace

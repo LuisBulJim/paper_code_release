@@ -1,0 +1,31 @@
+2026-10-03 17:28:37 | INFO | [ungrouped] 90 fold models, 261 images, 569 boxes
+2026-10-03 17:28:55 | INFO |   validation sweep r0 f0: 32 images
+2026-10-03 17:29:08 | INFO |   validation sweep r0 f1: 32 images
+2026-10-03 17:29:34 | INFO |   validation sweep r0 f2: 32 images
+2026-10-03 17:29:52 | INFO |   validation sweep r0 f3: 32 images
+2026-10-03 17:30:12 | INFO |   validation sweep r0 f4: 32 images
+2026-10-03 17:30:34 | INFO |   validation sweep r1 f0: 32 images
+2026-10-03 17:30:48 | INFO |   validation sweep r1 f1: 32 images
+2026-10-03 17:31:02 | INFO |   validation sweep r1 f2: 32 images
+2026-10-03 17:31:26 | INFO |   validation sweep r1 f3: 32 images
+2026-10-03 17:31:43 | INFO |   validation sweep r1 f4: 32 images
+2026-10-03 17:32:07 | INFO |   validation sweep r2 f0: 32 images
+2026-10-03 17:32:26 | INFO |   validation sweep r2 f1: 32 images
+2026-10-03 17:32:42 | INFO |   validation sweep r2 f2: 32 images
+2026-10-03 17:33:03 | INFO |   validation sweep r2 f3: 32 images
+2026-10-03 17:33:19 | INFO |   validation sweep r2 f4: 32 images
+2026-10-03 17:33:21 | INFO | [ungrouped] choice: tta={'config': 'tta_s3_flip', 'wbf_iou': 0.4, 'val_map50_mean_over_models': 0.355, 'standard_val_map50_mean_over_models': 0.3155, 'models': ['yolo26l', 'yolo26m', 'yolo26n']} wbf={'models': ['yolo26n', 'yolo26m', 'yolo26l'], 'weights': None, 'iou': 0.4, 'val_map50_mean': 0.3756, 'config': 'yolo26n+yolo26m+yolo26l_equal'}
+2026-10-03 17:36:16 | INFO | [ungrouped] bootstrap ('direct', 'yolo26n', 'standard') done
+2026-10-03 17:36:29 | INFO | [ungrouped] bootstrap ('direct', 'yolo26n', 'tta') done
+2026-10-03 17:36:37 | INFO | [ungrouped] bootstrap ('direct', 'yolo26m', 'standard') done
+2026-10-03 17:36:46 | INFO | [ungrouped] bootstrap ('direct', 'yolo26m', 'tta') done
+2026-10-03 17:36:58 | INFO | [ungrouped] bootstrap ('direct', 'yolo26l', 'standard') done
+2026-10-03 17:37:07 | INFO | [ungrouped] bootstrap ('direct', 'yolo26l', 'tta') done
+2026-10-03 17:37:17 | INFO | [ungrouped] bootstrap ('sequential', 'yolo26n', 'standard') done
+2026-10-03 17:37:25 | INFO | [ungrouped] bootstrap ('sequential', 'yolo26n', 'tta') done
+2026-10-03 17:37:33 | INFO | [ungrouped] bootstrap ('sequential', 'yolo26m', 'standard') done
+2026-10-03 17:37:41 | INFO | [ungrouped] bootstrap ('sequential', 'yolo26m', 'tta') done
+2026-10-03 17:37:52 | INFO | [ungrouped] bootstrap ('sequential', 'yolo26l', 'standard') done
+2026-10-03 17:37:59 | INFO | [ungrouped] bootstrap ('sequential', 'yolo26l', 'tta') done
+2026-10-03 17:38:09 | INFO | [ungrouped] bootstrap ('direct', 'yolo26n+yolo26m+yolo26l', 'wbf') done
+2026-10-03 17:38:10 | INFO | written r1\results\nested_summary.csv, nested_deltas.csv and inference_choice.json (groups: reconstructed from splits.json (contiguous blocks with identical test folds))

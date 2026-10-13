@@ -1,0 +1,2 @@
+2026-09-28 14:08:03 | INFO | LIACI test split: 191 images | in training pool (excluded): 0 | evaluation set: 191
+2026-09-28 14:09:54 | INFO | manifest written: data\sam3_manifest.json | 21 positive, 170 negative, 23 also in the frozen detection test
