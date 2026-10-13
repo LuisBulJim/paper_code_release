@@ -104,20 +104,18 @@
     <div class="wrap">
       <h2>Abstract</h2>
       <div class="abstract">
-        Automated detection of corrosion on submerged hulls is hampered by poor optics and by the scarcity of annotated
-        underwater images. We evaluate YOLO26 detectors on the public LIACI inspection dataset under a repeated nested
-        cross-validation whose outer folds are grouped by runs of neighbouring frames that approximate the source videos.
-        Grouping is decisive: for YOLO26-Medium, out-of-fold mAP@50 falls from 0.299 with ungrouped folds to 0.167 with
-        grouped folds, and a paired analysis traces most of the drop to test frames whose neighbours were in training.
-        LIACI's own official split has the same proximity (92% of its test frames have an adjacent frame in training),
-        which concerns any benchmark on this dataset. Under the grouped protocol, Medium and Large tie, direct and
-        sequential transfer tie for Medium, and test-time augmentation adds 0.02 to 0.05 mAP@50 in every configuration.
-        Changes targeted at measured failure modes (nine-class training with unused LIACI images, a segmentation head)
-        add a few points each; fusing four models adds 0.07 to 0.09, whether the members are the variants or plain
-        baselines. The recipe selected on validation, a four-model ensemble with test-time augmentation, reaches mAP@50
-        0.262 at 3.4 images/s on an RTX 4090. Segmentation masks raise pixel IoU over boxes (0.188 to 0.229 vs. 0.158),
-        and SAM 3 refines well-localised regions (IoU 0.650 with ground-truth boxes) but does not find corrosion on its
-        own (0.065 with text prompts). Code, splits and per-fold outputs are released.
+        Corrosion detection on submerged hulls is difficult due to poor optical conditions and a lack of annotated
+        underwater images. We evaluated YOLO26 detectors on the public LIACI dataset using repeated nested
+        cross-validation. The outer folds are grouped into runs of neighbouring frames that approximate the source
+        videos. For YOLO26-Medium, the out-of-fold mAP@50 drops from 0.299 with ungrouped folds to 0.167 with grouped
+        folds. A paired analysis attributes most of this drop to test frames whose neighbours were in the training
+        set. The official LIACI split has the same proximity, with 92% of its test frames having an adjacent frame in
+        the training set, which may affect the benchmarks on this dataset. Using the grouped protocol, the Medium and
+        Large models tied; direct and sequential transfer tied for the Medium model; and test-time augmentation added
+        between 0.02 and 0.05 mAP@50 across all configurations. Changes targeting measured failure modes each add a
+        few points. Fusing four models adds between 0.07 and 0.09, regardless of whether the components are variants
+        or unchanged baselines. The recipe selected on validation – an ensemble of four models with test-time
+        augmentation – achieves an mAP@50 of 0.262 at 3.4 images per second.
       </div>
       <div class="notice">
         <strong>Revised study.</strong> This page and the repository describe the revised manuscript. The first submission
