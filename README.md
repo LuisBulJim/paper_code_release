@@ -16,15 +16,16 @@ Project page: <https://luisbuljim.github.io/paper_code_release/>
 
 * **Data.** The 261 LIACI images with corrosion annotations converted to boxes (`dataset_yolo/`, not
   redistributed; `revision_nested_cv/r1/data/nested_manifest.json` holds the sha256 of every image and label).
-* **Protocol.** Repeated nested cross-validation, 3 repeats x 5 outer folds, with the outer folds **grouped by
-  video**: LIACI does not state which video each frame comes from, so the groups are runs of at most 15 pool
-  images in frame-index order, cut where the index gap exceeds 30 (**28 groups**,
-  `results/groups/groups.csv`). Inner validation is the only data used for early stopping, checkpoint
-  selection, the TTA / WBF configuration and the operating threshold. YOLO26 Nano / Medium / Large, direct and
+* **Protocol.** Repeated nested cross-validation, 3 repeats x 5 outer folds, with **frame-index-grouped** outer
+  folds: LIACI does not state which video each frame comes from, so the groups, a proxy for the source videos,
+  are runs of at most 15 pool images in frame-index order, cut where the index gap exceeds 30 (**28 groups**,
+  `results/groups/groups.csv`). Each fold's inner validation is used for its early stopping and checkpoint;
+  the TTA / WBF configuration and the operating threshold are a fixed recipe chosen on the mean over the 15
+  inner validations (selection within each fold is evaluated in `results_rev2/`). YOLO26 Nano / Medium / Large, direct and
   sequential transfer: **90 fold models**. An earlier ungrouped run of the same pipeline is kept as the ablation
   that measures the leakage.
 * **Evaluation.** One evaluator (`pycocotools`) on out-of-fold predictions: mAP@50, mAP@[.5:.95], precision /
-  recall / F1 at a fixed threshold and at the validation threshold, cluster bootstrap over the 28 video groups
+  recall / F1 at a fixed threshold and at the validation threshold, cluster bootstrap over the 28 index-run groups
   (1,000 replicates, paired differences, Holm correction within families).
 * **Improvement experiments** on the same splits (`revision_nested_cv/ext/`): small-data training recipe,
   nine-class training with the 1,591 unused LIACI images, a segmentation head, copy-paste augmentation, their
@@ -38,7 +39,9 @@ Project page: <https://luisbuljim.github.io/paper_code_release/>
 | Result | Value | Source file |
 |---|---|---|
 | YOLO26-Medium, direct transfer, single pass, out-of-fold mAP@50 | **0.299 ungrouped → 0.167 grouped** [0.119, 0.209] | `results/main_study/r1_results/nested_{ungrouped,grouped}/summary.csv` |
-| Four-baseline WBF ensemble + TTA (recipe selected on validation) | **0.262** mAP@50 at **3.4 images/s** (RTX 4090, FP32, batch 1) | `results/ext/results_final/summary.csv`, `table_latency.tex` |
+| Four-baseline WBF ensemble + TTA (fixed recipe, chosen on the pooled validation of the 15 folds) | **0.262** mAP@50 at **3.4 images/s** (RTX 4090, FP32, batch 1) | `results/ext/results_final/summary.csv`, `table_latency.tex` |
+| Same recipe with TTA / WBF / threshold chosen within each outer fold; full per-fold selection | **0.245**; **0.150** | `results_rev2/r2_2/summary.csv` |
+| Medium with a temporal buffer of B = 5 / 15 / 30 frame indices around the test frames | **0.131 / 0.120 / 0.097** | `results_rev2/r2_1/purge_summary.csv` |
 | Nine-class model (unused LIACI images), single pass | **0.204** mAP@50 at **125 images/s** | same |
 | Pixel IoU of masks vs. filled boxes | masks **0.188–0.229** vs. boxes **0.158** | `results/ext/results_final/pixel_summary.csv`, `table_pixel.tex` |
 | SAM 3 with ground-truth box prompts / with text prompts | IoU **0.650** [0.553, 0.734] / **0.065** [0.003, 0.138] | `results/ext/results_final/table_sam3.tex` (inputs in `results/ext/server_results_20261009/`) |
@@ -53,7 +56,7 @@ and `nested_deltas.tex`; the full list of generated tables is in `results/README
 ├── README.md, LICENSE, requirements-lock.txt, RELEASE_CHECKLIST.md
 ├── revision_nested_cv/            the code that produced every result (run layout, see section 4)
 │   ├── nested_cv.py               training of the 90 fold models + caching of all TTA views (GPU)
-│   ├── build_groups.py            video groups from frame indices (groups.csv for --groups-csv)
+│   ├── build_groups.py            index-run groups from frame indices (groups.csv for --groups-csv)
 │   ├── evaluate_cv.py, predict_extra_views.py, bench_latency.py, metrics_coco.py, common.py
 │   ├── run_revision.sh            phase launcher: check | dryrun | smoke | direct | sequential | verify | extra | eval | latency
 │   ├── README_nested_cv.md        notes on the main pipeline (Spanish)
@@ -74,13 +77,15 @@ and `nested_deltas.tex`; the full list of generated tables is in `results/README
 │   │   └── run_ext.sh, README_ext.md
 ├── results/                       outputs of the above (CSV / JSON / TeX / TXT / PNG; no weights, no pickles)
 │   ├── splits.json                the 3 x 5 outer/inner splits (seeds, test, val, train image lists)
-│   ├── groups/groups.csv          the 28 video groups given to the training run (image -> group)
+│   ├── groups/groups.csv          the 28 index-run groups given to the training run (image -> group)
 │   ├── groups/groups_report.csv   the same, with frame index and index gap per image
 │   ├── groups/nested_groups.csv   the same partition rebuilt from the splits by r1 (other labels)
 │   ├── main_study/                per-fold and out-of-fold metrics, bootstrap, sweeps, tables, figures, run records
 │   ├── ext/                       improvement experiments, pixel IoU, SAM 3, latency, diagnostics
 │   ├── PREDICTIONS.md             where the per-fold predictions and checkpoints are (archived release)
 │   └── README.md                  file-by-file description
+├── results_rev2/                  second-revision analyses: temporal buffer, coarser bootstrap, per-fold selection,
+│                                  chronology, tiled ground truth, SAM 3 positives, data flow (see its README.md)
 ├── docs/                          project page (GitHub Pages, served from /docs)
 └── legacy/                        superseded material, kept for transparency (not used by the manuscript)
     ├── original_submission/       executed notebooks, src/, splits and figures of the first submission
@@ -198,6 +203,6 @@ Code and result files: MIT License (see `LICENSE`). The datasets keep the licens
   title   = {Underwater Corrosion Detection with YOLO26: Comparing Model Scaling, Ensemble Fusion, and Test-Time Augmentation},
   journal = {Ocean Engineering (under review)},
   year    = {2026},
-  note    = {Code and results: https://github.com/LuisBulJim/paper_code_release; archived release: DOI to be added}
+  note    = {Code and results: https://github.com/LuisBulJim/paper_code_release; archived code: https://doi.org/10.5281/zenodo.23337633; predictions and checkpoints: https://doi.org/10.5281/zenodo.23338086}
 }
 ```

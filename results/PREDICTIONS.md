@@ -1,8 +1,8 @@
 # Per-fold predictions, masks and checkpoints
 
 The per-fold outputs and the trained weights are too large for git. They are deposited, together with the
-derived label files of the improvement experiments, in the **archived release** of this repository
-(Zenodo, DOI: *to be added*; the same DOI is quoted in the manuscript's Data availability statement).
+derived label files of the improvement experiments, in a Zenodo record that accompanies this repository
+(DOI: [10.5281/zenodo.23338086](https://doi.org/10.5281/zenodo.23338086); the same DOI is quoted in the manuscript's Data availability statement).
 
 ## `predictions_per_fold.zip` (236 MB zipped, 355 MB unpacked, 11,697 files)
 
@@ -23,6 +23,19 @@ and `revision_nested_cv/ext/out/sam3_boxfill/` to re-run the CPU evaluations (`r
 
 The SAM 3 masks of the ground-truth-box and text-prompt runs (`ext/out/sam3_gt_boxes/`, `ext/out/sam3_text/`)
 stayed on the GPU server; their metrics are in `results/ext/server_results_20261009/`.
+
+## `results_rev2_artifacts.zip` (second revision, 37 MB zipped)
+
+| Folder in the archive | Content | Produced by |
+|---|---|---|
+| `results_rev2/r2_1/purge{5,15,30}/preds/direct_r<r>_f<k>_m.pkl` | 45 pickles of the Medium models retrained with a temporal buffer of B frame indices around the test frames, same format as the main study | `results_rev2/r2_1ab_train.py` |
+| `results_rev2/r2_1/purge{5,15,30}/runs/` | their `args.yaml` and training curves (`results.csv`) | same |
+| `results_rev2/r2_1/logs/train_*.log` | training logs of the three buffer settings | `results_rev2/r2_1/run_chain.sh` |
+| `results_rev2/r2_5/sam3_farthest_{std,valthr}/` | SAM 3 masks (PNG) and prompting boxes (JSON) with the detector whose training frames are farthest in frame index, at confidence 0.25 and at the validation threshold 0.1 | `results_rev2/r2_5_sam3_farthest.sh` |
+| `results_rev2/r2_5/sam3_cases_{std,valthr}.png` | qualitative SAM 3 cases of the same runs | same |
+
+Unpack it at the repository root. The 45 buffer checkpoints are not archived; `splits.json` and
+`r2_1ab_train.py` regenerate them.
 
 ## Checkpoints
 
