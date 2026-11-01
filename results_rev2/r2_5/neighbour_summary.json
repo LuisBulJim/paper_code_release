@@ -1,0 +1,49 @@
+{
+ "buffer": 5,
+ "positives_r1": {
+  "n": 21,
+  "min": 1,
+  "median": 21.0,
+  "max": 118,
+  "le1": 1,
+  "le5": 3
+ },
+ "positives_farthest": {
+  "n": 21,
+  "min": 1,
+  "median": 21.0,
+  "max": 118,
+  "le1": 1,
+  "le5": 3
+ },
+ "all_r1": {
+  "n": 191,
+  "min": 1,
+  "median": 7.0,
+  "max": 151,
+  "le1": 23,
+  "le5": 85
+ },
+ "all_farthest": {
+  "n": 191,
+  "min": 1,
+  "median": 43.0,
+  "max": 151,
+  "le1": 1,
+  "le5": 8
+ },
+ "negatives_farthest": {
+  "n": 170,
+  "min": 3,
+  "median": 46.0,
+  "max": 151,
+  "le1": 0,
+  "le5": 5
+ },
+ "fold_changed": 126,
+ "positives_within_buffer_after": [
+  "image_1785.jpg",
+  "image_1790.jpg",
+  "image_1858.jpg"
+ ]
+}

@@ -1,0 +1,16 @@
+\begin{tabular}{@{} l c c c @{}}
+\toprule
+\textbf{Procedure} & \textbf{OOF mAP@50 [95\% CI]} & \textbf{Mean per-fold mAP@50} & \textbf{F1 (per-fold thr.)} \\
+\midrule
+Baseline Medium, single pass & 0.167 [0.119, 0.209] & 0.172 & 0.273 \\
+Fixed recipe (control ensemble + TTA), settings pooled over 15 validations & 0.262 [0.193, 0.329] & 0.272 & 0.342 \\
+Same recipe, TTA/WBF/threshold chosen in each outer fold & 0.245 [0.179, 0.312] & 0.265 & 0.313 \\
+Selection procedure: TTA, WBF, recipe and threshold chosen in each outer fold & 0.150 [0.102, 0.206] & 0.224 & 0.263 \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Paired differences in OOF mAP@50}} \\
+Procedure $-$ fixed recipe & $-0.113$ [$-0.138$, $-0.074$] & & \\
+Per-fold settings $-$ fixed recipe & $-0.017$ [$-0.025$, $-0.010$] & & \\
+Procedure $-$ baseline & $-0.017$ [$-0.033$, $+0.012$] & & \\
+Fixed recipe $-$ baseline & $+0.096$ [$+0.066$, $+0.124$] & & \\
+\bottomrule
+\end{tabular}

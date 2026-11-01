@@ -1,0 +1,16 @@
+repeat,fold,n_val,n_val_pos,n_test,tta,tta_val_map50,standard_val_map50,wbf,wbf_val_map50,recipe,recipe_val_map50,fixed_recipe_val_map50,conf,conf_c4,test_map50_of_choice,test_map50_fixed_recipe
+0,0,5,3,77,tta_s3_flip_equal@0.6,0.3712,0.35,n+m+l_equal@0.4,0.6506,x2_multi/tta,0.604,0.454,0.01,0.1,0.1151,0.1927
+0,1,17,8,66,tta_s3_flip@0.6,0.2141,0.2043,n+m+l_equal@0.4,0.2365,x3_seg/standard,0.3453,0.2939,0.4,0.05,0.2276,0.408
+0,2,37,31,22,tta_s3_flip_equal@0.5,0.2854,0.22,n+m+l_equal@0.5,0.2741,x4_seg_cp/tta,0.3388,0.3123,0.1,0.05,0.1562,0.1485
+0,3,25,18,44,tta_s3_noflip@0.4,0.1996,0.1622,m+l_favour_larger@0.4,0.2635,c4_baselines/standard,0.3553,0.3383,0.05,0.05,0.248,0.2658
+0,4,45,45,52,tta_s3_flip@0.4,0.3336,0.2539,m+l_favour_larger@0.4,0.3677,c4_baselines/standard,0.4437,0.4435,0.05,0.05,0.2842,0.2991
+1,0,24,22,49,tta_s3_flip_equal@0.4,0.3046,0.2713,n+m+l_equal@0.4,0.3172,x4_seg_cp/tta,0.4309,0.3419,0.01,0.05,0.345,0.3854
+1,1,24,16,35,tta_s3_flip@0.5,0.3093,0.3012,n+m+l_equal@0.4,0.4159,x3_seg/standard,0.4334,0.346,0.2,0.05,0.174,0.2195
+1,2,15,3,43,standard,0.1817,0.1817,n+m_favour_larger@0.5,0.2376,x1_recipe/standard,0.2241,0.1435,0.4,0.1,0.0578,0.2669
+1,3,23,20,88,tta_s3_flip@0.4,0.2902,0.2435,m+l_favour_larger@0.6,0.3131,c4_baselines/tta,0.3658,0.3658,0.05,0.05,0.2088,0.2076
+1,4,39,28,46,tta_s3_flip_equal@0.5,0.2448,0.2113,n+l_equal@0.5,0.2341,e1_ensemble/standard,0.3291,0.2866,0.05,0.05,0.3515,0.3299
+2,0,19,17,39,standard,0.1186,0.1186,n+l_equal@0.6,0.134,c4_baselines/standard,0.1893,0.1893,0.05,0.05,0.2399,0.237
+2,1,27,21,32,tta_s3_flip_equal@0.6,0.3026,0.244,m+l_favour_larger@0.4,0.3102,x4_seg_cp/tta,0.45,0.3676,0.05,0.05,0.34,0.3953
+2,2,6,1,69,tta_s3_noflip@0.4,0.2583,0.2398,n+m_favour_larger@0.6,0.1933,x0_baseline/tta,0.5933,0.1381,0.2,0.05,0.0806,0.158
+2,3,28,22,69,tta_s3_flip_equal@0.5,0.2266,0.211,m+l_favour_larger@0.4,0.2779,e1_ensemble/tta,0.4016,0.3529,0.05,0.05,0.2649,0.274
+2,4,13,11,52,standard,0.3645,0.3645,n+m+l_equal@0.6,0.2939,c4_baselines/standard,0.3361,0.3361,0.2,0.2,0.2727,0.289

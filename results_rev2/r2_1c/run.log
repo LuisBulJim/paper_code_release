@@ -1,0 +1,300 @@
+/home/user/work/envs/yoloenv/lib/python3.9/site-packages/ensemble_boxes/ensemble_boxes_wbf.py:36: UserWarning: X2 < X1 value in box. Swap them.
+  warnings.warn('X2 < X1 value in box. Swap them.')
+/home/user/work/envs/yoloenv/lib/python3.9/site-packages/ensemble_boxes/ensemble_boxes_wbf.py:39: UserWarning: Y2 < Y1 value in box. Swap them.
+  warnings.warn('Y2 < Y1 value in box. Swap them.')
+g28: bootstrap done (0 redraws)
+gap30: bootstrap done (0 redraws)
+gap40: bootstrap done (0 redraws)
+gap45: bootstrap done (0 redraws)
+{
+ "iters": 1000,
+ "seed": 0,
+ "redraws": {
+  "g28": 0,
+  "gap30": 0,
+  "gap40": 0,
+  "gap45": 0
+ },
+ "groupings": [
+  {
+   "grouping": "g28",
+   "n_groups": 28,
+   "largest": 15,
+   "largest_share": 0.057,
+   "groups_with_positives": 26,
+   "groups_with_negatives": 20,
+   "sizes": "15 15 15 15 15 15 15 15 15 15 15 13 11 10 9 9 7 6 6 5 3 3 3 3 3 2 2 1"
+  },
+  {
+   "grouping": "gap30",
+   "n_groups": 17,
+   "largest": 111,
+   "largest_share": 0.425,
+   "groups_with_positives": 15,
+   "groups_with_negatives": 16,
+   "sizes": "111 55 18 13 11 9 9 7 6 5 3 3 3 3 2 2 1"
+  },
+  {
+   "grouping": "gap40",
+   "n_groups": 10,
+   "largest": 124,
+   "largest_share": 0.475,
+   "groups_with_positives": 8,
+   "groups_with_negatives": 10,
+   "sizes": "124 58 18 17 17 9 7 6 3 2"
+  },
+  {
+   "grouping": "gap45",
+   "n_groups": 6,
+   "largest": 182,
+   "largest_share": 0.697,
+   "groups_with_positives": 5,
+   "groups_with_negatives": 6,
+   "sizes": "182 44 17 8 7 3"
+  }
+ ],
+ "width_ratio": [
+  {
+   "grouping": "gap30",
+   "kind": "interval",
+   "metric": "map50",
+   "n": 23,
+   "median_width_ratio_vs_g28": 1.258,
+   "min": 1.007,
+   "max": 1.693
+  },
+  {
+   "grouping": "gap30",
+   "kind": "interval",
+   "metric": "f1_vt",
+   "n": 23,
+   "median_width_ratio_vs_g28": 1.489,
+   "min": 1.14,
+   "max": 1.83
+  },
+  {
+   "grouping": "gap30",
+   "kind": "delta",
+   "metric": "map50",
+   "n": 22,
+   "median_width_ratio_vs_g28": 1.087,
+   "min": 0.566,
+   "max": 1.423
+  },
+  {
+   "grouping": "gap30",
+   "kind": "delta",
+   "metric": "f1_vt",
+   "n": 22,
+   "median_width_ratio_vs_g28": 1.061,
+   "min": 0.549,
+   "max": 1.859
+  },
+  {
+   "grouping": "gap40",
+   "kind": "interval",
+   "metric": "map50",
+   "n": 23,
+   "median_width_ratio_vs_g28": 1.351,
+   "min": 0.972,
+   "max": 1.746
+  },
+  {
+   "grouping": "gap40",
+   "kind": "interval",
+   "metric": "f1_vt",
+   "n": 23,
+   "median_width_ratio_vs_g28": 1.613,
+   "min": 1.047,
+   "max": 2.198
+  },
+  {
+   "grouping": "gap40",
+   "kind": "delta",
+   "metric": "map50",
+   "n": 22,
+   "median_width_ratio_vs_g28": 1.136,
+   "min": 0.556,
+   "max": 1.373
+  },
+  {
+   "grouping": "gap40",
+   "kind": "delta",
+   "metric": "f1_vt",
+   "n": 22,
+   "median_width_ratio_vs_g28": 1.114,
+   "min": 0.589,
+   "max": 1.702
+  },
+  {
+   "grouping": "gap45",
+   "kind": "interval",
+   "metric": "map50",
+   "n": 23,
+   "median_width_ratio_vs_g28": 1.473,
+   "min": 1.273,
+   "max": 1.867
+  },
+  {
+   "grouping": "gap45",
+   "kind": "interval",
+   "metric": "f1_vt",
+   "n": 23,
+   "median_width_ratio_vs_g28": 1.762,
+   "min": 1.264,
+   "max": 2.669
+  },
+  {
+   "grouping": "gap45",
+   "kind": "delta",
+   "metric": "map50",
+   "n": 22,
+   "median_width_ratio_vs_g28": 1.173,
+   "min": 0.532,
+   "max": 2.451
+  },
+  {
+   "grouping": "gap45",
+   "kind": "delta",
+   "metric": "f1_vt",
+   "n": 22,
+   "median_width_ratio_vs_g28": 1.39,
+   "min": 0.445,
+   "max": 2.966
+  }
+ ],
+ "excludes_zero_map50": {
+  "direct yolo26n: TTA - single pass": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "direct yolo26m: TTA - single pass": {
+   "g28": true,
+   "gap30": true,
+   "gap40": false,
+   "gap45": false
+  },
+  "direct yolo26l: TTA - single pass": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": false
+  },
+  "sequential yolo26n: TTA - single pass": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "sequential yolo26m: TTA - single pass": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "sequential yolo26l: TTA - single pass": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "3-model WBF - Medium": {
+   "g28": false,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "Medium - Nano (direct)": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "Large - Medium (direct)": {
+   "g28": false,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "yolo26n: sequential - direct": {
+   "g28": true,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "yolo26m: sequential - direct": {
+   "g28": false,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "yolo26l: sequential - direct": {
+   "g28": false,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "x2_multi - baseline (standard)": {
+   "g28": true,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "x3_seg - baseline (standard)": {
+   "g28": true,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "e1_ensemble - baseline (standard)": {
+   "g28": true,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "c4_baselines - baseline (standard)": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "e1 - c4 (standard)": {
+   "g28": false,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "x2_multi - baseline (tta)": {
+   "g28": true,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  },
+  "x3_seg - baseline (tta)": {
+   "g28": true,
+   "gap30": false,
+   "gap40": false,
+   "gap45": true
+  },
+  "e1_ensemble - baseline (tta)": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "c4_baselines - baseline (tta)": {
+   "g28": true,
+   "gap30": true,
+   "gap40": true,
+   "gap45": true
+  },
+  "e1 - c4 (tta)": {
+   "g28": false,
+   "gap30": false,
+   "gap40": false,
+   "gap45": false
+  }
+ }
+}

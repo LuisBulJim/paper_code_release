@@ -1,0 +1,7 @@
+output,cell_px,iou,boxes_total
+one filled box per annotated component (paper reference),,0.5344,569
+grid cells of 128 px covering the ground truth,128,0.2495,1252
+grid cells of 64 px covering the ground truth,64,0.4068,3071
+grid cells of 32 px covering the ground truth,32,0.5782,8643
+grid cells of 16 px covering the ground truth,16,0.7387,27061
+grid cells of 8 px covering the ground truth,8,0.8576,93242

@@ -1,0 +1,42 @@
+{
+ "images": 261,
+ "image_px": "native image size (as pixel_eval)",
+ "rows": [
+  {
+   "output": "one filled box per annotated component (paper reference)",
+   "cell_px": "",
+   "iou": 0.5344,
+   "boxes_total": 569
+  },
+  {
+   "output": "grid cells of 128 px covering the ground truth",
+   "cell_px": 128,
+   "iou": 0.2495,
+   "boxes_total": 1252
+  },
+  {
+   "output": "grid cells of 64 px covering the ground truth",
+   "cell_px": 64,
+   "iou": 0.4068,
+   "boxes_total": 3071
+  },
+  {
+   "output": "grid cells of 32 px covering the ground truth",
+   "cell_px": 32,
+   "iou": 0.5782,
+   "boxes_total": 8643
+  },
+  {
+   "output": "grid cells of 16 px covering the ground truth",
+   "cell_px": 16,
+   "iou": 0.7387,
+   "boxes_total": 27061
+  },
+  {
+   "output": "grid cells of 8 px covering the ground truth",
+   "cell_px": 8,
+   "iou": 0.8576,
+   "boxes_total": 93242
+  }
+ ]
+}

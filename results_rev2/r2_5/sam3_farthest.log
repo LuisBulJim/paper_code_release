@@ -1,0 +1,25 @@
+2026-10-29 06:57:05 | INFO | 191 images, 5 detector checkpoint(s)
+Loading weights:   0%|                                                                                                                                                                            | 0/1468 [00:00<?, ?it/s]Loading weights:  18%|████████████████████████████▊                                                                                                                                   | 264/1468 [00:00<00:00, 2639.68it/s]Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1468/1468 [00:00<00:00, 10243.45it/s]
+2026-10-29 06:57:56 | INFO |   25/191 images
+2026-10-29 06:57:59 | INFO |   50/191 images
+2026-10-29 06:57:59 | INFO |   75/191 images
+2026-10-29 06:58:00 | INFO |   100/191 images
+2026-10-29 06:58:01 | INFO |   125/191 images
+2026-10-29 06:58:03 | INFO |   150/191 images
+2026-10-29 06:58:06 | INFO |   175/191 images
+2026-10-29 06:58:07 | INFO |   191/191 images
+2026-10-29 06:58:08 | INFO | predictions written to /home/user/work/EONSEA/Articulo-Corrosion/revision_nested_cv/../results_rev2/r2_5/sam3_farthest_std
+2026-10-29 06:58:09 | INFO | positives 21: IoU 0.034 [0.000, 0.087] Dice 0.052 | detected 14.3% | negatives 170: false-mask rate 0.2059
+2026-10-29 06:58:12 | INFO | 191 images, 5 detector checkpoint(s)
+Loading weights:   0%|                                                                                                                                                                            | 0/1468 [00:00<?, ?it/s]Loading weights:  20%|████████████████████████████████▌                                                                                                                               | 299/1468 [00:00<00:00, 2988.30it/s]Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1468/1468 [00:00<00:00, 10009.52it/s]
+2026-10-29 06:58:21 | INFO |   25/191 images
+2026-10-29 06:58:25 | INFO |   50/191 images
+2026-10-29 06:58:27 | INFO |   75/191 images
+2026-10-29 06:58:28 | INFO |   100/191 images
+2026-10-29 06:58:32 | INFO |   125/191 images
+2026-10-29 06:58:36 | INFO |   150/191 images
+2026-10-29 06:58:40 | INFO |   175/191 images
+2026-10-29 06:58:43 | INFO |   191/191 images
+2026-10-29 06:58:44 | INFO | predictions written to /home/user/work/EONSEA/Articulo-Corrosion/revision_nested_cv/../results_rev2/r2_5/sam3_farthest_valthr
+2026-10-29 06:58:45 | INFO | positives 21: IoU 0.083 [0.010, 0.183] Dice 0.107 | detected 52.4% | negatives 170: false-mask rate 0.4176
+SAM3_DONE

@@ -1,0 +1,371 @@
+/home/user/work/envs/yoloenv/lib/python3.9/site-packages/ensemble_boxes/ensemble_boxes_wbf.py:66: UserWarning: Zero area box skipped: [1.0, 0.0021406346932053566, 1.0, 0.05066024139523506].
+  warnings.warn("Zero area box skipped: {}.".format(box_part))
+/home/user/work/envs/yoloenv/lib/python3.9/site-packages/ensemble_boxes/ensemble_boxes_wbf.py:66: UserWarning: Zero area box skipped: [1.0, 0.001983156893402338, 1.0, 0.04364200681447983].
+  warnings.warn("Zero area box skipped: {}.".format(box_part))
+/home/user/work/envs/yoloenv/lib/python3.9/site-packages/ensemble_boxes/ensemble_boxes_wbf.py:66: UserWarning: Zero area box skipped: [1.0, 0.0018652379512786865, 1.0, 0.03923434391617775].
+  warnings.warn("Zero area box skipped: {}.".format(box_part))
+/home/user/work/envs/yoloenv/lib/python3.9/site-packages/ensemble_boxes/ensemble_boxes_wbf.py:36: UserWarning: X2 < X1 value in box. Swap them.
+  warnings.warn('X2 < X1 value in box. Swap them.')
+/home/user/work/envs/yoloenv/lib/python3.9/site-packages/ensemble_boxes/ensemble_boxes_wbf.py:39: UserWarning: Y2 < Y1 value in box. Swap them.
+  warnings.warn('Y2 < Y1 value in box. Swap them.')
+261 images, 569 boxes, 28 groups (reconstructed from splits.json (contiguous blocks with identical test folds))
+checks OK: member images match every fold; e1 rebuild equals the stored e1 predictions
+r0 f0 val  5 (3 pos) | TTA tta_s3_flip_equal@0.6    | WBF n+m+l_equal@0.4        | recipe x2_multi/tta val 0.604 | conf 0.01
+r0 f1 val 17 (8 pos) | TTA tta_s3_flip@0.6          | WBF n+m+l_equal@0.4        | recipe x3_seg/standard val 0.345 | conf 0.4
+r0 f2 val 37 (31 pos) | TTA tta_s3_flip_equal@0.5    | WBF n+m+l_equal@0.5        | recipe x4_seg_cp/tta val 0.339 | conf 0.1
+r0 f3 val 25 (18 pos) | TTA tta_s3_noflip@0.4        | WBF m+l_favour_larger@0.4  | recipe c4_baselines/standard val 0.355 | conf 0.05
+r0 f4 val 45 (45 pos) | TTA tta_s3_flip@0.4          | WBF m+l_favour_larger@0.4  | recipe c4_baselines/standard val 0.444 | conf 0.05
+r1 f0 val 24 (22 pos) | TTA tta_s3_flip_equal@0.4    | WBF n+m+l_equal@0.4        | recipe x4_seg_cp/tta val 0.431 | conf 0.01
+r1 f1 val 24 (16 pos) | TTA tta_s3_flip@0.5          | WBF n+m+l_equal@0.4        | recipe x3_seg/standard val 0.433 | conf 0.2
+r1 f2 val 15 (3 pos) | TTA standard                 | WBF n+m_favour_larger@0.5  | recipe x1_recipe/standard val 0.224 | conf 0.4
+r1 f3 val 23 (20 pos) | TTA tta_s3_flip@0.4          | WBF m+l_favour_larger@0.6  | recipe c4_baselines/tta val 0.366 | conf 0.05
+r1 f4 val 39 (28 pos) | TTA tta_s3_flip_equal@0.5    | WBF n+l_equal@0.5          | recipe e1_ensemble/standard val 0.329 | conf 0.05
+r2 f0 val 19 (17 pos) | TTA standard                 | WBF n+l_equal@0.6          | recipe c4_baselines/standard val 0.189 | conf 0.05
+r2 f1 val 27 (21 pos) | TTA tta_s3_flip_equal@0.6    | WBF m+l_favour_larger@0.4  | recipe x4_seg_cp/tta val 0.450 | conf 0.05
+r2 f2 val  6 (1 pos) | TTA tta_s3_noflip@0.4        | WBF n+m_favour_larger@0.6  | recipe x0_baseline/tta val 0.593 | conf 0.2
+r2 f3 val 28 (22 pos) | TTA tta_s3_flip_equal@0.5    | WBF m+l_favour_larger@0.4  | recipe e1_ensemble/tta val 0.402 | conf 0.05
+r2 f4 val 13 (11 pos) | TTA standard                 | WBF n+m+l_equal@0.6        | recipe c4_baselines/standard val 0.336 | conf 0.2
+bootstrap baseline done
+bootstrap fixed done
+bootstrap c4_nested done
+bootstrap nested done
+{
+ "bootstrap": {
+  "iters": 1000,
+  "seed": 0,
+  "unit": "index-run group",
+  "n_groups": 28
+ },
+ "fixed_recipe": {
+  "recipe": "c4_baselines/tta",
+  "tta": {
+   "config": "tta_s3_flip_equal",
+   "iou": 0.6
+  },
+  "wbf": {
+   "members": "yolo26n+yolo26m+yolo26l",
+   "weight_mode": "equal",
+   "iou": 0.5
+  },
+  "conf_vt": 0.05,
+  "val_map50_mean_15_folds": 0.3278
+ },
+ "summary": {
+  "baseline": {
+   "map50": [
+    0.1665,
+    0.1192,
+    0.2088
+   ],
+   "map5095": [
+    0.0773,
+    0.0561,
+    0.0955
+   ],
+   "precision": [
+    0.2802,
+    0.224,
+    0.3202
+   ],
+   "recall": [
+    0.2665,
+    0.2034,
+    0.3253
+   ],
+   "f1": [
+    0.273,
+    0.2155,
+    0.3152
+   ],
+   "map50_fold_mean": 0.1725
+  },
+  "fixed": {
+   "map50": [
+    0.2622,
+    0.193,
+    0.3285
+   ],
+   "map5095": [
+    0.1238,
+    0.0903,
+    0.1544
+   ],
+   "precision": [
+    0.3261,
+    0.2612,
+    0.3698
+   ],
+   "recall": [
+    0.3609,
+    0.2741,
+    0.4564
+   ],
+   "f1": [
+    0.3424,
+    0.2735,
+    0.395
+   ],
+   "map50_fold_mean": 0.2718
+  },
+  "c4_nested": {
+   "map50": [
+    0.2449,
+    0.1791,
+    0.3124
+   ],
+   "map5095": [
+    0.1126,
+    0.0814,
+    0.1425
+   ],
+   "precision": [
+    0.3596,
+    0.2839,
+    0.41
+   ],
+   "recall": [
+    0.2777,
+    0.1839,
+    0.3826
+   ],
+   "f1": [
+    0.3131,
+    0.227,
+    0.385
+   ],
+   "map50_fold_mean": 0.2646
+  },
+  "nested": {
+   "map50": [
+    0.1496,
+    0.102,
+    0.2056
+   ],
+   "map5095": [
+    0.0676,
+    0.0472,
+    0.0914
+   ],
+   "precision": [
+    0.3061,
+    0.2359,
+    0.3645
+   ],
+   "recall": [
+    0.2314,
+    0.1627,
+    0.3007
+   ],
+   "f1": [
+    0.2631,
+    0.196,
+    0.3106
+   ],
+   "map50_fold_mean": 0.2244
+  }
+ },
+ "deltas": {
+  "nested - fixed": {
+   "map50": [
+    -0.1125,
+    -0.1383,
+    -0.0737,
+    1.0
+   ],
+   "map5095": [
+    -0.0562,
+    -0.073,
+    -0.0381,
+    1.0
+   ],
+   "precision": [
+    -0.02,
+    -0.0389,
+    0.0085,
+    0.917
+   ],
+   "recall": [
+    -0.1295,
+    -0.1705,
+    -0.0884,
+    1.0
+   ],
+   "f1": [
+    -0.0793,
+    -0.0965,
+    -0.0608,
+    1.0
+   ]
+  },
+  "c4_nested - fixed": {
+   "map50": [
+    -0.0173,
+    -0.0245,
+    -0.0103,
+    1.0
+   ],
+   "map5095": [
+    -0.0112,
+    -0.015,
+    -0.0072,
+    1.0
+   ],
+   "precision": [
+    0.0335,
+    0.0029,
+    0.057,
+    0.017
+   ],
+   "recall": [
+    -0.0832,
+    -0.1068,
+    -0.0619,
+    1.0
+   ],
+   "f1": [
+    -0.0292,
+    -0.0618,
+    -0.0028,
+    0.986
+   ]
+  },
+  "nested - c4_nested": {
+   "map50": [
+    -0.0953,
+    -0.1202,
+    -0.0603,
+    1.0
+   ],
+   "map5095": [
+    -0.045,
+    -0.0607,
+    -0.0284,
+    1.0
+   ],
+   "precision": [
+    -0.0535,
+    -0.078,
+    -0.0192,
+    0.997
+   ],
+   "recall": [
+    -0.0463,
+    -0.0985,
+    -0.002,
+    0.982
+   ],
+   "f1": [
+    -0.0501,
+    -0.0834,
+    -0.0169,
+    0.998
+   ]
+  },
+  "nested - baseline": {
+   "map50": [
+    -0.0168,
+    -0.0334,
+    0.0119,
+    0.91
+   ],
+   "map5095": [
+    -0.0096,
+    -0.0196,
+    0.0014,
+    0.956
+   ],
+   "precision": [
+    0.0259,
+    -0.0045,
+    0.0633,
+    0.046
+   ],
+   "recall": [
+    -0.0351,
+    -0.0833,
+    0.0084,
+    0.948
+   ],
+   "f1": [
+    -0.01,
+    -0.0412,
+    0.0117,
+    0.838
+   ]
+  },
+  "fixed - baseline": {
+   "map50": [
+    0.0957,
+    0.0663,
+    0.1245,
+    0.0
+   ],
+   "map5095": [
+    0.0465,
+    0.0317,
+    0.0618,
+    0.0
+   ],
+   "precision": [
+    0.0458,
+    0.0251,
+    0.0657,
+    0.0
+   ],
+   "recall": [
+    0.0943,
+    0.0542,
+    0.138,
+    0.0
+   ],
+   "f1": [
+    0.0694,
+    0.0468,
+    0.0876,
+    0.0
+   ]
+  }
+ },
+ "choices_count": {
+  "recipe": {
+   "c4_baselines/standard": 4,
+   "x4_seg_cp/tta": 3,
+   "x3_seg/standard": 2,
+   "x2_multi/tta": 1,
+   "x1_recipe/standard": 1,
+   "c4_baselines/tta": 1,
+   "e1_ensemble/standard": 1,
+   "x0_baseline/tta": 1,
+   "e1_ensemble/tta": 1
+  },
+  "tta": {
+   "tta_s3_flip_equal@0.5": 3,
+   "standard": 3,
+   "tta_s3_flip_equal@0.6": 2,
+   "tta_s3_noflip@0.4": 2,
+   "tta_s3_flip@0.4": 2,
+   "tta_s3_flip@0.6": 1,
+   "tta_s3_flip_equal@0.4": 1,
+   "tta_s3_flip@0.5": 1
+  },
+  "wbf": {
+   "n+m+l_equal@0.4": 4,
+   "m+l_favour_larger@0.4": 4,
+   "n+m+l_equal@0.5": 1,
+   "n+m_favour_larger@0.5": 1,
+   "m+l_favour_larger@0.6": 1,
+   "n+l_equal@0.5": 1,
+   "n+l_equal@0.6": 1,
+   "n+m_favour_larger@0.6": 1,
+   "n+m+l_equal@0.6": 1
+  },
+  "conf": {
+   "0.05": 7,
+   "0.2": 3,
+   "0.01": 2,
+   "0.4": 2,
+   "0.1": 1
+  }
+ }
+}
+written /home/user/work/EONSEA/Articulo-Corrosion/results_rev2/r2_2

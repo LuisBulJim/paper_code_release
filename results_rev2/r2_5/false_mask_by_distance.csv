@@ -1,0 +1,11 @@
+threshold,group,n_neg,false_paper_map,rate_paper_map,false_farthest_map,rate_farthest_map,only_paper_map,only_farthest_map
+conf 0.25,all,168,13,0.0774,34,0.2024,3,24
+conf 0.25,model unchanged,43,4,0.093,4,0.093,0,0
+conf 0.25,model changed,125,9,0.072,30,0.24,3,24
+conf 0.25,paper-map distance <=5,81,1,0.0123,15,0.1852,0,14
+conf 0.25,paper-map distance >5,87,12,0.1379,19,0.2184,3,10
+val thr 0.1,all,168,38,0.2262,70,0.4167,4,36
+val thr 0.1,model unchanged,43,12,0.2791,12,0.2791,0,0
+val thr 0.1,model changed,125,26,0.208,58,0.464,4,36
+val thr 0.1,paper-map distance <=5,81,14,0.1728,37,0.4568,2,25
+val thr 0.1,paper-map distance >5,87,24,0.2759,33,0.3793,2,11

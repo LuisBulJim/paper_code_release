@@ -1,0 +1,7 @@
+run,n_neg_before,false_masks_before,rate_before,excluded_present,excluded_with_false_mask,n_neg_after,false_masks_after,rate_after,mean_false_area_after
+text prompts (paper),170,16,0.0941,2,2,168,14,0.0833,0.00635
+GT box prompts (paper),170,0,0.0,2,0,168,0,0.0,0.0
+detector boxes conf 0.25 (paper map),170,13,0.0765,2,0,168,13,0.0774,0.00592
+detector boxes val thr 0.1 (paper map),170,38,0.2235,2,0,168,38,0.2262,0.01447
+detector boxes conf 0.25 (farthest map),170,35,0.2059,2,1,168,34,0.2024,0.01607
+detector boxes val thr 0.1 (farthest map),170,71,0.4176,2,1,168,70,0.4167,0.03447

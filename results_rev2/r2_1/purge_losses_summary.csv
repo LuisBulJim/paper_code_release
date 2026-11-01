@@ -1,0 +1,4 @@
+setting,lost_train_val_min,lost_median,lost_max,lost_total_over_15,train_left_min,train_left_max,val_left_min,val_pos_left_min
+B5,0,10.0,16,135,141,203,5,1
+B15,0,21.0,40,327,125,203,4,1
+B30,0,41.0,61,528,113,203,4,1
