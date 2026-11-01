@@ -63,7 +63,7 @@ def light(s: Scored, names: list[str]) -> tuple[float, float]:
 _SCORED: dict = {}
 
 
-def _boot_one(args):
+def _boot_one(args: tuple[str, list]) -> tuple[str, np.ndarray]:
     key, samples = args
     per = _SCORED[key]
     return key, np.array([[np.mean(v) for v in zip(*[light(per[r], smp) for r in sorted(per)])] for smp in samples])
@@ -157,7 +157,7 @@ def main() -> None:
             comps.append((f"ext/x0_baseline/{st}", f"ext/{m}/{st}", f"{m} - baseline ({st})"))
         comps.append((f"ext/c4_baselines/{st}", f"ext/e1_ensemble/{st}", f"e1 - c4 ({st})"))
 
-    def ci(a):
+    def ci(a: np.ndarray) -> tuple[float, float]:
         return float(np.nanpercentile(a, 2.5)), float(np.nanpercentile(a, 97.5))
 
     interval_rows, delta_rows = [], []
@@ -201,7 +201,7 @@ def main() -> None:
     print(json.dumps(numbers, indent=1))
 
 
-def c4_threshold_standard(store, gt, fixed_tta, fixed_wbf, iou_match) -> float:
+def c4_threshold_standard(store: r22.Store, gt: dict, fixed_tta: dict, fixed_wbf: dict, iou_match: float) -> float:
     """Pooled-validation F1 threshold of c4 single pass (same rule as ext/evaluate_ext.validation)."""
     from collections import defaultdict
     from r1 import evaluate as ev

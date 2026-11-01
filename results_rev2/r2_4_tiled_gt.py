@@ -1,4 +1,4 @@
-"""R2.4 (optional) -- 0.534 is the IoU of one filled box per annotated connected component, not a ceiling of box output.
+"""R2.4 -- 0.534 is the IoU of one filled box per annotated connected component, not a ceiling of box output.
 
 Ground truth and pooling exactly as ext/pixel_eval.py: union of the corrosion polygons of ext/data/labels_seg rasterised
 at image size, pixels pooled over the 261 images, IoU = TP / (TP + FP + FN). First the paper's reference row is

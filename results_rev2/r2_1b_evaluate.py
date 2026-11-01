@@ -67,7 +67,7 @@ def main() -> None:
                 boot[(lab, st, u)] = np.array([np.mean([coco_from_per_image(reps[r], s)["map50"] for r in range(3)]) for s in smp])
             print(f"{lab:6s} {st:8s} OOF mAP@50 {full[(lab, st)]:.4f}", flush=True)
 
-    def ci(a):
+    def ci(a: np.ndarray) -> list[float]:
         return [round(float(np.percentile(a, 2.5)), 4), round(float(np.percentile(a, 97.5)), 4)]
 
     summary, deltas = [], []

@@ -76,7 +76,7 @@ OUT = REPO / "results_rev2" / "r2_2"
 class Store:
     """Lazy access to the stored views of every model, and the WBF of the ensembles under any fusion setting."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.pkl, self.fused = {}, {}
 
     def rec(self, pattern: str, r: int, k: int) -> dict:
@@ -140,7 +140,7 @@ def select_fold(store: Store, r: int, k: int, gt: ev.GT, iou_match: float, grid_
     n_pos = sum(len(gt[n]["boxes"]) > 0 for n in names)
     assert n_pos, f"r{r} f{k}: validation without positives"
 
-    def val_map(preds):
+    def val_map(preds: ev.Preds) -> float:
         return ev.coco_map(preds, gt, names)["map50"]
 
     # 1. TTA: 12 configurations + single pass, mean over direct n/m/l
@@ -197,7 +197,7 @@ def select_fold(store: Store, r: int, k: int, gt: ev.GT, iou_match: float, grid_
 class PerFoldScored:
     """Out-of-fold detections of one repeat, each image matched at its own fold's threshold."""
 
-    def __init__(self, preds: ev.Preds, gt: ev.GT, names: list[str], conf_of: dict[str, float], iou: float):
+    def __init__(self, preds: ev.Preds, gt: ev.GT, names: list[str], conf_of: dict[str, float], iou: float) -> None:
         self.coco = coco_per_image(preds, gt, names)
         self.counts = {n: ev.match_image(preds[n]["boxes"], preds[n]["scores"], gt[n]["boxes"], conf_of[n], iou) for n in names}
 
@@ -350,7 +350,7 @@ def main() -> None:
                   "fixed_recipe_val_map50": round(f["fixed_recipe_val_map50"], 4), "conf": f["conf"], "conf_c4": f["conf_c4"],
                   "test_map50_of_choice": round(f["test_map50"], 4), "test_map50_fixed_recipe": round(f["test_map50_fixed"], 4)} for f in folds.values()]
 
-    def write_csv(path, rows):
+    def write_csv(path: Path, rows: list[dict]) -> None:
         import csv
         with open(path, "w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
@@ -361,7 +361,8 @@ def main() -> None:
     write_csv(OUT / "validation_grid.csv", [{**{"val_map50_n": "", "val_map50_m": "", "val_map50_l": ""}, **g} for g in grid_rows])
     write_csv(OUT / "summary.csv", summary)
     write_csv(OUT / "deltas.csv", deltas)
-    def count(key):
+
+    def count(key: str) -> dict[str, int]:
         return dict(Counter(str(x[key]) for x in fold_rows).most_common())
 
     numbers = {"bootstrap": {"iters": len(samples), "seed": evc["bootstrap_seed"], "unit": "index-run group", "n_groups": len(set(groups.values()))},

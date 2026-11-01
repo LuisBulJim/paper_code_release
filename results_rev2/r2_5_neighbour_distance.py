@@ -62,7 +62,7 @@ def main() -> None:
         {"tag": TAG, "model": MODEL, "repeat": REPEAT, "rule": "fold model of repeat 0 whose train+val frames are farthest in frame index (index only)",
          "n_images": len(images), "images": images}, indent=1), encoding="utf-8")
 
-    def stats(sub, key):
+    def stats(sub: list[dict], key: str) -> dict[str, int | float]:
         v = np.array([r[key] for r in sub])
         return {"n": len(v), "min": int(v.min()), "median": float(np.median(v)), "max": int(v.max()),
                 "le1": int((v <= 1).sum()), f"le{BUFFER}": int((v <= BUFFER).sum())}

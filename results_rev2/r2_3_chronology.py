@@ -17,7 +17,7 @@ PACKAGES = {"ext_paquete.zip": "first round (spec + failure analysis)", "ext_cie
 LOGS = ["out/preds", "ext/out/logs/train_x1_recipe.log", "ext/out/logs/train_x2_multi.log", "ext/out/logs/closing.log"]
 
 
-def main():
+def main() -> None:
     out = {"zip_members_local_time": {}, "mtime_utc": {}}
     for z, what in PACKAGES.items():
         with zipfile.ZipFile(NCV / z) as zf:

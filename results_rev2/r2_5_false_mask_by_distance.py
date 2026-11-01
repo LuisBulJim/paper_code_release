@@ -20,11 +20,11 @@ RUNS = {
 }
 
 
-def load_neg(d):
+def load_neg(d: str) -> dict[str, bool]:
     return {r["image"]: r["false_mask"] == "True" for r in csv.DictReader(open(REPO / d / "sam3_negatives.csv"))}
 
 
-def main():
+def main() -> None:
     dist = {r["image"]: r for r in csv.DictReader(open(REPO / "results_rev2/r2_5/neighbour_distance.csv"))}
     rows, summary = [], {}
     for run, (old_dir, new_dir) in RUNS.items():

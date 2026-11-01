@@ -25,7 +25,7 @@ RUNS = {
 }
 
 
-def main():
+def main() -> None:
     rows = []
     for name, d in RUNS.items():
         p = REPO / d / "sam3_negatives.csv"

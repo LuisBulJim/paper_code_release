@@ -10,6 +10,8 @@ Copies are written to paper/tex/ for \\input in the supplementary material.
 
 Usage (from the repository root): python results_rev2/make_tex_tables.py
 """
+from __future__ import annotations
+
 import csv
 from pathlib import Path
 
@@ -17,19 +19,19 @@ R = Path(__file__).resolve().parent
 OUT = R / "tex"
 
 
-def rows(p):
+def rows(p: str) -> list[dict[str, str]]:
     return list(csv.DictReader(open(R / p, encoding="utf-8")))
 
 
-def f3(x):
+def f3(x: str | float) -> str:
     return f"{float(x):.3f}"
 
 
-def sg(x):
+def sg(x: str | float) -> str:
     return f"${float(x):+.3f}$"
 
 
-def ci(lo, hi, signed=False):
+def ci(lo: str | float, hi: str | float, signed: bool = False) -> str:
     g = sg if signed else f3
     return f"[{g(lo)}, {g(hi)}]"
 
@@ -39,11 +41,11 @@ RECIPE = {"x0_baseline": "Baseline", "x1_recipe": "Small-data recipe", "x2_multi
           "c4_baselines": "Ens.\\ of baselines"}
 
 
-def tex_name(s):
+def tex_name(s: str) -> str:
     return s.replace("_", "\\_")
 
 
-def per_fold():
+def per_fold() -> None:
     lines = [r"\begin{tabular}{@{} c c r r l l l c c c @{}}", r"\toprule",
              r"\textbf{Rep.} & \textbf{Fold} & \textbf{Val.} & \textbf{Val.\ pos.} & \textbf{TTA config.} & \textbf{WBF config.} & "
              r"\textbf{Recipe (pass)} & \textbf{Thr.} & \textbf{Test, choice} & \textbf{Test, fixed} \\", r"\midrule"]
@@ -56,7 +58,7 @@ def per_fold():
     (OUT / "r2_2_per_fold.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def summary():
+def summary() -> None:
     lab = {"baseline": "Baseline Medium, single pass", "fixed": "Fixed recipe (control ensemble + TTA), settings pooled over 15 validations",
            "c4_nested": "Same recipe, TTA/WBF/threshold chosen in each outer fold",
            "nested": "Selection procedure: TTA, WBF, recipe and threshold chosen in each outer fold"}
@@ -75,7 +77,7 @@ def summary():
     (OUT / "r2_2_summary.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def supercluster():
+def supercluster() -> None:
     g = {r["grouping"]: r for r in rows("r2_1c/groupings.csv")}
     keys = ["g28", "gap30", "gap40", "gap45"]
     head = " & ".join(f"\\textbf{{{g[k]['n_groups']} groups}}" for k in keys)
@@ -92,7 +94,7 @@ def supercluster():
     (OUT / "r2_1c_supercluster.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def tiled():
+def tiled() -> None:
     lines = [r"\begin{tabular}{@{} l c r @{}}", r"\toprule", r"\textbf{Box output built from the ground truth} & \textbf{Pixel IoU} & \textbf{Boxes} \\", r"\midrule"]
     for r in rows("r2_4/tiled_gt.csv"):
         name = "One filled box per annotated connected component" if not r["cell_px"] else f"Grid cells of {r['cell_px']} px covering the ground truth"
@@ -101,14 +103,14 @@ def tiled():
     (OUT / "r2_4_tiled.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def purge():
+def purge() -> None:
     import json
     import re
     summ = {r["setting"]: r for r in rows("r2_1/purge_summary.csv")}
     dl = {r["comparison"]: r for r in rows("r2_1/purge_deltas.csv")}
     loss = {x["setting"]: x for x in json.load(open(R / "r2_1/purge_numbers.json"))["losses"]}
 
-    def c(s, signed=False):
+    def c(s: str, signed: bool = False) -> str:
         lo, hi = (float(v) for v in re.findall(r"-?[0-9.]+", s))
         return ci(lo, hi, signed)
     lines = [r"\begin{tabular}{@{} l c c c c c c @{}}", r"\toprule",
